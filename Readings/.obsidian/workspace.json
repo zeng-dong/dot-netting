@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD.md"
+                "file": "Learning DDD/Strategic Design.md"
               }
             }
           }
@@ -137,5 +137,8 @@
     "collapsed": true
   },
   "active": "b971dc678d097e81",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Learning DDD by Vlad Khononov.md",
+    "Learning DDD/Strategic Design.md"
+  ]
 }
