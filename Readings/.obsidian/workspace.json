@@ -4,11 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "5d7c6040a632c2e7",
+        "id": "d5880d037ee7e565",
         "type": "tabs",
         "children": [
           {
-            "id": "b971dc678d097e81",
+            "id": "2eeaaf2f33c41cdd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8c3c0db4b4108b12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SOLID/SOLID in React.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "690f68d2eabf293b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "YouTube.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5a24c69795e9c0ae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,31 +56,32 @@
             }
           },
           {
-            "id": "fc5d067a5629fd59",
+            "id": "ea5d32d49ce29f8c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Untitled.md",
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "4ca6a2d27da87052",
+            "id": "1e33a53ee4e31255",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET 7/C# 11.md",
+                "file": "Dot NET 7/C.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 2,
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -110,7 +147,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dot NET 7/C# 11.md",
+                "file": "YouTube.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +164,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dot NET 7/C# 11.md",
+                "file": "YouTube.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET 7/C# 11.md"
+                "file": "YouTube.md"
               }
             }
           }
@@ -161,10 +198,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4ca6a2d27da87052",
+  "active": "690f68d2eabf293b",
   "lastOpenFiles": [
-    "Untitled.md",
+    "SOLID/SOLID in React.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Dot NET 7/C.md",
     "Learning DDD/Strategic Design.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md"
+    "EF Core/pluralsights.md",
+    "keys in md.md",
+    "Dot NET 7/C# 11.md"
   ]
 }
