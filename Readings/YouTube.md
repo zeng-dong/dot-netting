@@ -10,3 +10,5 @@ https://www.youtube.com/@MilanJovanovicTech
 
 
 https://www.youtube.com/@Codewrinkles
+
+[Practical introduction to Event Sourcing with EventStoreDB](https://www.youtube.com/watch?v=rqYPVzjoxqI)

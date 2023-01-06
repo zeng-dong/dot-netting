@@ -44,44 +44,29 @@
             }
           },
           {
-            "id": "5a24c69795e9c0ae",
+            "id": "5e95d663d80b8d83",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD/Strategic Design.md",
+                "file": "Quotes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "ea5d32d49ce29f8c",
+            "id": "b6c5937531da98cd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e33a53ee4e31255",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET 7/C.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
           }
         ],
-        "currentTab": 2,
-        "stacked": true
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -147,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YouTube.md",
+                "file": "Excalidraw/insurance coverage model.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -164,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "YouTube.md",
+                "file": "Excalidraw/insurance coverage model.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "YouTube.md"
+                "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
           }
@@ -198,14 +183,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "690f68d2eabf293b",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Cosmos DB/Cosmos DB.md",
+    "Quotes.md",
+    "YouTube.md",
     "SOLID/SOLID in React.md",
     "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Event-driven with feads.md",
     "Dot NET 7/C.md",
     "Learning DDD/Strategic Design.md",
     "EF Core/pluralsights.md",
-    "keys in md.md",
-    "Dot NET 7/C# 11.md"
+    "keys in md.md"
   ]
 }
