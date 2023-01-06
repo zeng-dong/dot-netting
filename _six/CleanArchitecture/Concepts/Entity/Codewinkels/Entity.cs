@@ -12,7 +12,7 @@ public class Entity<Tid> : IEquatable<Entity<Tid>>
 
     public override bool Equals(object obj)
     {
-        if (obj == null) return false;
+        if (obj is null) return false;
         return Equals(obj as Entity<Tid>);
     }
 
