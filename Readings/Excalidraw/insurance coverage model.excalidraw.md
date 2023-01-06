@@ -27,7 +27,7 @@ Coverage
 
 Policy ^CU7Dj7ad
 
-Policy md5044 = factory.Create(List<File>, string policyNumber);
+Policy md5044 = factory.Create(List<File> all9Files, string policyNumber);
 
 var interestedCoverages = 
     md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);
@@ -36,14 +36,21 @@ var interestedCoverages =
 Rate ^drXEjoqJ
 
 Name
-HasProposedRate
+bool HasProposedRate
 Value
+decimal ProposedRate
  ^GUjFsw8T
 
 Account ^jeTAr8ER
 
 Name
-DotNumber ^2ohZfZ8w
+DotNumber
+List<Policy> Policies
+ ^2ohZfZ8w
+
+PolicyFactory ^3vTfTWFv
+
+Policy Create(List<File> files, string policyNumber)  ^QfGpgaVU
 
 %%
 # Drawing
@@ -56,13 +63,13 @@ DotNumber ^2ohZfZ8w
 		{
 			"id": "Ysy9wdmNltmxWgl3wbxPx",
 			"type": "rectangle",
-			"x": -237.5,
-			"y": -329.4375,
-			"width": 351,
-			"height": 235,
+			"x": -338.5,
+			"y": -400.4375,
+			"width": 452,
+			"height": 306,
 			"angle": 0,
 			"strokeColor": "#000000",
-			"backgroundColor": "transparent",
+			"backgroundColor": "#228be6",
 			"fillStyle": "hachure",
 			"strokeWidth": 1,
 			"strokeStyle": "solid",
@@ -73,8 +80,8 @@ DotNumber ^2ohZfZ8w
 				"type": 3
 			},
 			"seed": 301532469,
-			"version": 84,
-			"versionNonce": 301048789,
+			"version": 138,
+			"versionNonce": 1733818581,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -84,17 +91,21 @@ DotNumber ^2ohZfZ8w
 				{
 					"id": "DOxmmn04kAfHfBj2xrkl3",
 					"type": "arrow"
+				},
+				{
+					"id": "b39uziirhT3y76NnT2-Ku",
+					"type": "arrow"
 				}
 			],
-			"updated": 1672977348590,
+			"updated": 1672978564001,
 			"link": null,
 			"locked": false
 		},
 		{
 			"id": "LYhlPX1q",
 			"type": "text",
-			"x": -232.5,
-			"y": -324.4375,
+			"x": -333.5,
+			"y": -359.9375,
 			"width": 266,
 			"height": 225,
 			"angle": 0,
@@ -108,11 +119,11 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 1525541717,
-			"version": 259,
-			"versionNonce": 2051731451,
+			"version": 297,
+			"versionNonce": 1423993595,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977348590,
+			"updated": 1672978564004,
 			"link": null,
 			"locked": false,
 			"text": "List<Coverage> Coverages\nAccount Account\nPremium WritenPremium\nInternalUser Underwriter\nList<Transaction> Changes\nDateTime EffectiveDate\nbool IsCurrent or IsActive\n\n",
@@ -201,8 +212,8 @@ DotNumber ^2ohZfZ8w
 		{
 			"id": "S9SciufI",
 			"type": "text",
-			"x": -78.5,
-			"y": -74.9375,
+			"x": -208,
+			"y": -69.9375,
 			"width": 88,
 			"height": 50,
 			"angle": 0,
@@ -216,8 +227,8 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 1424825723,
-			"version": 18,
-			"versionNonce": 220333493,
+			"version": 61,
+			"versionNonce": 1475795579,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -225,7 +236,7 @@ DotNumber ^2ohZfZ8w
 					"type": "arrow"
 				}
 			],
-			"updated": 1672976820411,
+			"updated": 1672977857480,
 			"link": null,
 			"locked": false,
 			"text": "Coverage\n",
@@ -241,8 +252,8 @@ DotNumber ^2ohZfZ8w
 		{
 			"id": "CU7Dj7ad",
 			"type": "text",
-			"x": -227.5,
-			"y": -351.9375,
+			"x": -325.5000000000001,
+			"y": -422.93750000000006,
 			"width": 54,
 			"height": 25,
 			"angle": 0,
@@ -256,11 +267,11 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 731353019,
-			"version": 69,
-			"versionNonce": 750691957,
+			"version": 114,
+			"versionNonce": 1662055317,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977352868,
+			"updated": 1672978574859,
 			"link": null,
 			"locked": false,
 			"text": "Policy",
@@ -276,10 +287,10 @@ DotNumber ^2ohZfZ8w
 		{
 			"id": "DOxmmn04kAfHfBj2xrkl3",
 			"type": "arrow",
-			"x": -74.71676062900153,
-			"y": -90.9375,
-			"width": 22.37759870062078,
-			"height": 42.92112398197234,
+			"x": -97.23661725227834,
+			"y": -89.88005319148934,
+			"width": 8.968055069114016,
+			"height": 37.91218697227035,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -293,11 +304,11 @@ DotNumber ^2ohZfZ8w
 				"type": 2
 			},
 			"seed": 536707387,
-			"version": 181,
-			"versionNonce": 105718005,
+			"version": 258,
+			"versionNonce": 691428795,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977399351,
+			"updated": 1672978564001,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -306,20 +317,20 @@ DotNumber ^2ohZfZ8w
 					0
 				],
 				[
-					-22.37759870062078,
-					42.92112398197234
+					-8.968055069114016,
+					37.91218697227035
 				]
 			],
 			"lastCommittedPoint": null,
 			"startBinding": {
 				"elementId": "Ysy9wdmNltmxWgl3wbxPx",
-				"focus": -0.21274025212340683,
-				"gap": 3.5
+				"gap": 4.5574468085106385,
+				"focus": -0.21274025212340683
 			},
 			"endBinding": {
 				"elementId": "RTgBwz9D",
-				"focus": -0.4082820491081401,
-				"gap": 13.078876018027657
+				"gap": 17.03036621921899,
+				"focus": -0.4082820491081401
 			},
 			"startArrowhead": null,
 			"endArrowhead": "arrow"
@@ -342,22 +353,22 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 1631257397,
-			"version": 317,
-			"versionNonce": 113819093,
+			"version": 327,
+			"versionNonce": 1123389499,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977216708,
+			"updated": 1672977639886,
 			"link": null,
 			"locked": false,
-			"text": "Policy md5044 = factory.Create(List<File>, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n",
-			"rawText": "Policy md5044 = factory.Create(List<File>, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n",
+			"text": "Policy md5044 = factory.Create(List<File> all9Files, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n",
+			"rawText": "Policy md5044 = factory.Create(List<File> all9Files, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n",
 			"fontSize": 15.599999999999989,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
 			"baseline": 94,
 			"containerId": null,
-			"originalText": "Policy md5044 = factory.Create(List<File>, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n"
+			"originalText": "Policy md5044 = factory.Create(List<File> all9Files, string policyNumber);\n\nvar interestedCoverages = \n    md5044.GetCoverage(param CoverageType[] interestedCoverageTypes);\n"
 		},
 		{
 			"id": "-2wqnF5Y1wfNE88Qgh0fC",
@@ -365,7 +376,7 @@ DotNumber ^2ohZfZ8w
 			"x": 107.25,
 			"y": -42.15625,
 			"width": 308,
-			"height": 81,
+			"height": 111.5,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -379,11 +390,11 @@ DotNumber ^2ohZfZ8w
 				"type": 3
 			},
 			"seed": 133809973,
-			"version": 49,
-			"versionNonce": 540026171,
+			"version": 69,
+			"versionNonce": 1428218709,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977071863,
+			"updated": 1672977606182,
 			"link": null,
 			"locked": false
 		},
@@ -426,9 +437,9 @@ DotNumber ^2ohZfZ8w
 			"id": "GUjFsw8T",
 			"type": "text",
 			"x": 120.75,
-			"y": -29.65625,
-			"width": 171,
-			"height": 100,
+			"y": -31.65625,
+			"width": 219,
+			"height": 125,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -440,8 +451,8 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 2079272693,
-			"version": 70,
-			"versionNonce": 707950299,
+			"version": 112,
+			"versionNonce": 680057557,
 			"isDeleted": false,
 			"boundElements": [
 				{
@@ -449,26 +460,26 @@ DotNumber ^2ohZfZ8w
 					"type": "arrow"
 				}
 			],
-			"updated": 1672977146526,
+			"updated": 1672977599605,
 			"link": null,
 			"locked": false,
-			"text": "Name\nHasProposedRate\nValue\n",
-			"rawText": "Name\nHasProposedRate\nValue\n",
+			"text": "Name\nbool HasProposedRate\nValue\ndecimal ProposedRate\n",
+			"rawText": "Name\nbool HasProposedRate\nValue\ndecimal ProposedRate\n",
 			"fontSize": 20,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 93,
+			"baseline": 118,
 			"containerId": null,
-			"originalText": "Name\nHasProposedRate\nValue\n"
+			"originalText": "Name\nbool HasProposedRate\nValue\ndecimal ProposedRate\n"
 		},
 		{
 			"id": "ykzrALDcCdxUMs7Sx79ED",
 			"type": "arrow",
 			"x": 63.74999999999999,
-			"y": 7.347622722226446,
-			"width": 47.99999999999999,
-			"height": 8.30630248865652,
+			"y": 20.019442061192624,
+			"width": 48.00000000000001,
+			"height": 7.218249070527651,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -482,11 +493,11 @@ DotNumber ^2ohZfZ8w
 				"type": 2
 			},
 			"seed": 578473275,
-			"version": 27,
-			"versionNonce": 940893051,
+			"version": 111,
+			"versionNonce": 615561269,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977146527,
+			"updated": 1672977599606,
 			"link": null,
 			"locked": false,
 			"points": [
@@ -495,8 +506,8 @@ DotNumber ^2ohZfZ8w
 					0
 				],
 				[
-					47.99999999999999,
-					8.30630248865652
+					48.00000000000001,
+					7.218249070527651
 				]
 			],
 			"lastCommittedPoint": null,
@@ -517,9 +528,9 @@ DotNumber ^2ohZfZ8w
 			"id": "_yGy4UbTLB0xyx7q-FvQG",
 			"type": "rectangle",
 			"x": 170.25,
-			"y": -287.15625,
-			"width": 300.5,
-			"height": 48,
+			"y": -318.65625,
+			"width": 559.5000000000001,
+			"height": 79.49999999999999,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -533,19 +544,19 @@ DotNumber ^2ohZfZ8w
 				"type": 3
 			},
 			"seed": 385628981,
-			"version": 63,
-			"versionNonce": 1130047957,
+			"version": 121,
+			"versionNonce": 1725227669,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977262634,
+			"updated": 1672978569151,
 			"link": null,
 			"locked": false
 		},
 		{
 			"id": "jeTAr8ER",
 			"type": "text",
-			"x": 173.25,
-			"y": -304.15625,
+			"x": 165.25,
+			"y": -337.65625,
 			"width": 62,
 			"height": 20,
 			"angle": 0,
@@ -559,11 +570,11 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 17814171,
-			"version": 55,
-			"versionNonce": 1943869301,
+			"version": 122,
+			"versionNonce": 687180891,
 			"isDeleted": false,
 			"boundElements": null,
-			"updated": 1672977357136,
+			"updated": 1672977809083,
 			"link": null,
 			"locked": false,
 			"text": "Account",
@@ -579,10 +590,10 @@ DotNumber ^2ohZfZ8w
 		{
 			"id": "2ohZfZ8w",
 			"type": "text",
-			"x": 228.75,
-			"y": -277.65625,
-			"width": 85,
-			"height": 40,
+			"x": 184.25,
+			"y": -314.15625,
+			"width": 155,
+			"height": 80,
 			"angle": 0,
 			"strokeColor": "#000000",
 			"backgroundColor": "transparent",
@@ -594,22 +605,176 @@ DotNumber ^2ohZfZ8w
 			"groupIds": [],
 			"roundness": null,
 			"seed": 740923637,
-			"version": 16,
-			"versionNonce": 767390011,
+			"version": 92,
+			"versionNonce": 624537013,
 			"isDeleted": false,
-			"boundElements": null,
-			"updated": 1672977288483,
+			"boundElements": [
+				{
+					"id": "b39uziirhT3y76NnT2-Ku",
+					"type": "arrow"
+				}
+			],
+			"updated": 1672977843483,
 			"link": null,
 			"locked": false,
-			"text": "Name\nDotNumber",
-			"rawText": "Name\nDotNumber",
+			"text": "Name\nDotNumber\nList<Policy> Policies\n",
+			"rawText": "Name\nDotNumber\nList<Policy> Policies\n",
 			"fontSize": 16,
 			"fontFamily": 1,
 			"textAlign": "left",
 			"verticalAlign": "top",
-			"baseline": 34,
+			"baseline": 74,
 			"containerId": null,
-			"originalText": "Name\nDotNumber"
+			"originalText": "Name\nDotNumber\nList<Policy> Policies\n"
+		},
+		{
+			"id": "PGXfKku-59RiargB2cywG",
+			"type": "rectangle",
+			"x": 146.75,
+			"y": -213.15625,
+			"width": 611.5000000000002,
+			"height": 107,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "cross-hatch",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"roundness": {
+				"type": 3
+			},
+			"seed": 1024910581,
+			"version": 220,
+			"versionNonce": 46725813,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1672978580190,
+			"link": null,
+			"locked": false
+		},
+		{
+			"id": "3vTfTWFv",
+			"type": "text",
+			"x": 153.25,
+			"y": -230.15625,
+			"width": 104,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "cross-hatch",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"roundness": null,
+			"seed": 779904661,
+			"version": 69,
+			"versionNonce": 1855631029,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1672977791622,
+			"link": null,
+			"locked": false,
+			"text": "PolicyFactory",
+			"rawText": "PolicyFactory",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 14,
+			"containerId": null,
+			"originalText": "PolicyFactory"
+		},
+		{
+			"id": "QfGpgaVU",
+			"type": "text",
+			"x": 155.25,
+			"y": -186.15625,
+			"width": 398,
+			"height": 20,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "cross-hatch",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"roundness": null,
+			"seed": 652855029,
+			"version": 107,
+			"versionNonce": 634167547,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1672977774400,
+			"link": null,
+			"locked": false,
+			"text": "Policy Create(List<File> files, string policyNumber) ",
+			"rawText": "Policy Create(List<File> files, string policyNumber) ",
+			"fontSize": 16,
+			"fontFamily": 1,
+			"textAlign": "left",
+			"verticalAlign": "top",
+			"baseline": 14,
+			"containerId": null,
+			"originalText": "Policy Create(List<File> files, string policyNumber) "
+		},
+		{
+			"id": "b39uziirhT3y76NnT2-Ku",
+			"type": "arrow",
+			"x": 166.02021276595744,
+			"y": -301.53058535605976,
+			"width": 49.59042553191489,
+			"height": 9.39733647201706,
+			"angle": 0,
+			"strokeColor": "#000000",
+			"backgroundColor": "transparent",
+			"fillStyle": "cross-hatch",
+			"strokeWidth": 1,
+			"strokeStyle": "solid",
+			"roughness": 1,
+			"opacity": 100,
+			"groupIds": [],
+			"roundness": {
+				"type": 2
+			},
+			"seed": 1211069109,
+			"version": 93,
+			"versionNonce": 1069084251,
+			"isDeleted": false,
+			"boundElements": null,
+			"updated": 1672978564001,
+			"link": null,
+			"locked": false,
+			"points": [
+				[
+					0,
+					0
+				],
+				[
+					-49.59042553191489,
+					-9.39733647201706
+				]
+			],
+			"lastCommittedPoint": null,
+			"startBinding": {
+				"elementId": "2ohZfZ8w",
+				"gap": 18.229787234042554,
+				"focus": 0.13115492957746483
+			},
+			"endBinding": {
+				"elementId": "Ysy9wdmNltmxWgl3wbxPx",
+				"gap": 2.9297872340425535,
+				"focus": -0.542254775475622
+			},
+			"startArrowhead": null,
+			"endArrowhead": "arrow"
 		},
 		{
 			"id": "21GgBcJ9",
@@ -963,11 +1128,11 @@ DotNumber ^2ohZfZ8w
 		}
 	],
 	"appState": {
-		"theme": "light",
+		"theme": "dark",
 		"viewBackgroundColor": "#ffffff",
 		"currentItemStrokeColor": "#000000",
 		"currentItemBackgroundColor": "transparent",
-		"currentItemFillStyle": "hachure",
+		"currentItemFillStyle": "cross-hatch",
 		"currentItemStrokeWidth": 1,
 		"currentItemStrokeStyle": "solid",
 		"currentItemRoughness": 1,
@@ -977,10 +1142,10 @@ DotNumber ^2ohZfZ8w
 		"currentItemTextAlign": "left",
 		"currentItemStartArrowhead": null,
 		"currentItemEndArrowhead": "arrow",
-		"scrollX": 431.25,
-		"scrollY": 398.21875,
+		"scrollX": 924.0000000000009,
+		"scrollY": 726.5000000000006,
 		"zoom": {
-			"value": 2
+			"value": 0.9999999999999991
 		},
 		"currentItemRoundness": "round",
 		"gridSize": null,

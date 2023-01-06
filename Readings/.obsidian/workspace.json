@@ -4,69 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d5880d037ee7e565",
+        "id": "28b7257ddd76a659",
         "type": "tabs",
         "children": [
           {
-            "id": "2eeaaf2f33c41cdd",
+            "id": "26388503f4e0b600",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
+                "file": "EF Core/pluralsights.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          },
-          {
-            "id": "8c3c0db4b4108b12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SOLID/SOLID in React.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "690f68d2eabf293b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "YouTube.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e95d663d80b8d83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Quotes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b6c5937531da98cd",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -132,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md",
+                "file": "EF Core/pluralsights.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md",
+                "file": "EF Core/pluralsights.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md"
+                "file": "EF Core/pluralsights.md"
               }
             }
           }
@@ -185,6 +138,7 @@
   },
   "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Excalidraw/insurance coverage model.excalidraw.md",
     "Cosmos DB/Cosmos DB.md",
     "Quotes.md",
     "YouTube.md",
@@ -193,7 +147,6 @@
     "Event-driven with feads.md",
     "Dot NET 7/C.md",
     "Learning DDD/Strategic Design.md",
-    "EF Core/pluralsights.md",
-    "keys in md.md"
+    "EF Core/pluralsights.md"
   ]
 }

@@ -4,6 +4,10 @@
 *  Using EF Core 6 with Azure Cosmos DB 
 
 # Interests
-*  Encapsulating EF Core 6 Usage
-*  EF Core 6: Best Practices
+* Encapsulating EF Core 6 Usage
+* EF Core 6: Best Practices
+* EF Core 6: Cross-platform development
+	* setting up and using SQLLite
+
+
 
