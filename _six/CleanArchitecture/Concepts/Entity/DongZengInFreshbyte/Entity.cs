@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Concepts.Entity.DongZengInFreshbyte;
+﻿namespace Concepts.Entity.DongZengInFreshbyte;
 
 public interface IEntity
 {

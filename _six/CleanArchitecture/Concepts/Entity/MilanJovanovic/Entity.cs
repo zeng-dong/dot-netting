@@ -39,7 +39,6 @@ public abstract class Entity : IEquatable<Entity>
 
     public static bool operator !=(Entity a, Entity b) => !(a == b);
 
-    /// <inheritdoc />
     public bool Equals(Entity other)
     {
         if (other is null)

@@ -1,23 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Concepts.Entity.Codewinkels;
+﻿namespace Concepts.Entity.Codewinkels;
 
 public class Entity<Tid> : IEquatable<Entity<Tid>>
 {
+    public Tid Id { get; }
+
     protected Entity(Tid id)
     {
         if (!IsValid(id)) throw new ArgumentException("Identifier is not in supported format");
         Id = id;
     }
 
-    public Tid Id { get; }
-
     public override bool Equals(object obj)
     {
+        if (obj == null) return false;
         return Equals(obj as Entity<Tid>);
     }
 
