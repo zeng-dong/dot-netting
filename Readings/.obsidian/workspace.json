@@ -4,18 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "28b7257ddd76a659",
+        "id": "0d296fd31f58f696",
         "type": "tabs",
         "children": [
           {
-            "id": "26388503f4e0b600",
+            "id": "dc7bdd2b0a06ecfd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "excalidraw",
               "state": {
-                "file": "EF Core/pluralsights.md",
-                "mode": "source",
-                "source": false
+                "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
           }
@@ -85,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "EF Core/pluralsights.md",
+                "file": "Excalidraw/insurance coverage model.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "EF Core/pluralsights.md",
+                "file": "Excalidraw/insurance coverage model.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "EF Core/pluralsights.md"
+                "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
           }
@@ -136,8 +134,9 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f88b6dbbc947393e",
+  "active": "dc7bdd2b0a06ecfd",
   "lastOpenFiles": [
+    "EF Core/pluralsights.md",
     "Excalidraw/insurance coverage model.excalidraw.md",
     "Cosmos DB/Cosmos DB.md",
     "Quotes.md",
@@ -146,7 +145,6 @@
     "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Event-driven with feads.md",
     "Dot NET 7/C.md",
-    "Learning DDD/Strategic Design.md",
-    "EF Core/pluralsights.md"
+    "Learning DDD/Strategic Design.md"
   ]
 }

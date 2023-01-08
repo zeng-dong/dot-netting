@@ -9,4 +9,5 @@ public class Order : AuditableEntity
     public int OrderTotal { get; set; }
     public DateTime OrderPlaced { get; set; }
     public bool OrderPaid { get; set; }
+    public string Dummy { get; set; }
 }
