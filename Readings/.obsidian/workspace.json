@@ -16,8 +16,33 @@
                 "file": "Excalidraw/insurance coverage model.excalidraw.md"
               }
             }
+          },
+          {
+            "id": "6bf8135d066286aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Code Magzine/Interests.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "549091ab92cbe67e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "YouTube.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md",
+                "file": "YouTube.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md",
+                "file": "YouTube.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md"
+                "file": "YouTube.md"
               }
             }
           }
@@ -134,17 +159,29 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dc7bdd2b0a06ecfd",
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "549091ab92cbe67e",
   "lastOpenFiles": [
-    "EF Core/pluralsights.md",
+    "Dot NET with Azure/Secure Microservice with Azure AD.md",
+    "Dot NET with Azure/Building native solutions with Azure and .NET.md",
+    "Code Magzine/Interests.md",
     "Excalidraw/insurance coverage model.excalidraw.md",
+    "EF Core/pluralsights.md",
     "Cosmos DB/Cosmos DB.md",
     "Quotes.md",
     "YouTube.md",
     "SOLID/SOLID in React.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
-    "Event-driven with feads.md",
-    "Dot NET 7/C.md",
-    "Learning DDD/Strategic Design.md"
+    "Learning DDD/Learning DDD by Vlad Khononov.md"
   ]
 }
