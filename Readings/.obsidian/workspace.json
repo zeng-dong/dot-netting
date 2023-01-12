@@ -4,21 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "0d296fd31f58f696",
+        "id": "be12d6d0580650e3",
         "type": "tabs",
         "children": [
           {
-            "id": "dc7bdd2b0a06ecfd",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/insurance coverage model.excalidraw.md"
-              }
-            }
-          },
-          {
-            "id": "6bf8135d066286aa",
+            "id": "2b4cbe6709a99f26",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -30,19 +20,19 @@
             }
           },
           {
-            "id": "549091ab92cbe67e",
+            "id": "3ffaf2020da1956f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "YouTube.md",
+                "file": "Code Magzine/Caching.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -108,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YouTube.md",
+                "file": "Code Magzine/Caching.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "YouTube.md",
+                "file": "Code Magzine/Caching.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "YouTube.md"
+                "file": "Code Magzine/Caching.md"
               }
             }
           }
@@ -171,17 +161,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "549091ab92cbe67e",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Code Magzine/Interests.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Learning DDD/Strategic Design.md",
+    "Excalidraw/insurance coverage model.excalidraw.md",
+    "YouTube.md",
     "Dot NET with Azure/Secure Microservice with Azure AD.md",
     "Dot NET with Azure/Building native solutions with Azure and .NET.md",
-    "Code Magzine/Interests.md",
-    "Excalidraw/insurance coverage model.excalidraw.md",
     "EF Core/pluralsights.md",
     "Cosmos DB/Cosmos DB.md",
-    "Quotes.md",
-    "YouTube.md",
-    "SOLID/SOLID in React.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md"
+    "Quotes.md"
   ]
 }
