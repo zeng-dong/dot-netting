@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Magzine/Interests.md",
+                "file": "Code Magzine/Caching.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3f0162971a0187b7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code Magzine/Interests.md",
+                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code Magzine/Interests.md",
+                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Magzine/Interests.md"
+                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md"
               }
             }
           }
@@ -148,7 +161,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "23e4b4479bad4d81",
+  "active": "3f0162971a0187b7",
   "lastOpenFiles": [
     "Code Magzine/Caching.md",
     "Code Magzine/Interests.md",
