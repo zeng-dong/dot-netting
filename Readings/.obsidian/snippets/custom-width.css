@@ -1,0 +1,4 @@
+/* Custom Line Width */
+body {
+	--file-line-width: 95rem;
+}
