@@ -28,6 +28,22 @@ builder.Services.AddDistributedSqlServerCache(options =>
 
 add `Microsoft.Extensions.Caching.SqlServer`
 
+### Redis (remote dictionary server) Cache
+#### Configure the Redis service (we use Azure Cache for Redis here)
+
+#### dependencies
+add `Microsoft.Extensions.Caching.StackExchangeRedis`
+
+#### configure middleware
+``` c#
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+	options.Configuration = builder.Configuration["ConnectionString:Redis"];
+	options.InstanceName = "SampleInstance";
+});
+```
+
+### NCache Cache
 
 
 # In-Memory caching in ASP.NET Core
