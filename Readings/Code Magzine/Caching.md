@@ -159,3 +159,4 @@ public async Task<IActionResult> GetAsync()
     return Ok(employees);
 }
 ```
+Here, if the entry is not found in the cache, the thread waits till it enters the semaphore. Once the thread enters the semaphore, it checks if the cache entry is populated by other threads by that time. If the entry is still not available in the cache, we proceed to fetch the data from the database and populate it into the cache. Finally, it is very important to make sure that we release the semaphore so that other threads can continue.

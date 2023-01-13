@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Magzine/Caching.md",
+                "file": "Code Magzine/Interests.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code Magzine/Caching.md",
+                "file": "Code Magzine/Interests.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Code Magzine/Caching.md",
+                "file": "Code Magzine/Interests.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Code Magzine/Caching.md"
+                "file": "Code Magzine/Interests.md"
               }
             }
           }
@@ -148,10 +148,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "23e4b4479bad4d81",
   "lastOpenFiles": [
-    "Code Magzine/Interests.md",
     "Code Magzine/Caching.md",
+    "Code Magzine/Interests.md",
     "SOLID/SOLID in React.md",
     "YouTube.md",
     "Quotes.md",
