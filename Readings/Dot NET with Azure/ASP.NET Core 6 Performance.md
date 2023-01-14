@@ -41,9 +41,37 @@ docker rm $(docker ps -aq)
 - docker pull redis
 - docker run -d --name redisDev -p 6379:6379 redis
 - Microsoft.Extensions.Caching.StackExchan  (6.0.13)  EDahl used 6.0.9
-- 
+- connection string: "localhost"
+
+have a distributed cache set up in Program.cs
+``` c#
+builder.Services.AddStackExchangeRedisCache(options =>
+        {
+            options.Configuration = builder.Configuration.GetConnectionString("Redis");
+            options.InstanceName = "test";
+        });
+```
+, you should be fine. Here's the page on hub.docker.com that shows the Redis Docker container. It's an official image and has more than a billion downloads. To pull this image locally, we can use the docker pull command shown here at the top of the page. In a terminal, I'll do exactly that. Docker pull redis, and the image pulls down just fine. This means that I have a Redis container on my machine, and now to use it, we need to run it. The run command is docker run. We'll use ‑d to run it in detached mode, and I'll give the running image a name of redisDev, and we need to make sure to map the local port of 6379 to the container port of 6379 so that we can access the cache from our ASP.NET Core app, which is running on our local machine. And the image we want to run is the Redis image that we just pulled. That's it. And we should have a Redis instance running on our machine now. Pretty awesome stuff. Now let's get it plugged into our Program.cs file. There's where we added the memory cache, so let's put the distributed cache in about the same place. To use Redis as a distributed cache, we can use the NuGet package called Microsoft.Extensions.Caching.StackExchangeRedis. With that NuGet package installed, we can use the AddStackExchangeRedisCache extension method. We need to provide some options, and we'll provide the configuration, which is a connection string, and I'll call for a connection string from our app configuration called Redis. We'll add that in just a sec. And then we can specify a name for our cache. I'll just call it CarvedRock. Now in our appsettings file we can add the connection string for the cache. We set up Redis on our local machine, and we provided a port mapping of 6379‑6379 in our container. So the connection string is simply localhost. Couldn't get any easier than that. If you're using a different type of distributed cache, it's just a matter of making sure you've got a few lines in Program.cs that will give an instance of an IDistributedCache to the dependency injection engine. That should do the trick, so let's set a breakpoint if we hit our Thread.Sleep line. We'll only hit this if we don't get a cache hit, and then we'll get data from the database and store it in the cache before returning it. If we get a cache hit, we'll deserialize it using the logic there on line 76 and return that. Once again, note that the application itself should behave functionally exactly the same as we've seen before. We're just using a distributed cache now, and the code has gotten still more complicated. But I'll hit the Footwear link now that it's running, and then I need to log in this time, since I don't have an open browser. And then we hit our breakpoint. This is good and expected, since we don't have any cached data yet. I'll continue, and our page loads just like we'd expect it to. I'll hit the Clothing link to get away from the Footwear page, and that throws the exception that we've seen a couple of times now. And if I now hit the Footwear link, the page loads nice and quickly, and we didn't hit our breakpoint. This is great and means both are distributed cache and the serialization logic we're using are both working just fine. Now I want to look a little closer at the problems with cache invalidation and how we can address them since we're using a distributed cache.
+
+#### ## Installing and running Node.js Redis CLI
+[ref](https://redis.com/blog/get-redis-cli-without-installing-redis-server/)
+
+Once you’ve installed Node.js and [npm](https://www.npmjs.com/), it’s a simple one-liner to get and install the Node.js version of redis-cli:
+	npm install -g redis-cli
+
+Then you can run it with the command:
+	rdcli -h your.redis.host -a yourredispassword -p 11111
 
 
-
-
-We're going to get that set up very quickly and then try out our distributed caching logic, but as long as you have a distributed cache set up in Program.cs, you should be fine. Here's the page on hub.docker.com that shows the Redis Docker container. It's an official image and has more than a billion downloads. To pull this image locally, we can use the docker pull command shown here at the top of the page. In a terminal, I'll do exactly that. Docker pull redis, and the image pulls down just fine. This means that I have a Redis container on my machine, and now to use it, we need to run it. The run command is docker run. We'll use ‑d to run it in detached mode, and I'll give the running image a name of redisDev, and we need to make sure to map the local port of 6379 to the container port of 6379 so that we can access the cache from our ASP.NET Core app, which is running on our local machine. And the image we want to run is the Redis image that we just pulled. That's it. And we should have a Redis instance running on our machine now. Pretty awesome stuff. Now let's get it plugged into our Program.cs file. There's where we added the memory cache, so let's put the distributed cache in about the same place. To use Redis as a distributed cache, we can use the NuGet package called Microsoft.Extensions.Caching.StackExchangeRedis. With that NuGet package installed, we can use the AddStackExchangeRedisCache extension method. We need to provide some options, and we'll provide the configuration, which is a connection string, and I'll call for a connection string from our app configuration called Redis. We'll add that in just a sec. And then we can specify a name for our cache. I'll just call it CarvedRock. Now in our appsettings file we can add the connection string for the cache. We set up Redis on our local machine, and we provided a port mapping of 6379‑6379 in our container. So the connection string is simply localhost. Couldn't get any easier than that. If you're using a different type of distributed cache, it's just a matter of making sure you've got a few lines in Program.cs that will give an instance of an IDistributedCache to the dependency injection engine. That should do the trick, so let's set a breakpoint if we hit our Thread.Sleep line. We'll only hit this if we don't get a cache hit, and then we'll get data from the database and store it in the cache before returning it. If we get a cache hit, we'll deserialize it using the logic there on line 76 and return that. Once again, note that the application itself should behave functionally exactly the same as we've seen before. We're just using a distributed cache now, and the code has gotten still more complicated. But I'll hit the Footwear link now that it's running, and then I need to log in this time, since I don't have an open browser. And then we hit our breakpoint. This is good and expected, since we don't have any cached data yet. I'll continue, and our page loads just like we'd expect it to. I'll hit the Clothing link to get away from the Footwear page, and that throws the exception that we've seen a couple of times now. And if I now hit the Footwear link, the page loads nice and quickly, and we didn't hit our breakpoint. This is great and means both are distributed cache and the serialization logic we're using are both working just fine. Now I want to look a little closer at the problems with cache invalidation and how we can address them since we're using a distributed cache.
+I actually run by 
+```
+	rdcli
+```
+and it gives this prompt:
+```
+127.0.0.1:6379>
+```
+and I am able to see the keys by
+```
+keys *
+```

@@ -14,6 +14,8 @@ public class Program
             options.InstanceName = "test";
         });
 
+        builder.Services.AddTransient<ICachingService, CachingService>();
+
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
         builder.Services.AddEndpointsApiExplorer();

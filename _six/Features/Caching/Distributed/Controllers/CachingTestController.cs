@@ -12,9 +12,9 @@ namespace Distributed.Controllers;
 public class CachingTestController : ControllerBase
 {
     private readonly ILogger<CachingTestController> _logger;
-    private readonly IDistributedCache _cache;
+    private readonly ICachingService _cache;
 
-    public CachingTestController(ILogger<CachingTestController> logger, IDistributedCache cache)
+    public CachingTestController(ILogger<CachingTestController> logger, ICachingService cache)
     {
         _logger = logger;
         _cache = cache;
@@ -23,11 +23,11 @@ public class CachingTestController : ControllerBase
     [HttpGet]
     public async Task<Policy> Get(string name)
     {
-        var result = await _cache.GetAsync(name);
+        var result = await _cache.GetBytesAsync(name);
 
         if (result == null)
         {
-            await _cache.SetStringAsync(name + "string", name + " as string");
+            await _cache.SetStringAsync(name + "string", name + " as string", new DistributedCacheEntryOptions());
 
             _logger.LogInformation($"{name} not found in cache. new it up.");
             Thread.Sleep(5000);
@@ -46,7 +46,7 @@ public class CachingTestController : ControllerBase
 
             var serialized = JsonSerializer.Serialize(newPolicy, CacheSourceGenerationContext.Default.Policy);
 
-            await _cache.SetAsync(name, Encoding.UTF8.GetBytes(serialized),
+            await _cache.SetBytesAsync(name, Encoding.UTF8.GetBytes(serialized),
                 new DistributedCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(60)
