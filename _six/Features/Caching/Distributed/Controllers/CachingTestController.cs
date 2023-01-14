@@ -20,12 +20,14 @@ public class CachingTestController : ControllerBase
         _cache = cache;
     }
 
+    [HttpGet]
     public async Task<Policy> Get(string name)
     {
         var result = await _cache.GetAsync(name);
 
         if (result == null)
         {
+            _logger.LogInformation($"{name} not found in cache. new it up.");
             Thread.Sleep(5000);
             var newPolicy = new Policy
             {
@@ -45,12 +47,13 @@ public class CachingTestController : ControllerBase
             await _cache.SetAsync(name, Encoding.UTF8.GetBytes(serialized),
                 new DistributedCacheEntryOptions
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(60)
                 });
 
             return newPolicy;
         }
 
+        _logger.LogInformation($"{name} not found cache. return it directly");
         var policy = JsonSerializer.Deserialize(Encoding.UTF8.GetString(result), CacheSourceGenerationContext.Default.Policy);
 
         return policy!;
