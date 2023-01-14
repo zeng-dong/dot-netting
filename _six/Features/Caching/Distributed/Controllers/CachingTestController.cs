@@ -27,6 +27,8 @@ public class CachingTestController : ControllerBase
 
         if (result == null)
         {
+            await _cache.SetStringAsync(name + "string", name + " as string");
+
             _logger.LogInformation($"{name} not found in cache. new it up.");
             Thread.Sleep(5000);
             var newPolicy = new Policy
