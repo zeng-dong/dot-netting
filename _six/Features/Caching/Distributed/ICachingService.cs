@@ -11,7 +11,15 @@ public interface ICachingService
 
     Task SetBytesAsync(string key, byte[] value, DistributedCacheEntryOptions options);
 
+    Task<T?> GetAsync<T>(string key);
+
+    Task SetAsync<T>(string key, T value, DistributedCacheEntryOptions options);
+
+    Task<string?> GetStringAsync<T>(string key);
+
     Task SetStringAsync(string key, string value, DistributedCacheEntryOptions options);
+
+    Task RemoveAsync<T>(string key);
 }
 
 public class CachingService : ICachingService
@@ -33,9 +41,14 @@ public class CachingService : ICachingService
         await _cache.SetAsync(key, value, options);
     }
 
+    public async Task<string?> GetStringAsync<T>(string key)
+    {
+        return await _cache.GetStringAsync(key);
+    }
+
     public async Task SetStringAsync(string key, string value, DistributedCacheEntryOptions options)
     {
-        await SetAsync<string>(key, value, options);
+        await _cache.SetStringAsync(key, value, options);
     }
 
     public async Task<T?> GetAsync<T>(string key)
@@ -51,6 +64,11 @@ public class CachingService : ICachingService
     {
         var bytes = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(value, JsonSerializerOptions));
         await _cache.SetAsync(key, bytes, options);
+    }
+
+    public async Task RemoveAsync<T>(string key)
+    {
+        await _cache.RemoveAsync(key);
     }
 
     private static readonly JsonSerializerOptions JsonSerializerOptions =

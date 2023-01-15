@@ -42,6 +42,9 @@ docker rm $(docker ps -aq)
 - docker run -d --name redisDev -p 6379:6379 redis
 - Microsoft.Extensions.Caching.StackExchan  (6.0.13)  EDahl used 6.0.9
 - connection string: "localhost"
+- docker stop redisDev
+- docker rm redisDev
+- dokcer rmi redis
 
 have a distributed cache set up in Program.cs
 ``` c#

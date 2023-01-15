@@ -1,10 +1,8 @@
 using Distributed;
 using FluentAssertions;
-using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Options;
-using Newtonsoft.Json.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -15,7 +13,7 @@ namespace DistributedTests;
 public class CacheServiceTests
 {
     [Fact]
-    public void Can_set_byte_array()
+    public void It_adds_byte_array_to_cache()
     {
         Given_byte_array();
 
@@ -25,7 +23,7 @@ public class CacheServiceTests
     }
 
     [Fact]
-    public void Can_set_string()
+    public void It_adds_string_to_cache()
     {
         Given_string();
 
@@ -35,9 +33,9 @@ public class CacheServiceTests
     }
 
     [Fact]
-    public void Can_set_type()
+    public void It_adds_type_instance_to_cache()
     {
-        Given_an_instance();
+        Given_an_instance_of_a_type();
 
         When_set_to_cache_as_type();
 
@@ -45,7 +43,7 @@ public class CacheServiceTests
     }
 
     [Fact]
-    public void Can_get_type_instance_when_exists()
+    public void It_retrieves_type_instance_when_exists()
     {
         Given_an_instance_exsits_in_cache();
 
@@ -55,7 +53,7 @@ public class CacheServiceTests
     }
 
     [Fact]
-    public void Can_get_null_as_type_instalce_when_not_exist()
+    public void It_retrieves_null_as_type_instalce_when_not_exist()
     {
         Given_an_instance_not_exsits_in_cache();
 
@@ -74,7 +72,7 @@ public class CacheServiceTests
         _string = "Hello World";
     }
 
-    private void Given_an_instance()
+    private void Given_an_instance_of_a_type()
     {
         InitInstance();
     }
@@ -179,12 +177,12 @@ public class CacheServiceTests
     private string? _string;
     private Policy? _instance, _result;
     private readonly IDistributedCache _innerImplementation;
-    private readonly CachingService _cache;
+    private readonly ICachingService _cache;
     private readonly ITestOutputHelper _output;
     private const string _cacheKey = "policy-123";
     private readonly DistributedCacheEntryOptions _distributedCacheEntryOptions;
 
-    private static JsonSerializerOptions _jsonSerializerOptions = new()
+    private static readonly JsonSerializerOptions _jsonSerializerOptions = new()
     {
         PropertyNamingPolicy = null,
         WriteIndented = true,
