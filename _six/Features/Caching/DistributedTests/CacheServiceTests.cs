@@ -62,6 +62,16 @@ public class CacheServiceTests
         Then_null_is_retrieved_from_cache();
     }
 
+    [Fact]
+    public void It_removes_cached_entry()
+    {
+        Given_a_cache_entry_with_known_cache_key();
+
+        When_remove_from_cache_with_this_cache_key();
+
+        Then_cache_entry_with_the_cache_key_is_removed_from_cache();
+    }
+
     private void Given_byte_array()
     {
         _bytes = new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 };
@@ -87,6 +97,11 @@ public class CacheServiceTests
             _distributedCacheEntryOptions);
     }
 
+    private void Given_a_cache_entry_with_known_cache_key()
+    {
+        _innerImplementation.SetString(_cacheKey, "Hello World", _distributedCacheEntryOptions);
+    }
+
     private void Given_an_instance_not_exsits_in_cache()
     {
         _innerImplementation.Remove(_cacheKey);
@@ -110,6 +125,11 @@ public class CacheServiceTests
     private void When_retrieve_from_cache_as_type()
     {
         _result = _cache.GetAsync<Policy>(_cacheKey).Result;
+    }
+
+    private void When_remove_from_cache_with_this_cache_key()
+    {
+        _cache.RemoveAsync(_cacheKey).Wait();
     }
 
     private void Then_the_byte_array_is_set_in_cache()
@@ -144,6 +164,12 @@ public class CacheServiceTests
     private void Then_null_is_retrieved_from_cache()
     {
         _result.Should().BeNull();
+    }
+
+    private void Then_cache_entry_with_the_cache_key_is_removed_from_cache()
+    {
+        var entry = _innerImplementation.Get(_cacheKey);
+        entry.Should().BeNull();
     }
 
     private void InitInstance()

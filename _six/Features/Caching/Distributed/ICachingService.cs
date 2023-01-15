@@ -19,7 +19,7 @@ public interface ICachingService
 
     Task SetStringAsync(string key, string value, DistributedCacheEntryOptions options);
 
-    Task RemoveAsync<T>(string key);
+    Task RemoveAsync(string key);
 }
 
 public class CachingService : ICachingService
@@ -66,7 +66,7 @@ public class CachingService : ICachingService
         await _cache.SetAsync(key, bytes, options);
     }
 
-    public async Task RemoveAsync<T>(string key)
+    public async Task RemoveAsync(string key)
     {
         await _cache.RemoveAsync(key);
     }
