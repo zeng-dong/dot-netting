@@ -1,8 +1,11 @@
 using Distributed;
 using FluentAssertions;
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
 using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Caching.StackExchangeRedis;
 using Microsoft.Extensions.Options;
+using System;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -30,6 +33,16 @@ public class CacheServiceTests
         When_set_to_cache_as_string();
 
         Then_the_string_is_set_in_cache();
+    }
+
+    [Fact]
+    public void It_retrieves_string_from_cache()
+    {
+        Given_string_exists_in_cache();
+
+        When_retrieve_from_cache_as_string();
+
+        Then_the_string_is_retrieved_from_cache();
     }
 
     [Fact]
@@ -79,7 +92,7 @@ public class CacheServiceTests
 
     private void Given_string()
     {
-        _string = "Hello World";
+        _stringToBeCached = "Hello World";
     }
 
     private void Given_an_instance_of_a_type()
@@ -93,8 +106,14 @@ public class CacheServiceTests
 
         _innerImplementation
             .SetAsync(_cacheKey,
-            Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_instance, _jsonSerializerOptions)),
-            _distributedCacheEntryOptions);
+            Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_instanceToBeCached, _jsonSerializerOptions)),
+            _distributedCacheEntryOptions).Wait();
+    }
+
+    private void Given_string_exists_in_cache()
+    {
+        _stringToBeCached = "magic string";
+        _innerImplementation.SetStringAsync(_cacheKey, _stringToBeCached, _distributedCacheEntryOptions).Wait();
     }
 
     private void Given_a_cache_entry_with_known_cache_key()
@@ -114,17 +133,22 @@ public class CacheServiceTests
 
     private void When_set_to_cache_as_string()
     {
-        _cache.SetStringAsync(_cacheKey, _string!, _distributedCacheEntryOptions).Wait();
+        _cache.SetStringAsync(_cacheKey, _stringToBeCached!, _distributedCacheEntryOptions).Wait();
     }
 
     private void When_set_to_cache_as_type()
     {
-        _cache.SetAsync(_cacheKey, _instance, _distributedCacheEntryOptions).Wait();
+        _cache.SetAsync(_cacheKey, _instanceToBeCached, _distributedCacheEntryOptions).Wait();
     }
 
     private void When_retrieve_from_cache_as_type()
     {
-        _result = _cache.GetAsync<Policy>(_cacheKey).Result;
+        _instanceRetrievedFromCache = _cache.GetAsync<Policy>(_cacheKey).Result;
+    }
+
+    private void When_retrieve_from_cache_as_string()
+    {
+        _stringRetrievedFromCache = _cache.GetStringAsync(_cacheKey).Result;
     }
 
     private void When_remove_from_cache_with_this_cache_key()
@@ -142,7 +166,7 @@ public class CacheServiceTests
     {
         var entry = _innerImplementation.GetString(_cacheKey);
         _output.WriteLine(entry);
-        entry.Should().Contain(_string);
+        entry.Should().Contain(_stringToBeCached);
     }
 
     private void Then_the_instance_is_set_in_cache()
@@ -153,17 +177,23 @@ public class CacheServiceTests
         var instance = JsonSerializer.Deserialize<Policy>(entry, _jsonSerializerOptions);
 
         _output.WriteLine($"{instance!.Name}: {instance.Premium}, {instance.Liability!.Limit}");
-        instance.Should().BeEquivalentTo(_instance);
+        instance.Should().BeEquivalentTo(_instanceToBeCached);
     }
 
     private void Then_the_instance_is_retrieved_from_cache()
     {
-        _result.Should().BeEquivalentTo(_instance);
+        _instanceRetrievedFromCache.Should().BeEquivalentTo(_instanceToBeCached);
+    }
+
+    private void Then_the_string_is_retrieved_from_cache()
+    {
+        _stringRetrievedFromCache.Should().BeEquivalentTo(_stringToBeCached);
+        _output.WriteLine(_stringRetrievedFromCache);
     }
 
     private void Then_null_is_retrieved_from_cache()
     {
-        _result.Should().BeNull();
+        _instanceRetrievedFromCache.Should().BeNull();
     }
 
     private void Then_cache_entry_with_the_cache_key_is_removed_from_cache()
@@ -174,7 +204,7 @@ public class CacheServiceTests
 
     private void InitInstance()
     {
-        _instance = new()
+        _instanceToBeCached = new()
         {
             Id = 123,
             Name = "MD-5044",
@@ -192,20 +222,36 @@ public class CacheServiceTests
     {
         _output = output;
 
-        _innerImplementation = new MemoryDistributedCache(
-                Options.Create(new MemoryDistributedCacheOptions()));
+        //// _innerImplementation = MemoryCache;
+
+        _innerImplementation = RedisCache;
 
         _cache = new CachingService(_innerImplementation);
-        _distributedCacheEntryOptions = new();
+        _distributedCacheEntryOptions = new()
+        {
+            AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(3)
+        };
+        _cacheKey = Guid.NewGuid().ToString();
+
+        _output.WriteLine($"current key = {_cacheKey}");
     }
 
+    private IDistributedCache MemoryCache => new MemoryDistributedCache(
+                Options.Create(new MemoryDistributedCacheOptions()));
+
+    private IDistributedCache RedisCache => new RedisCache(Options.Create(new RedisCacheOptions()
+    {
+        Configuration = "localhost",
+        InstanceName = "UnitTest-",
+    }));
+
     private byte[]? _bytes;
-    private string? _string;
-    private Policy? _instance, _result;
+    private string? _stringToBeCached, _stringRetrievedFromCache;
+    private Policy? _instanceToBeCached, _instanceRetrievedFromCache;
     private readonly IDistributedCache _innerImplementation;
     private readonly ICachingService _cache;
     private readonly ITestOutputHelper _output;
-    private const string _cacheKey = "policy-123";
+    private readonly string _cacheKey;
     private readonly DistributedCacheEntryOptions _distributedCacheEntryOptions;
 
     private static readonly JsonSerializerOptions _jsonSerializerOptions = new()

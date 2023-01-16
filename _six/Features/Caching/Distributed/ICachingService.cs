@@ -15,7 +15,7 @@ public interface ICachingService
 
     Task SetAsync<T>(string key, T value, DistributedCacheEntryOptions options);
 
-    Task<string?> GetStringAsync<T>(string key);
+    Task<string?> GetStringAsync(string key);
 
     Task SetStringAsync(string key, string value, DistributedCacheEntryOptions options);
 
@@ -41,7 +41,7 @@ public class CachingService : ICachingService
         await _cache.SetAsync(key, value, options);
     }
 
-    public async Task<string?> GetStringAsync<T>(string key)
+    public async Task<string?> GetStringAsync(string key)
     {
         return await _cache.GetStringAsync(key);
     }
