@@ -26,6 +26,16 @@ public class CacheServiceTests
     }
 
     [Fact]
+    public void It_retrieves_bytes_from_cache()
+    {
+        Given_byte_array_exists_in_cache();
+
+        When_retrieve_from_cache_as_byte_array();
+
+        Then_the_byte_array_is_retrieved_from_cache();
+    }
+
+    [Fact]
     public void It_adds_string_to_cache()
     {
         Given_string();
@@ -87,7 +97,7 @@ public class CacheServiceTests
 
     private void Given_byte_array()
     {
-        _bytes = new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 };
+        _bytesToBeCached = new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 };
     }
 
     private void Given_string()
@@ -116,6 +126,12 @@ public class CacheServiceTests
         _innerImplementation.SetStringAsync(_cacheKey, _stringToBeCached, _distributedCacheEntryOptions).Wait();
     }
 
+    private void Given_byte_array_exists_in_cache()
+    {
+        _bytesToBeCached = new byte[] { 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 };
+        _innerImplementation.SetAsync(_cacheKey, _bytesToBeCached, _distributedCacheEntryOptions).Wait();
+    }
+
     private void Given_a_cache_entry_with_known_cache_key()
     {
         _innerImplementation.SetString(_cacheKey, "Hello World", _distributedCacheEntryOptions);
@@ -128,7 +144,7 @@ public class CacheServiceTests
 
     private void When_set_to_cache_as_byte_array()
     {
-        _cache.SetBytesAsync(_cacheKey, _bytes!, _distributedCacheEntryOptions).Wait();
+        _cache.SetBytesAsync(_cacheKey, _bytesToBeCached!, _distributedCacheEntryOptions).Wait();
     }
 
     private void When_set_to_cache_as_string()
@@ -151,6 +167,11 @@ public class CacheServiceTests
         _stringRetrievedFromCache = _cache.GetStringAsync(_cacheKey).Result;
     }
 
+    private void When_retrieve_from_cache_as_byte_array()
+    {
+        _bytesRetrievedFromCache = _cache.GetBytesAsync(_cacheKey).Result;
+    }
+
     private void When_remove_from_cache_with_this_cache_key()
     {
         _cache.RemoveAsync(_cacheKey).Wait();
@@ -159,7 +180,7 @@ public class CacheServiceTests
     private void Then_the_byte_array_is_set_in_cache()
     {
         var entry = _innerImplementation.Get(_cacheKey);
-        entry.Should().BeEquivalentTo(_bytes);
+        entry.Should().BeEquivalentTo(_bytesToBeCached);
     }
 
     private void Then_the_string_is_set_in_cache()
@@ -200,6 +221,11 @@ public class CacheServiceTests
     {
         var entry = _innerImplementation.Get(_cacheKey);
         entry.Should().BeNull();
+    }
+
+    private void Then_the_byte_array_is_retrieved_from_cache()
+    {
+        _bytesRetrievedFromCache.Should().BeEquivalentTo(_bytesToBeCached);
     }
 
     private void InitInstance()
@@ -245,7 +271,7 @@ public class CacheServiceTests
         InstanceName = "UnitTest-",
     }));
 
-    private byte[]? _bytes;
+    private byte[]? _bytesToBeCached, _bytesRetrievedFromCache;
     private string? _stringToBeCached, _stringRetrievedFromCache;
     private Policy? _instanceToBeCached, _instanceRetrievedFromCache;
     private readonly IDistributedCache _innerImplementation;
