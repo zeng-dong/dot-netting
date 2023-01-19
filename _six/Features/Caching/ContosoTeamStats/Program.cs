@@ -8,7 +8,7 @@ public class Program
         var services = builder.Services;
 
         services.AddControllersWithViews();
-        services.AddSingleton(async x => await RedisConnection.InitializeAsync(connectionString: "localhost");
+        services.AddSingleton(async x => await RedisConnection.InitializeAsync(connectionString: "localhost"));
 
         var app = builder.Build();
 
