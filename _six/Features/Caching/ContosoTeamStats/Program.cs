@@ -7,18 +7,13 @@ public class Program
         var builder = WebApplication.CreateBuilder(args);
         var services = builder.Services;
 
-        // Add services to the container.
-        //builder.Services.AddRazorPages();
-
         services.AddControllersWithViews();
         services.AddSingleton(async x => await RedisConnection.InitializeAsync(connectionString: "localhost");
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline.
         if (!app.Environment.IsDevelopment())
         {
-            //// app.UseExceptionHandler("/Error");
             app.UseExceptionHandler("/Home/Error");
             app.UseHsts();
         }
@@ -33,8 +28,6 @@ public class Program
         app.UseRouting();
 
         app.UseAuthorization();
-
-        ////app.MapRazorPages();
 
         app.UseEndpoints(endpoints =>
         {
