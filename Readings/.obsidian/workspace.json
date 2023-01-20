@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4bcceed5d65d43a1",
+        "id": "cc8af8b9b97da0c0",
         "type": "tabs",
         "children": [
           {
-            "id": "23e4b4479bad4d81",
+            "id": "acaeb91e8f28c1c7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Code Magzine/Caching.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3f0162971a0187b7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5f8e2862a53ce323",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET with Azure/Key vault.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md",
+                "file": "Learning DDD/Strategic Design.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET with Azure/ASP.NET Core 6 Performance.md"
+                "file": "Learning DDD/Strategic Design.md"
               }
             }
           }
@@ -173,17 +148,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f0162971a0187b7",
+  "active": "acaeb91e8f28c1c7",
   "lastOpenFiles": [
-    "Dot NET with Azure/Key vault.md",
-    "Dot NET with Azure/ASP.NET Core 6 Performance.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Code Magzine/Caching.md",
+    "Dot NET with Azure/ASP.NET Core 6 Performance.md",
+    "Dot NET with Azure/Key vault.md",
     "Code Magzine/Interests.md",
     "SOLID/SOLID in React.md",
     "YouTube.md",
     "Quotes.md",
     "keys in md.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Learning DDD/Strategic Design.md"
   ]
 }
