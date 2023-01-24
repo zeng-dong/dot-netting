@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD/Strategic Design.md",
+                "file": "YouTube.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e3d6fef376135415",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Exploring Blazor.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD/Strategic Design.md",
+                "file": "Books/Exploring Blazor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD/Strategic Design.md",
+                "file": "Books/Exploring Blazor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD/Strategic Design.md"
+                "file": "Books/Exploring Blazor.md"
               }
             }
           }
@@ -148,17 +161,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "acaeb91e8f28c1c7",
+  "active": "e3d6fef376135415",
   "lastOpenFiles": [
+    "YouTube.md",
+    "Learning DDD/Strategic Design.md",
     "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Code Magzine/Caching.md",
     "Dot NET with Azure/ASP.NET Core 6 Performance.md",
     "Dot NET with Azure/Key vault.md",
     "Code Magzine/Interests.md",
     "SOLID/SOLID in React.md",
-    "YouTube.md",
     "Quotes.md",
-    "keys in md.md",
-    "Learning DDD/Strategic Design.md"
+    "keys in md.md"
   ]
 }
