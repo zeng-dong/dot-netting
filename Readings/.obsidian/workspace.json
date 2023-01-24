@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "dfc6d42b69a2aa60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD/Hands-on DDD with .NET Core.md"
+                "file": "Learning DDD/Learning DDD by Vlad Khononov.md"
               }
             }
           }
@@ -173,8 +185,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "411a6ffce4b9904c",
+  "active": "dfc6d42b69a2aa60",
   "lastOpenFiles": [
+    "Learning DDD/PATTERNS, PRINCIPLES, AND PRACTICES OF DDD.md",
+    "Learning DDD/Hands-on DDD with .NET Core.md",
     "Books/Exploring Blazor.md",
     "YouTube.md",
     "Learning DDD/Strategic Design.md",
@@ -182,8 +196,6 @@
     "Code Magzine/Caching.md",
     "Dot NET with Azure/ASP.NET Core 6 Performance.md",
     "Dot NET with Azure/Key vault.md",
-    "Code Magzine/Interests.md",
-    "SOLID/SOLID in React.md",
-    "Quotes.md"
+    "Code Magzine/Interests.md"
   ]
 }
