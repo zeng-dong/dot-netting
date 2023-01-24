@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "411a6ffce4b9904c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Exploring Blazor.md",
+                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Exploring Blazor.md",
+                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Exploring Blazor.md"
+                "file": "Learning DDD/Hands-on DDD with .NET Core.md"
               }
             }
           }
@@ -161,8 +173,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3d6fef376135415",
+  "active": "411a6ffce4b9904c",
   "lastOpenFiles": [
+    "Books/Exploring Blazor.md",
     "YouTube.md",
     "Learning DDD/Strategic Design.md",
     "Learning DDD/Learning DDD by Vlad Khononov.md",
@@ -171,7 +184,6 @@
     "Dot NET with Azure/Key vault.md",
     "Code Magzine/Interests.md",
     "SOLID/SOLID in React.md",
-    "Quotes.md",
-    "keys in md.md"
+    "Quotes.md"
   ]
 }
