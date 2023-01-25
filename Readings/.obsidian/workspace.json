@@ -8,24 +8,24 @@
         "type": "tabs",
         "children": [
           {
-            "id": "acaeb91e8f28c1c7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "YouTube.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "e3d6fef376135415",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "Books/Exploring Blazor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9976a55255f757f1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
                 "mode": "source",
                 "source": false
               }
@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
+                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
+                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md"
+                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md"
               }
             }
           }
@@ -185,16 +185,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dfc6d42b69a2aa60",
+  "active": "9976a55255f757f1",
   "lastOpenFiles": [
-    "Learning DDD/PATTERNS, PRINCIPLES, AND PRACTICES OF DDD.md",
-    "Learning DDD/Hands-on DDD with .NET Core.md",
     "Books/Exploring Blazor.md",
+    "Learning DDD/Hands-on DDD with .NET Core.md",
+    "Dot NET with Azure/ASP.NET Core 6 Performance.md",
+    "Learning DDD/Patterns, Principles, and Practices of DDD.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
     "YouTube.md",
     "Learning DDD/Strategic Design.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Code Magzine/Caching.md",
-    "Dot NET with Azure/ASP.NET Core 6 Performance.md",
     "Dot NET with Azure/Key vault.md",
     "Code Magzine/Interests.md"
   ]
