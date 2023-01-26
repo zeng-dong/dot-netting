@@ -32,6 +32,18 @@
             }
           },
           {
+            "id": "5e01e30e51fafb7e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Blazor in Action.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "411a6ffce4b9904c",
             "type": "leaf",
             "state": {
@@ -56,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
+                "file": "Books/Blazor in Action.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
+                "file": "Books/Blazor in Action.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md"
+                "file": "Books/Blazor in Action.md"
               }
             }
           }
@@ -185,8 +197,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9976a55255f757f1",
+  "active": "5e01e30e51fafb7e",
   "lastOpenFiles": [
+    "Learning DDD/Patterns of Enterprise Application Architecture.md",
     "Books/Exploring Blazor.md",
     "Learning DDD/Hands-on DDD with .NET Core.md",
     "Dot NET with Azure/ASP.NET Core 6 Performance.md",
@@ -195,7 +208,6 @@
     "YouTube.md",
     "Learning DDD/Strategic Design.md",
     "Code Magzine/Caching.md",
-    "Dot NET with Azure/Key vault.md",
-    "Code Magzine/Interests.md"
+    "Dot NET with Azure/Key vault.md"
   ]
 }
