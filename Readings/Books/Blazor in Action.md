@@ -22,3 +22,9 @@ Same DI as other ASP.NET Core apps.
 - for Blazor WebAssembly, Scoped and Singleton behave the same. Because there is no request in a Blazor WebAssembly application.
 
 WebAssemblyHost is the heart of your Blazor app. It contains all the application configurations and services needed to run your app.
+
+#### defining layout
+the default layout is defined within the Router component
+the layout will automatically be applied to all pages in the application
+
+alternatively, use the @layout directive
