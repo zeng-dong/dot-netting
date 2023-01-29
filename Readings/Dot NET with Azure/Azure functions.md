@@ -59,3 +59,26 @@ In the above function app 'zd-first-functionapp'
 8. I just disabled it.
 
 
+# Mark Heath: Azure Durable Functions Fundamentals
+- an extension to Azure Functions
+- write "stateful" functions in a "serverless" environment
+- define workflows in code
+- FaaS
+- 
+
+
+
+
+# Apress Hands-on Azure Functions with Csharp
+
+#### Azure Functions Core Tools
+- https://github.com/Azure/azure-Functions-core-tools
+- I installed v4 from msi
+
+##### create an Azure Function Project
+func init --worker-runtime dotnet
+or: func init, and it will prompt for runtime
+
+
+
+

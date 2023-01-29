@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "created_with_core_tool": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7226",
+      "launchBrowser": false
+    }
+  }
+}
