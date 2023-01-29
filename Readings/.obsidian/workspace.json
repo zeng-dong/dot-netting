@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "1391d2fa2ee20b9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Learning DDD/zd notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "dfc6d42b69a2aa60",
             "type": "leaf",
             "state": {
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -134,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Blazor in Action.md",
+                "file": "Learning DDD/zd notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Blazor in Action.md",
+                "file": "Learning DDD/zd notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Blazor in Action.md"
+                "file": "Learning DDD/zd notes.md"
               }
             }
           }
@@ -197,17 +209,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5e01e30e51fafb7e",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Learning DDD/Hands-on DDD with .NET Core.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Books/Blazor in Action.md",
     "Learning DDD/Patterns of Enterprise Application Architecture.md",
     "Books/Exploring Blazor.md",
-    "Learning DDD/Hands-on DDD with .NET Core.md",
     "Dot NET with Azure/ASP.NET Core 6 Performance.md",
     "Learning DDD/Patterns, Principles, and Practices of DDD.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
     "YouTube.md",
     "Learning DDD/Strategic Design.md",
-    "Code Magzine/Caching.md",
-    "Dot NET with Azure/Key vault.md"
+    "Code Magzine/Caching.md"
   ]
 }
