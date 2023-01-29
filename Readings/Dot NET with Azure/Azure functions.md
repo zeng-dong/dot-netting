@@ -43,3 +43,19 @@ In the above function app 'zd-first-functionapp'
 8. click "Get function URL"
 9. like this: https://zd-first-functionapp.azurewebsites.net/api/HttpTrigger1?code=GIrZZ-9SSlhBLvAZnXQO0lCXFm-lKTdcb-UnpLClKCVpAzFukOHL3g==
 10. I can call the function in a browser like this: https://zd-first-functionapp.azurewebsites.net/api/HttpTrigger1?code=GIrZZ-9SSlhBLvAZnXQO0lCXFm-lKTdcb-UnpLClKCVpAzFukOHL3g==&&name=hithere
+
+### Timer trigger
+CRON expression
+	- determines when your function should run
+#### create a function with timer trigger
+In the above function app 'zd-first-functionapp'
+1. select Functions
+2. click Add
+3. select the Timer Trigger template
+4. accept the defualt name TimerTrigger1 and Schedule (0*/%**** - means to run every 5 minutes)
+5. navigate to the code
+6. view the log after 5 minutes
+7. I can disable/delete the function to avoid it running.
+8. I just disabled it.
+
+
