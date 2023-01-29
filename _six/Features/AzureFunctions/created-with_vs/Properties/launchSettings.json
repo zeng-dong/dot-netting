@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "created_with_vs": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7137",
+      "launchBrowser": false
+    }
+  }
+}
