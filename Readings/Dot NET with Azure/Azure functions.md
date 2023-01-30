@@ -64,7 +64,15 @@ In the above function app 'zd-first-functionapp'
 - write "stateful" functions in a "serverless" environment
 - define workflows in code
 - FaaS
-- 
+
+## Create an Azure Function App with Durable Functions enabled
+1. File -> New
+2. Azure Functions template
+3. Durable Functions Orchestration template
+4. accept Storage emulator, that is: checked: Use Azurite for runtime storage account (AzureWebJobsStorage)
+5. no authorization options
+
+
 
 
 

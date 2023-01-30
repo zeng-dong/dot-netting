@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "durable_functions_with_vs": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7039",
+      "launchBrowser": false
+    }
+  }
+}
