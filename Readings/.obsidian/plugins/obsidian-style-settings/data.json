@@ -3,5 +3,8 @@
   "minimal-style@@h2-color@@dark": "#EEEE0C",
   "minimal-style@@h3-color@@dark": "#05EB3B",
   "id@@h1-color-theme@@dark": "#ED410B",
-  "id@@h2-color-theme@@dark": "#E9E50B"
+  "id@@h2-color-theme@@dark": "#09E91C",
+  "id@@h3-color-theme@@dark": "#F1D009",
+  "id@@h4-color-theme@@dark": "#760DE9",
+  "id@@h5-color-theme@@dark": "#DBA11E"
 }

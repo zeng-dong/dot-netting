@@ -8,54 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e3d6fef376135415",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Exploring Blazor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9976a55255f757f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learning DDD/Patterns of Enterprise Application Architecture.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5e01e30e51fafb7e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Blazor in Action.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "411a6ffce4b9904c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learning DDD/Hands-on DDD with .NET Core.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1391d2fa2ee20b9b",
             "type": "leaf",
             "state": {
@@ -66,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "92cfeaa8784fccd8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Dot NET with Azure/Azure functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dfc6d42b69a2aa60",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Learning DDD/Learning DDD by Vlad Khononov.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dot NET with Azure/Azure functions.md",
+                "file": "Learning DDD/zd notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dot NET with Azure/Azure functions.md",
+                "file": "Learning DDD/zd notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET with Azure/Azure functions.md"
+                "file": "Learning DDD/zd notes.md"
               }
             }
           }
@@ -221,17 +148,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "1391d2fa2ee20b9b",
   "lastOpenFiles": [
-    "Learning DDD/zd notes.md",
     "Learning DDD/Hands-on DDD with .NET Core.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
-    "Books/Blazor in Action.md",
-    "Learning DDD/Patterns of Enterprise Application Architecture.md",
+    "Learning DDD/zd notes.md",
     "Books/Exploring Blazor.md",
-    "Dot NET with Azure/ASP.NET Core 6 Performance.md",
-    "Learning DDD/Patterns, Principles, and Practices of DDD.md",
-    "YouTube.md",
-    "Learning DDD/Strategic Design.md"
+    "Learning DDD/Patterns of Enterprise Application Architecture.md",
+    "Books/Blazor in Action.md",
+    "Dot NET with Azure/Azure functions.md",
+    "Books/Hands-on Azure Functions with Csharp.md",
+    "Books/ZD book list.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Dot NET with Azure/ASP.NET Core 6 Performance.md"
   ]
 }
