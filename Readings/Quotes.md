@@ -17,3 +17,6 @@
 >   [Book of household management] - Isabella Beeton 1836 - 1865
 
 > The only kind of writing is rewriting. -Ernest Hemingway
+
+> The Jedi were real?!   -Ray
+> Crazy thing is…it’s true.  All of it. The Force, the Jedi. It’s all true.” – Han Solo

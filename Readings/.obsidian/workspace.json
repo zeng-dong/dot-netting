@@ -163,6 +163,8 @@
   },
   "active": "3d130b1b47f5af03",
   "lastOpenFiles": [
+    "Quotes.md",
+    "Books/ZD book list.md",
     "Learning DDD/zd notes.md",
     "Learning DDD/Hands-on DDD with .NET Core.md",
     "Books/Exploring Blazor.md",
@@ -170,8 +172,6 @@
     "Books/Blazor in Action.md",
     "Dot NET with Azure/Azure functions.md",
     "Books/Hands-on Azure Functions with Csharp.md",
-    "Books/ZD book list.md",
-    "Learning DDD/Learning DDD by Vlad Khononov.md",
-    "Dot NET with Azure/ASP.NET Core 6 Performance.md"
+    "Learning DDD/Learning DDD by Vlad Khononov.md"
   ]
 }
