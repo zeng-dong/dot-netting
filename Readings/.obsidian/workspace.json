@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/ZD book list.md",
+                "file": "Quotes.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/ZD book list.md",
+                "file": "Quotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/ZD book list.md",
+                "file": "Quotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/ZD book list.md"
+                "file": "Quotes.md"
               }
             }
           }
@@ -163,8 +163,8 @@
   },
   "active": "3d130b1b47f5af03",
   "lastOpenFiles": [
-    "Quotes.md",
     "Books/ZD book list.md",
+    "Quotes.md",
     "Learning DDD/zd notes.md",
     "Learning DDD/Hands-on DDD with .NET Core.md",
     "Books/Exploring Blazor.md",

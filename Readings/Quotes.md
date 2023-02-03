@@ -20,3 +20,7 @@
 
 > The Jedi were real?!   -Ray
 > Crazy thing is…it’s true.  All of it. The Force, the Jedi. It’s all true.” – Han Solo
+
+> **The goal of the Object Mother pattern is not to provide a factory method for every single test requirement we might have** but instead to provide ways to create a few functionally meaningful versions of an object that can be easily adapted within a concrete test.
+
+> Object Mothers do have their faults. In particular there's a heavy coupling in that many tests will depend on the exact data in the mothers. As a result it's tricky should you want to change that standard data for any reason. Changes to classes will also result in the need to migrate the tests - although that will be an issue in any case.  -- Martin Fowler
