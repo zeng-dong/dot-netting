@@ -1,10 +1,17 @@
-﻿namespace TestingDomain;
-
-public class IntCalculator
+﻿namespace TestingDomain
 {
-    public int Value { get; private set; }
+    public class IntCalculator
+    {
+        public int Value { get; private set; }
 
-    public void Subtract(int number) => Value -= number;
+        public void Subtract(int number)
+        {
+            Value -= number;
+        }
 
-    public void Add(int number) => Value += number;
+        public void Add(int number)
+        {
+            Value += number;
+        }
+    }
 }
