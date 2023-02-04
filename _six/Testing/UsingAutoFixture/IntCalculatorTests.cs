@@ -4,6 +4,7 @@ public class IntCalculatorTests
 {
     [Fact]
     [Trait("Category", "traditional")]
+    [Trait("IntCalculator", "op")]
     public void Can_sub()
     {
         var calculator = new IntCalculator();
@@ -16,6 +17,7 @@ public class IntCalculatorTests
 
     [Fact]
     [Trait("Category", "fixture")]
+    [Trait("IntCalculator", "op")]
     public void Can_sub_fixture_style()
     {
         var calculator = new IntCalculator();
