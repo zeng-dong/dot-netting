@@ -1,4 +1,6 @@
-﻿namespace UsingAutoFixture;
+﻿using TestingDomain;
+
+namespace UsingAutoFixture;
 
 public class IntCalculatorTests
 {

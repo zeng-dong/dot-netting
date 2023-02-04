@@ -11,3 +11,5 @@ public abstract class BaseDataBuilder<T> where T: class
         public virtual T Build() => Result;
     }
 ```
+
+Anonymous test data: data that is required to be present for the test to be able to execute, but where the value itself is unimportant
