@@ -10,4 +10,10 @@
     <None Include="DemoCode.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Users\UserBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+  </ItemGroup>
+
 </Project>
