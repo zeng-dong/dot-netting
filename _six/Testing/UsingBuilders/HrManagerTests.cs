@@ -47,14 +47,25 @@ public class HrManagerTests
         result.Should().Be(expected);
     }
 
+    [Fact]
+    public void Hr_manager_knows_employee_years_using_old_fashioned_builder()
+    {
+        var years = 8;
+        var dell = new EmployeeOldFashionBuilder()
+            .WithStart(DateTime.Now.AddYears(-years))
+            .Build();
+
+        var result = _manager.Years(dell);
+
+        result.Should().Be(years);
+    }
+
     public HrManagerTests()
     {
         _builder = new EmployeeBuilder();
         _manager = new HrManager();
     }
 
-    private int _salary;
-    private decimal _bonusRate;
     private readonly EmployeeBuilder _builder;
     private readonly HrManager _manager;
 }
