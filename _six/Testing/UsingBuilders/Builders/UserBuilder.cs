@@ -1,4 +1,5 @@
 ﻿using TestingDomain.Users;
+using BuilderGenerator;
 
 namespace UsingBuilders.Builders;
 
@@ -8,22 +9,11 @@ public partial class UserBuilder
     public static UserBuilder Simple()
     {
         var builder = new UserBuilder()
-            .WithId(Guid.NewGuid)
-            .WithFirstName(() => Guid.NewGuid().ToString())
-            .WithMiddleName(() => Guid.NewGuid().ToString())
-            .WithLastName(() => Guid.NewGuid().ToString());
+            .WithFirstName(Guid.NewGuid().ToString())
 
-        return builder;
-    }
+            .WithOrders(new List<Order>())
 
-    public static UserBuilder Typical()
-    {
-        var builder = Simple()
-            .WithOrders(
-                () => new List<Order>
-                {
-                    OrderBuilder.Simple().Build(),
-                });
+            .WithLastName(Guid.NewGuid().ToString());
 
         return builder;
     }
