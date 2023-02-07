@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingAutoFixture", "UsingAu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestingDomain", "TestingDomain\TestingDomain.csproj", "{FEBBE27A-F2E8-47A7-ABB8-6F49EAB11EA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingBuilders", "UsingBuilders\UsingBuilders.csproj", "{E9341035-EB2D-4656-B8D6-B0A94A1BE41D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsingBuilders", "UsingBuilders\UsingBuilders.csproj", "{E9341035-EB2D-4656-B8D6-B0A94A1BE41D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RunnersForSmallExperiments", "RunnersForSmallExperiments\RunnersForSmallExperiments.csproj", "{B0267501-20B6-487A-AF82-96207975CC1F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E9341035-EB2D-4656-B8D6-B0A94A1BE41D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9341035-EB2D-4656-B8D6-B0A94A1BE41D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9341035-EB2D-4656-B8D6-B0A94A1BE41D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0267501-20B6-487A-AF82-96207975CC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0267501-20B6-487A-AF82-96207975CC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0267501-20B6-487A-AF82-96207975CC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0267501-20B6-487A-AF82-96207975CC1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
