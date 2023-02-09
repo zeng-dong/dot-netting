@@ -33,6 +33,9 @@ Anonymous test data: data that is required to be present for the test to be able
 
 [code in github](https://github.com/makolyte/concurrent-requests-with-httpclient)
 
+#zdnote 
+This article [How to Execute Multiple Tasks Asynchronously in C#](https://code-maze.com/csharp-execute-multiple-tasks-asynchronously/) may also be good. It has a github repo.
+
 The HttpClient class was designed to be used concurrently. It’s thread-safe and can handle multiple requests. You can fire off multiple requests from the same thread and await all of the responses, or fire off requests from multiple threads. No matter what the scenario, HttpClient was built to handle concurrent requests.
 
 To use HttpClient effectively for concurrent requests, there are a few guidelines:
