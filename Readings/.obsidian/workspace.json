@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "cb012f98a25c3ad3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tracking-Tasks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "3d130b1b47f5af03",
             "type": "leaf",
             "state": {
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dot NET 7/random.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dot NET 7/random.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,16 +150,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET 7/random.md"
+                "file": "Tracking-Tasks.md"
               }
             }
+          },
+          {
+            "id": "522c901adad58564",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 708.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,9 +181,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3d130b1b47f5af03",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
     "Learning DDD/zd notes.md",
+    "Dot NET 7/random.md",
     "Dot NET 7/C# 11.md",
     "Quotes.md",
     "Books/ZD book list.md",
@@ -171,7 +192,6 @@
     "Books/Exploring Blazor.md",
     "Learning DDD/Patterns of Enterprise Application Architecture.md",
     "Books/Blazor in Action.md",
-    "Dot NET with Azure/Azure functions.md",
-    "Books/Hands-on Azure Functions with Csharp.md"
+    "Dot NET with Azure/Azure functions.md"
   ]
 }
