@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dot NET 7/random.md",
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dot NET 7/random.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dot NET 7/random.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dot NET 7/random.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -183,11 +183,11 @@
   },
   "active": "cb012f98a25c3ad3",
   "lastOpenFiles": [
+    "Dot NET 7/random.md",
     "keys in md.md",
     "YouTube.md",
     "Tracking-Tasks.md",
     "Learning DDD/zd notes.md",
-    "Dot NET 7/random.md",
     "Dot NET 7/C# 11.md",
     "Quotes.md",
     "Books/ZD book list.md",
