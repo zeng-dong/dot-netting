@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "EF Core/pluralsights.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "EF Core/pluralsights.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "EF Core/pluralsights.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "EF Core/pluralsights.md"
               }
             }
           },
@@ -183,15 +183,15 @@
   },
   "active": "cb012f98a25c3ad3",
   "lastOpenFiles": [
-    "Dot NET 7/random.md",
-    "keys in md.md",
-    "YouTube.md",
-    "Tracking-Tasks.md",
     "Learning DDD/zd notes.md",
-    "Dot NET 7/C# 11.md",
-    "Quotes.md",
+    "Dot NET 7/random.md",
     "Books/ZD book list.md",
-    "Learning DDD/Hands-on DDD with .NET Core.md",
-    "Books/Exploring Blazor.md"
+    "Books/Hands-on Azure Functions with Csharp.md",
+    "Books/Exploring Blazor.md",
+    "Books/Blazor in Action.md",
+    "keys in md.md",
+    "2023-02-13.md",
+    "Tracking-Tasks.md",
+    "YouTube.md"
   ]
 }
