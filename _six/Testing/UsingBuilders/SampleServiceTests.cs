@@ -12,7 +12,7 @@ public class SampleServiceTests
 
     public SampleServiceTests()
     {
-        _options = Options.Create<SampleOptions>(new() { ConnStr = "AzureBlobSuperSecret", PriceTier = 98765 });
+        _options = Options.Create<SampleOptions>(new() { ConnStr = "This is the fake thing I talked about", PriceTier = 98765 });
 
         _repo = new(_options);
     }
@@ -28,11 +28,11 @@ public class SampleServiceTests
     public void It_returns_options_detail()
     {
         var result = _repo.OptionDetail();
-        result.Should().Be("The IOption I have is: AzureBlobSuperSecret, 98765");
+        result.Should().Be("The IOption I have is: This is the fake thing I talked about, 98765");
     }
 
     [Fact]
-    public void I_can_reset_options()
+    public void I_can_reset_options_to_force_exception()
     {
         _options = Options.Create<SampleOptions>(new() { ConnStr = null, PriceTier = 98765 });
         _repo = new(_options);
@@ -43,7 +43,7 @@ public class SampleServiceTests
     }
 
     [Fact]
-    public void I_can_mock_the_ioptions_interface()
+    public void I_can_mock_the_ioptions_builder_instead()
     {
         var opt = new SampleOptions() { ConnStr = "This is mocking the builder thing I talked about", PriceTier = 999 };
         var ioptions = new Mock<IOptions<SampleOptions>>();
