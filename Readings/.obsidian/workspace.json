@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2023-02-13.md",
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-02-13.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-02-13.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-02-13.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -158,6 +158,8 @@
   },
   "active": "a17ce5b9e631cb18",
   "lastOpenFiles": [
+    "keys in md.md",
+    "2023-02-13.md",
     "Learning DDD/zd notes.md",
     "EF Core/pluralsights.md",
     "Dot NET 7/random.md",
@@ -165,8 +167,6 @@
     "Books/Hands-on Azure Functions with Csharp.md",
     "Books/Exploring Blazor.md",
     "Books/Blazor in Action.md",
-    "keys in md.md",
-    "2023-02-13.md",
     "Tracking-Tasks.md"
   ]
 }
