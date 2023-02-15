@@ -1,6 +1,6 @@
 ﻿namespace TestingDomain.Options;
 
-public interface ISampleRepository
+public interface ISampleService
 {
     Task<bool> Get();
 

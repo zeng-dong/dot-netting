@@ -2,11 +2,11 @@
 
 namespace TestingDomain.Options;
 
-public class SampleRepository : ISampleRepository
+public class SampleService : ISampleService
 {
     private readonly SampleOptions _options;
 
-    public SampleRepository(IOptions<SampleOptions> options)
+    public SampleService(IOptions<SampleOptions> options)
     {
         _options = options.Value;
     }

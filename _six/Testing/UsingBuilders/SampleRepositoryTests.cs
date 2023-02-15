@@ -5,12 +5,12 @@ using TestingDomain.Options;
 
 namespace UsingBuilders;
 
-public class SampleRepositoryTests
+public class SampleServiceTests
 {
     private IOptions<SampleOptions> _options;
-    private SampleRepository _repo;
+    private SampleService _repo;
 
-    public SampleRepositoryTests()
+    public SampleServiceTests()
     {
         _options = Options.Create<SampleOptions>(new() { ConnStr = "AzureBlobSuperSecret", PriceTier = 98765 });
 
@@ -49,7 +49,7 @@ public class SampleRepositoryTests
         var ioptions = new Mock<IOptions<SampleOptions>>();
         ioptions.Setup(x => x.Value).Returns(opt);
 
-        var rep = new SampleRepository(ioptions.Object);
+        var rep = new SampleService(ioptions.Object);
 
         var result = rep.OptionDetail();
         result.Should().Be("The IOption I have is: This is mocking the builder thing I talked about, 999");
