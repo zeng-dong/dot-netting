@@ -2,6 +2,6 @@
 
 public class SampleOptions
 {
-    public string FirstSetting { get; set; }
+    public string FirstSetting { get; set; } = String.Empty;
     public int SecondSetting { get; set; }
 }

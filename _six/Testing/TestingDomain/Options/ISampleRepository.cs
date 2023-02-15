@@ -3,4 +3,6 @@
 public interface ISampleRepository
 {
     Task<bool> Get();
+
+    string OptionDetail();
 }

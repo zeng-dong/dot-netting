@@ -15,4 +15,9 @@ public class SampleRepository : ISampleRepository
     {
         return await Task.FromResult(true);
     }
+
+    public string OptionDetail()
+    {
+        return $"The IOption I have is: {_options.FirstSetting}, {_options.SecondSetting}";
+    }
 }
