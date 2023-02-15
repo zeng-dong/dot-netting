@@ -18,6 +18,11 @@ public class SampleRepository : ISampleRepository
 
     public string OptionDetail()
     {
-        return $"The IOption I have is: {_options.FirstSetting}, {_options.SecondSetting}";
+        if (_options.ConnStr is null)
+        {
+            throw new ArgumentException("no, not good");
+        }
+
+        return $"The IOption I have is: {_options.ConnStr}, {_options.PriceTier}";
     }
 }

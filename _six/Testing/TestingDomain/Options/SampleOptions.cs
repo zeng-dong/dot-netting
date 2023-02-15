@@ -2,6 +2,6 @@
 
 public class SampleOptions
 {
-    public string FirstSetting { get; set; } = String.Empty;
-    public int SecondSetting { get; set; }
+    public string? ConnStr { get; set; } = String.Empty;
+    public int PriceTier { get; set; }
 }
