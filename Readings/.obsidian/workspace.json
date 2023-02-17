@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "06f87f6507d57da7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET 7/Generics.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2023-02-16.md",
+                "file": "Dot NET 7/Generics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2023-02-16.md",
+                "file": "Dot NET 7/Generics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2023-02-16.md"
+                "file": "Dot NET 7/Generics.md"
               }
             }
           },
@@ -156,8 +169,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a17ce5b9e631cb18",
+  "active": "06f87f6507d57da7",
   "lastOpenFiles": [
+    "2023-02-16.md",
     "2023-02-15.md",
     "Tracking-Tasks.md",
     "keys in md.md",
@@ -166,7 +180,6 @@
     "EF Core/pluralsights.md",
     "Dot NET 7/random.md",
     "Books/ZD book list.md",
-    "Books/Hands-on Azure Functions with Csharp.md",
-    "Books/Exploring Blazor.md"
+    "Books/Hands-on Azure Functions with Csharp.md"
   ]
 }
