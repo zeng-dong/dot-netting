@@ -1,7 +1,7 @@
 ﻿namespace BestPractices.Entities;
 
-public class Author : IComparable
-{ 
+public class Author : IComparable<Author>
+{
     public string FirstName { get; set; }
     public string LastName { get; set; }
 
@@ -24,5 +24,12 @@ public class Author : IComparable
             return this.ToString().CompareTo(otherAuthor.ToString());
         }
         throw new ArgumentException("Not a Author", nameof(obj));
+    }
+
+    public int CompareTo(Author? other)
+    {
+        if (other == null) return 1;
+
+        return this.ToString().CompareTo(other.ToString());
     }
 }
