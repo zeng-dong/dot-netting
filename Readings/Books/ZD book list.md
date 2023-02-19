@@ -23,3 +23,8 @@ Apress Practical Enterprise React
 Apress React and Libraries
 #React 
 Packt Mastering React Test-driven development
+
+## Blazor
+
+## Minimal API
+
