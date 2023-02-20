@@ -1,4 +1,7 @@
-﻿namespace TodoApi.Weathers;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using TodoApi.Todos;
+
+namespace TodoApi.Weathers;
 
 internal static class WeatherApi
 {
@@ -22,6 +25,16 @@ internal static class WeatherApi
         })
         .WithName("GetWeatherForecast")
         .WithOpenApi();
+
+        group.MapGet("/{id}", Results<Ok<bool>, NotFound> (int id) =>
+        {
+            if (id % 5 == 0)
+            {
+                return TypedResults.NotFound();
+            }
+
+            return id % 2 == 0 ? TypedResults.Ok(true) : TypedResults.Ok(false);
+        });
 
         return group;
     }
