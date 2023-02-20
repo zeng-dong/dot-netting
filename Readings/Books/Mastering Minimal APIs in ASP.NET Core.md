@@ -13,6 +13,11 @@ Packt
 		- and UseEndpoints() is automatically added at the end of the middleware pipeline
 - use MapMethods for specific methods(patch, head, options): app.MapMethods("/update-order", new[] { HttpMethods.Patch}, () => {  // updating })	
 
+### route handler
+### route parameters
+If the route values cannot be casted to the specified types, then an exception of the **BadHttpRequestException** type will be thrown, and the API will respond with a **400 Bad Request** message.
+### route constraints
+If, according to the constraints, no route matches the specified path, we don’t get an exception. Instead we obtain a **404 Not Found** message,
 
 
 ## Parameter binding

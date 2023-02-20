@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/ZD book list.md",
+                "file": "Books/Mastering Minimal APIs in ASP.NET Core.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Books/Mastering Minimal APIs in ASP.NET Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Books/Mastering Minimal APIs in ASP.NET Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "Books/Mastering Minimal APIs in ASP.NET Core.md"
               }
             }
           },
@@ -169,17 +168,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "159b16a9590f817c",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
-    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Books/ZD book list.md",
+    "Tracking-Tasks.md",
+    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Books/2003 intereating books.md",
     "2023-02-13.md",
     "Books/Blazor in Action.md",
     "2023-02-16.md",
     "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Learning DDD/Patterns of Enterprise Application Architecture.md",
-    "Learning DDD/Patterns, Principles, and Practices of DDD.md",
-    "Learning DDD/Strategic Design.md"
+    "Learning DDD/Patterns, Principles, and Practices of DDD.md"
   ]
 }
