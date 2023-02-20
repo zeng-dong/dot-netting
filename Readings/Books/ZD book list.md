@@ -27,4 +27,6 @@ Packt Mastering React Test-driven development
 ## Blazor
 
 ## Minimal API
+Packt.Mastering.Minimal.APIs.in.ASP.NET.Core.1803237821
+
 
