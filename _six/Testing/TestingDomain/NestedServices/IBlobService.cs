@@ -7,7 +7,7 @@ public interface IBlobService
 
 public interface ISupporting1
 {
-    bool Do();
+    int Do();
 }
 
 public interface ISupporting2
@@ -19,11 +19,12 @@ public class BlobService : IBlobService
 {
     public int Do(ISupporting1 service1, ISupporting2 service2, string name)
     {
-        if (service1.Do()) { return 201; }
+        var x = service1.Do();
+        if (x < 10) { return 201; }
 
-        if (!service1.Do()) { return 401; }
+        if (x < 100) { return 401; }
 
-        if (service2.Do()) { return 202; }
+        if (x < 1000) { return 501; }
 
         return 999;
     }

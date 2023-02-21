@@ -14,8 +14,10 @@ public class MultipleReturnValuesFromMockTests
 
         service1
             .SetupSequence(x => x.Do())
-            .Returns(true)
-            .Returns(false);
+            .Returns(1)
+            .Returns(11)
+            .Returns(111)
+            .Returns(1111);
 
         service2
             .Setup(x => x.Do())
@@ -25,9 +27,11 @@ public class MultipleReturnValuesFromMockTests
         var callItFirstTime = sut.Do(service1.Object, service2.Object, "hello");
         var callItSecondTime = sut.Do(service1.Object, service2.Object, "hello");
         var callItThirdTime = sut.Do(service1.Object, service2.Object, "hello");
+        var callItFourthTime = sut.Do(service1.Object, service2.Object, "hello");
 
         callItFirstTime.Should().Be(201);
         callItSecondTime.Should().Be(401);
-        callItThirdTime.Should().Be(202);
+        callItThirdTime.Should().Be(501);
+        callItFourthTime.Should().Be(999);
     }
 }
