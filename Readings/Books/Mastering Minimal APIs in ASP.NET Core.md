@@ -18,7 +18,12 @@ Packt
 If the route values cannot be casted to the specified types, then an exception of the **BadHttpRequestException** type will be thrown, and the API will respond with a **400 Bad Request** message.
 ### route constraints
 If, according to the constraints, no route matches the specified path, we don’t get an exception. Instead we obtain a **404 Not Found** message,
-
+### parameter binding
+- route values
+- query strings
+- headers
+- the body (as json, the only format supported by default)
+- a service provider (dependency injection)
 
 ## Parameter binding
 ## Exploring responses
