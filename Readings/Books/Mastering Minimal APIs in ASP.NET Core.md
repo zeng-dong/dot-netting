@@ -24,6 +24,10 @@ If, according to the constraints, no route matches the specified path, we don’
 - headers
 - the body (as json, the only format supported by default)
 - a service provider (dependency injection)
+### special bindings
+HttpContext, HttpRequest, HttpResponse, ClaimsPrincipal 
+	- we call also access all these objects using IHttpContextAccessor
+### custom binding
 
 ## Parameter binding
 ## Exploring responses
