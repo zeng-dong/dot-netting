@@ -1,0 +1,29 @@
+﻿steps:
+  - task: SonarQubePrepare@5
+    displayName: Prepare SonarQube Analysis
+    inputs:
+      SonarQube: 'SonarQube'
+      scannerMode: 'MSBuild'
+      projectKey: 'my-project-key'
+      extraProperties: |
+        sonar.cs.vstest.reportsPath=$(Agent.TempDirectory)/*.trx
+        sonar.cs.opencover.reportsPaths=$(Agent.TempDirectory)/*/coverage.opencover.xml
+  - task: DotNetCoreCLI@2
+    displayName: 'Build my solution'
+    inputs:
+      command: 'build'
+      projects: '**/MyApp.csproj'
+      arguments: '--configuration $(BuildConfiguration)'
+  - task: DotNetCoreCLI@2
+    displayName: 'Run my unit tests'
+    inputs:
+      command: 'test'
+      projects: '**/Tests.csproj'
+      arguments: ==collect "XPlat Code coverage" --configuration $(BuildConfiguration) --settings src/MyProj/MyProjTests/runsettings.xml
+  - template: pipeline-int-tests.yml
+  - task: SonarQubeAnalyze@5
+    displayName: SonarQube Analysis
+  - task: SonarQubePublish@5
+    displayName: publishing
+    inputs:
+      pollingTimeoutSec: '300'

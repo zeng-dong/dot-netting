@@ -1,0 +1,9 @@
+﻿variables:
+  - name: appinsightsKey
+    value: guid
+  - name: azureAdClientId
+    value: guid
+  - name: blobKey
+    value: '@Microsoft.KeyVault(SecretUri=https//ssss)'
+  - name: appName
+    value: 'mysuperapp$(environment)'

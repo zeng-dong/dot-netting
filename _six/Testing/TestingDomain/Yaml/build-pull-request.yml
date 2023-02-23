@@ -1,0 +1,23 @@
+﻿trigger: none
+
+pr:
+  branches:
+    includes:
+    - main
+    - release/*
+    - hotfix/*
+  paths:
+    include:
+    - src/MyProject
+
+pool:
+  name: 'mypool-ubuntu-20.03'
+
+variables:
+  BuildConfigurations: 'Release'
+
+jobs:
+  - job: build
+    displayName: Build and Unit Test
+    step:
+      - template build-tasks.yml
