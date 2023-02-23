@@ -1,0 +1,14 @@
+﻿azure-pipeline
+.yml
+
+-API-tests
+-build-pr
+-build-release
+-build-tasks
+-E2E-UI-tests
+-int-tests
+-release-tasks
+-variables
+-variables-dev
+-variables-int
+-variables-qa
