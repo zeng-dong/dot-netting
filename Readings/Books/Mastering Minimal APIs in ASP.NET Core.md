@@ -18,7 +18,8 @@ Packt
 If the route values cannot be casted to the specified types, then an exception of the **BadHttpRequestException** type will be thrown, and the API will respond with a **400 Bad Request** message.
 ### route constraints
 If, according to the constraints, no route matches the specified path, we don’t get an exception. Instead we obtain a **404 Not Found** message,
-### parameter binding
+
+## parameter binding
 - route values
 - query strings
 - headers
@@ -29,7 +30,8 @@ HttpContext, HttpRequest, HttpResponse, ClaimsPrincipal
 	- we call also access all these objects using IHttpContextAccessor
 ### custom binding
 
-## Parameter binding
 ## Exploring responses
+
+
 ## Controlling serialization
 ## Architecting a minimal API project
