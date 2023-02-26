@@ -23,23 +23,32 @@ public class ExceptionHandlingMiddleware
             var response = context.Response;
             response.ContentType = "application/json";
 
+            string message;
             switch (error)
             {
                 case InvalidOperationException e:
                     response.StatusCode = (int)HttpStatusCode.BadRequest;
+                    message = e.Message;
                     break;
 
                 case ArgumentException e:
                     response.StatusCode = (int)HttpStatusCode.NotFound;
+                    message = e.Message;
                     break;
 
                 default:
                     response.StatusCode = (int)HttpStatusCode.InternalServerError;
+                    message = $"Unexpected exception. {error?.Message}";
                     break;
             }
 
-            var result = JsonSerializer.Serialize(new { message = error?.Message });
-            await response.WriteAsync(result);
+            await response.WriteAsync(JsonSerializer.Serialize(new { message }));
         }
     }
+}
+
+public static class ApplicationBuilderExtensions
+{
+    public static IApplicationBuilder AddCommonExceptionsHandler(this IApplicationBuilder applicationBuilder)
+        => applicationBuilder.UseMiddleware<ExceptionHandlingMiddleware>();
 }

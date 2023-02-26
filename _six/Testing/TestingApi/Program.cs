@@ -22,8 +22,9 @@ public class Program
             app.UseSwaggerUI();
         }
 
-        app.UseAuthorization();
+        app.AddCommonExceptionsHandler();
 
+        app.UseAuthorization();
 
         app.MapControllers();
 

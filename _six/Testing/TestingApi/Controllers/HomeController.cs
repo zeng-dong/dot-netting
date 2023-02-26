@@ -14,6 +14,8 @@ public class HomeController : ControllerBase
 
         if (name == "null") { throw new ArgumentException("null cannot be hello"); }
 
+        if (name.StartsWith("bad")) { throw new DivideByZeroException(nameof(name)); }
+
         return Ok($"Hello {name}");
     }
 }
