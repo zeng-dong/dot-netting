@@ -10,7 +10,7 @@ public class HomeController : ControllerBase
     [HttpGet]
     public IActionResult Index([FromQuery] string name)
     {
-        if (name == null) { throw new ArgumentNullException("name"); }
+        if (name == "hello") { throw new InvalidOperationException("Cannot apply hello to hello"); }
 
         if (name == "null") { throw new ArgumentException("null cannot be hello"); }
 
