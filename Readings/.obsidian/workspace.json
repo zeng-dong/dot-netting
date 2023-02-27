@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "2023-02-26.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "2023-02-26.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "2023-02-26.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "2023-02-26.md"
               }
             }
           },
@@ -156,10 +156,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "33faf0c16050b6c6",
   "lastOpenFiles": [
-    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Tracking-Tasks.md",
+    "2023-02-26.md",
+    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "2023-02-20.md",
     "Books/ZD book list.md",
     "Books/2003 intereating books.md",

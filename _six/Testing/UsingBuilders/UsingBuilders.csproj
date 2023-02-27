@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TestingApi\TestingApi.csproj" />
     <ProjectReference Include="..\TestingDomain\TestingDomain.csproj" />
   </ItemGroup>
 
