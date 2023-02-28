@@ -1,7 +1,9 @@
 ## Xyzal in spring
 
 - [ ] take xyzal 🔁 every day 🛫 2023-02-12
-- [ ] take xyzal 🔁 every day 🛫 2023-02-26
+- [ ] take xyzal 🔁 every day 🛫 2023-02-28
+- [x] take xyzal 🔁 every day 🛫 2023-02-27 ✅ 2023-02-27
+- [x] take xyzal 🔁 every day 🛫 2023-02-26 ✅ 2023-02-27
 - [x] take xyzal 🔁 every day 🛫 2023-02-25 ✅ 2023-02-25
 - [x] take xyzal 🔁 every day 🛫 2023-02-24 ✅ 2023-02-24
 - [x] take xyzal 🔁 every day 🛫 2023-02-23 ✅ 2023-02-23
