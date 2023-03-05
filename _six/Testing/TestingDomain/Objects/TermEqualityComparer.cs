@@ -15,9 +15,21 @@ public class TermEqualityComparer : IEqualityComparer<TermEqualityComparer>
     }
 }
 
-public class TermEquatable : IEquatable<TermEquatable>
+public sealed class TermEquatable : IEquatable<TermEquatable>
 {
     public bool Equals(TermEquatable? other)
+    {
+        throw new NotImplementedException();
+    }
+
+    public override bool Equals(object? obj)
+    {
+        if (obj == null) { return false; }
+
+        return Equals(obj as TermEquatable);
+    }
+
+    public override int GetHashCode()
     {
         throw new NotImplementedException();
     }
