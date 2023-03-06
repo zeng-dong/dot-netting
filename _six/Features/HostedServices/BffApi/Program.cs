@@ -1,3 +1,6 @@
+using BffApi.Configuration;
+using BffApi.DependencyInjection;
+
 namespace BffApi;
 
 public class Program
@@ -6,10 +9,16 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
+        var config = builder.Configuration;
+
+        builder.Services.Configure<WeatherForecastingConfiguration>(config.GetSection("Features:WeatherForecasting"));
+        builder.Services.Configure<ExternalServicesConfig>(ExternalServicesConfig.WeatherApi, config.GetSection("ExternalServices:WeatherApi"));
+
+        builder.Services.AddWeatherForecasting(config)
+            .AddCaching();
 
         builder.Services.AddControllers();
-        // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
@@ -25,7 +34,6 @@ public class Program
         app.UseHttpsRedirection();
 
         app.UseAuthorization();
-
 
         app.MapControllers();
 
