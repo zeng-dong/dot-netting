@@ -13,17 +13,19 @@ public class Program
             // use a scoped container to create jobs.
             q.UseMicrosoftDependencyInjectionScopedJobFactory();
 
-            // Create a "key" for the job
-            var jobKey = new JobKey("HelloWorldJob");
+            //// Create a "key" for the job
+            //var jobKey = new JobKey("HelloWorldJob");
 
-            // Register the job with the DI container
-            q.AddJob<HelloWorldJob>(opts => opts.WithIdentity(jobKey));
+            //// Register the job with the DI container
+            //q.AddJob<HelloWorldJob>(opts => opts.WithIdentity(jobKey));
 
-            // Create a trigger for the job
-            q.AddTrigger(opts => opts
-                .ForJob(jobKey) // link to the HelloWorldJob
-                .WithIdentity("HelloWorldJob-trigger") // give the trigger a unique name
-                .WithCronSchedule("0/15 * * * * ?")); // run every 15 seconds
+            //// Create a trigger for the job
+            //q.AddTrigger(opts => opts
+            //    .ForJob(jobKey) // link to the HelloWorldJob
+            //    .WithIdentity("HelloWorldJob-trigger") // give the trigger a unique name
+            //    .WithCronSchedule("0/15 * * * * ?")); // run every 15 seconds
+
+            q.AddJobAndTrigger<HelloWorldJob>(builder.Configuration);
         });
         builder.Services.AddQuartzHostedService(q => q.WaitForJobsToComplete = true);
 
