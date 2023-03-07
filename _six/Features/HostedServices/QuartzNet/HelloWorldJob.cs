@@ -2,10 +2,19 @@
 
 namespace QuartzNet;
 
+[DisallowConcurrentExecution]
 public class HelloWorldJob : IJob
 {
+    private readonly ILogger<HelloWorldJob> _logger;
+
+    public HelloWorldJob(ILogger<HelloWorldJob> logger)
+    {
+        _logger = logger;
+    }
+
     public Task Execute(IJobExecutionContext context)
     {
-        throw new NotImplementedException();
+        _logger.LogInformation("Hello world!");
+        return Task.CompletedTask;
     }
 }
