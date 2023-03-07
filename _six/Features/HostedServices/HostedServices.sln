@@ -5,9 +5,11 @@ VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{532787FA-E850-4CBB-A7C8-7D3C7260B3B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherService.Api", "WeatherService.Api\WeatherService.Api.csproj", "{5ECBD9D1-6AB9-4F9F-83C7-FA2AA1CBFBAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherService.Api", "WeatherService.Api\WeatherService.Api.csproj", "{5ECBD9D1-6AB9-4F9F-83C7-FA2AA1CBFBAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BffApi", "BffApi\BffApi.csproj", "{B6C27E44-50C6-44A0-B4F4-A6014ADEFBCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BffApi", "BffApi\BffApi.csproj", "{B6C27E44-50C6-44A0-B4F4-A6014ADEFBCA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuartzNet", "QuartzNet\QuartzNet.csproj", "{F3C425A7-8082-405D-9592-8C4C92D4BF67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{B6C27E44-50C6-44A0-B4F4-A6014ADEFBCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6C27E44-50C6-44A0-B4F4-A6014ADEFBCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6C27E44-50C6-44A0-B4F4-A6014ADEFBCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C425A7-8082-405D-9592-8C4C92D4BF67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C425A7-8082-405D-9592-8C4C92D4BF67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C425A7-8082-405D-9592-8C4C92D4BF67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C425A7-8082-405D-9592-8C4C92D4BF67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
