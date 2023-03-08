@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD/zd notes.md",
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Learning DDD/zd notes.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Learning DDD/zd notes.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Learning DDD/zd notes.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -156,8 +156,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "33faf0c16050b6c6",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Learning DDD/zd notes.md",
     "Tracking-Tasks.md",
     "2023-02-26.md",
     "Books/Mastering Minimal APIs in ASP.NET Core.md",

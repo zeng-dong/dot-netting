@@ -14,10 +14,10 @@ public class Program
             q.UseMicrosoftDependencyInjectionScopedJobFactory();
 
             //// Create a "key" for the job
-            //var jobKey = new JobKey("HelloWorldJob");
+            ///var jobKey = new JobKey("HelloWorldJob");
 
             //// Register the job with the DI container
-            //q.AddJob<HelloWorldJob>(opts => opts.WithIdentity(jobKey));
+            ///q.AddJob<HelloWorldJob>(opts => opts.WithIdentity(jobKey));
 
             //// Create a trigger for the job
             //q.AddTrigger(opts => opts
