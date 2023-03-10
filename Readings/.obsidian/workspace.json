@@ -13,7 +13,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Learning DDD/zd notes.md",
+                "file": "Dot NET 7/C# 11.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "58a959de79b0f1ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dot NET 7/json.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "14b301a3a1c0e6cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Blazor WebAssembly by Examples 2nd Edition.md",
+                "file": "Dot NET 7/json.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Blazor WebAssembly by Examples 2nd Edition.md",
+                "file": "Dot NET 7/json.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Blazor WebAssembly by Examples 2nd Edition.md"
+                "file": "Dot NET 7/json.md"
               }
             }
           },
@@ -169,8 +193,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3293d7cb5f5389fb",
+  "active": "58a959de79b0f1ca",
   "lastOpenFiles": [
+    "Dot NET 7/C# 11.md",
+    "Dot NET 7/json.md",
+    "Books/2003 intereating books.md",
+    "EF Core/pluralsights.md",
+    "Code Magzine/Interests.md",
     "Learning DDD/zd notes.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "Tracking-Tasks.md",
@@ -178,7 +207,6 @@
     "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "2023-02-20.md",
     "Books/ZD book list.md",
-    "Books/2003 intereating books.md",
     "2023-02-13.md",
     "Books/Blazor in Action.md",
     "2023-02-16.md",
