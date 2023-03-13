@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "335e3ca3c7b76140",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Projects/Angular.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "58a959de79b0f1ca",
             "type": "leaf",
             "state": {
@@ -55,7 +67,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -121,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Projects/Angular.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Projects/Angular.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "Projects/Angular.md"
               }
             }
           },
@@ -192,12 +205,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "335e3ca3c7b76140",
   "lastOpenFiles": [
+    "Tracking-Tasks.md",
+    "Projects/Angular.md",
+    "Projects",
     "Dot NET 7/C# 11.md",
     "Learning DDD/zd notes.md",
     "Quotes.md",
-    "Tracking-Tasks.md",
     "Dot NET 7/json.md",
     "Books/2003 intereating books.md",
     "EF Core/pluralsights.md",
