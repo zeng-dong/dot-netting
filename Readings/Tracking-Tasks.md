@@ -42,3 +42,8 @@
 - [ ] do this and that 🔁 every week on Saturday
 - [x] do this and that 🔁 every week on Saturday ✅ 2023-02-18
 - [ ] do this and that 🔁 every week on Saturday
+
+```mermaid
+flowchart TD
+1[id] --> shopping --> cost
+```
