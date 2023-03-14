@@ -14,3 +14,9 @@ npm install -g @angular/cli@latest: ng version: 15.2.2
 - add: Installs an Angular library to an Angular application.
 - completion: Enables auto-complete for Angular CLI commands through the terminal.
 - update: Updates an Angular application to the latest Angular version
+
+
+# model project
+ng new model
+cd into it
+ng serve
