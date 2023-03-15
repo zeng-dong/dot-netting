@@ -1,7 +1,9 @@
 ## Xyzal in spring
 
 - [ ] take xyzal 🔁 every day 🛫 2023-02-12
-- [ ] take xyzal 🔁 every day 🛫 2023-03-13
+- [ ] take xyzal 🔁 every day 🛫 2023-03-15
+- [x] take xyzal 🔁 every day 🛫 2023-03-14 ✅ 2023-03-14
+- [x] take xyzal 🔁 every day 🛫 2023-03-13 ✅ 2023-03-14
 - [x] take xyzal 🔁 every day 🛫 2023-03-12 ✅ 2023-03-13
 - [x] take xyzal 🔁 every day 🛫 2023-03-11 ✅ 2023-03-11
 - [x] take xyzal 🔁 every day 🛫 2023-03-10 ✅ 2023-03-11
@@ -47,3 +49,11 @@
 flowchart TD
 1[id] --> shopping --> cost
 ```
+
+```mermaid
+pie title Pets adopted by volunteers
+    "Dogs" : 386
+    "Cats" : 85
+    "Rats" : 15
+```
+
