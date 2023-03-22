@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Implementing event-driven microservices architecture in .NET 7.md",
+                "file": "Quotes.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Implementing event-driven microservices architecture in .NET 7.md",
+                "file": "Quotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Implementing event-driven microservices architecture in .NET 7.md",
+                "file": "Quotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Implementing event-driven microservices architecture in .NET 7.md"
+                "file": "Quotes.md"
               }
             }
           },
@@ -158,13 +158,13 @@
   },
   "active": "8ce951111d93a003",
   "lastOpenFiles": [
+    "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Tracking-Tasks.md",
     "Dot NET 7/json.md",
     "Learning DDD/zd notes.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "2023-03-13.md",
-    "keys in md.md",
     "Projects/Angular.md",
     "Projects",
     "Dot NET 7/C# 11.md",

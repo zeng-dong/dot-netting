@@ -32,3 +32,6 @@
 > 
 
 > Object Mothers do have their faults. In particular there's a heavy coupling in that many tests will depend on the exact data in the mothers. As a result it's tricky should you want to change that standard data for any reason. Changes to classes will also result in the need to migrate the tests - although that will be an issue in any case.  -- Martin Fowler
+
+If we want to make an Assert against each item in the collection, we could do this in a for loop for example
+https://app.pluralsight.com/library/courses/dotnet-core-testing-code-xunit-dotnet-getting-started/transcript
