@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quotes.md",
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quotes.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Quotes.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quotes.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   },
   "active": "8ce951111d93a003",
   "lastOpenFiles": [
+    "Quotes.md",
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Tracking-Tasks.md",
@@ -168,7 +169,6 @@
     "Projects/Angular.md",
     "Projects",
     "Dot NET 7/C# 11.md",
-    "Quotes.md",
     "Books/2003 intereating books.md",
     "EF Core/pluralsights.md",
     "Code Magzine/Interests.md",
