@@ -8,3 +8,9 @@ Git uses these two for each commit
 once a solution/project is loaded, several ways to create a local repo:
 - Git -> Crate Git Repository ...
 - use the bottom status bar: Add to Source Control -> select Git: and it brings up the dialog, fill the fields -> Create and Push (or select Local Only and then Create)
+
+to config default main branch name on a machine level:
+git config --global init.defaultbranch main
+
+to list config:
+git config --global -l
