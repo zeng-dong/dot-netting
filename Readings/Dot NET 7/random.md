@@ -68,3 +68,8 @@ The single HttpClient instance uses the connection limit to determine the max nu
 
 
 ## Only use DefaultRequestHeaders for headers that don’t change.
+
+
+
+[HttpPost("categories/{id}/update")]  
+public async Task<ActionResult> Update([FromBody] CategoryUpdateDto dto, [FromRoute] Guid id)
