@@ -14,3 +14,7 @@ git config --global init.defaultbranch main
 
 to list config:
 git config --global -l
+
+# pushing local repo to remote GitHub
+in visual studio status bar, bring out Git Changes -> Push 
+this bring up the Create a Git repository window, we can select GitHub or Azure DevOps, or existing remote

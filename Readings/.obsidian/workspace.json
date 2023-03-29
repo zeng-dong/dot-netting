@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "Books/Git and Visual Studio 2022 Pluralsight.md"
               }
             }
           },
@@ -171,8 +171,8 @@
   },
   "active": "ea0bdd81adac4a76",
   "lastOpenFiles": [
-    "Dot NET 7/random.md",
     "Tracking-Tasks.md",
+    "Dot NET 7/random.md",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
     "Quotes.md",
     "keys in md.md",
