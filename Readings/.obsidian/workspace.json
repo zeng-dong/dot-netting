@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
+                "file": "Books/Exploring Blazor.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "47a7db752f35e6cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Web Development with Blazor.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
+                "file": "Web Development with Blazor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Git and Visual Studio 2022 Pluralsight.md",
+                "file": "Web Development with Blazor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Git and Visual Studio 2022 Pluralsight.md"
+                "file": "Web Development with Blazor.md"
               }
             }
           },
@@ -169,17 +181,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea0bdd81adac4a76",
+  "active": "47a7db752f35e6cd",
   "lastOpenFiles": [
+    "Books/Exploring Blazor.md",
+    "Web Development with Blazor.md",
+    "Books/Blazor WebAssembly by Examples 2nd Edition.md",
+    "Books/Blazor in Action.md",
+    "Books/Git and Visual Studio 2022 Pluralsight.md",
     "Tracking-Tasks.md",
     "Dot NET 7/random.md",
-    "Books/Git and Visual Studio 2022 Pluralsight.md",
     "Quotes.md",
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
     "Learning DDD/zd notes.md",
-    "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "2023-03-13.md",
     "Projects/Angular.md",
     "Projects",
@@ -192,7 +207,6 @@
     "2023-02-20.md",
     "Books/ZD book list.md",
     "2023-02-13.md",
-    "Books/Blazor in Action.md",
     "2023-02-16.md",
     "Learning DDD/Learning DDD by Vlad Khononov.md",
     "Learning DDD/Patterns of Enterprise Application Architecture.md"
