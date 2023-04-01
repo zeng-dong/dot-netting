@@ -36,10 +36,23 @@ Very performant. Unity, Unreal Engine, can be compiled into WebAssembly.
 ## Introducing .NET7
 
 ## Introducing Blazor
+An open-source web UI SPA framework.
+Browser and Razor
+
+Steve Sanderson 2017 NDC Oslo. He showed his demo to Damian Edwards and David Fowler.
+
 ### Blazor Server
+uses SignalR
+#zdcontinue 2023.03-30
+
 
 ### Blazor WebAssembly
 
 ### Blazor WebAssembly versus Blazor Server
 
 ### Blazor Hybrid/.NET MAUI
+
+# Creating your first
+### The templates
+in .NET 7 we have 4 Blazor templates: 2 server, 2 WebAssembly
+and 1 hybrid

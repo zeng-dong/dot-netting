@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Development with Blazor.md",
+                "file": "Tracking-Tasks.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Web Development with Blazor.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Development with Blazor.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Development with Blazor.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -181,10 +181,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47a7db752f35e6cd",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
-    "Books/Exploring Blazor.md",
+    "Books/Mastering Minimal APIs in ASP.NET Core.md",
+    "Books/2003 intereating books.md",
     "Web Development with Blazor.md",
+    "Books/Exploring Blazor.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "Books/Blazor in Action.md",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
@@ -199,11 +201,9 @@
     "Projects/Angular.md",
     "Projects",
     "Dot NET 7/C# 11.md",
-    "Books/2003 intereating books.md",
     "EF Core/pluralsights.md",
     "Code Magzine/Interests.md",
     "2023-02-26.md",
-    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "2023-02-20.md",
     "Books/ZD book list.md",
     "2023-02-13.md",
