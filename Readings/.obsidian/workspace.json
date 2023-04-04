@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -122,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/React/Pluralsight Working with Components in React 18.md",
+                "file": "Tracking-Tasks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/React/Pluralsight Working with Components in React 18.md",
+                "file": "Tracking-Tasks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/React/Pluralsight Working with Components in React 18.md"
+                "file": "Tracking-Tasks.md"
               }
             }
           },
@@ -193,10 +193,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9bace0785db3e518",
+  "active": "47a7db752f35e6cd",
   "lastOpenFiles": [
-    "Projects/Angular.md",
     "Projects/React/Pluralsight Working with Components in React 18.md",
+    "Projects/Angular.md",
     "Projects/React",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
     "Books/Exploring Blazor.md",
