@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a2de24096c07bf3f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/Angular.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9bace0785db3e518",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Projects/React/Pluralsight Working with Components in React 18.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea0bdd81adac4a76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/Exploring Blazor.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "47a7db752f35e6cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Dot NET 7/random.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Dot NET 7/random.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tracking-Tasks.md",
+                "file": "Dot NET 7/random.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tracking-Tasks.md"
+                "file": "Dot NET 7/random.md"
               }
             }
           },
@@ -193,21 +156,21 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "47a7db752f35e6cd",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
-    "Projects/React/Pluralsight Working with Components in React 18.md",
+    "Quotes.md",
+    "Tracking-Tasks.md",
     "Projects/Angular.md",
+    "Projects/React/Pluralsight Working with Components in React 18.md",
+    "Books/Exploring Blazor.md",
     "Projects/React",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
-    "Books/Exploring Blazor.md",
-    "Tracking-Tasks.md",
     "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Books/2003 intereating books.md",
     "Web Development with Blazor.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "Books/Blazor in Action.md",
     "Dot NET 7/random.md",
-    "Quotes.md",
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
