@@ -23,6 +23,13 @@ a JavaScript syntax extension. It does not execute directly in the browser.
 > /* # __ PURE __ * / comments: help bundlers such as webpack remove redundant code in the bundling process
 
 ### Creating a component
+The StrictMode component will check the content inside it for potential problems and report them in the browser’s console. This is often referred to as React’s strict mode. The strict
+mode in React is different from the strict mode in JavaScript, but their purpose of eliminating bad code is the same.
+
+function Alert(){ return ( <div>abc xyz</div> ); }
+
+const Alert = () => { return ( <div>abc xyz</div> ); }
+
 ### Understanding imports and exports
 ### Using props
 ### Introducing React
