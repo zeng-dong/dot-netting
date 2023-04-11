@@ -1,3 +1,8 @@
+## timeline
+#### 2023.04.09
+start the solution
+
+
 ### commands
 dotnet new -l
 

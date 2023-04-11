@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/React/Udemy app with .NET and React.md",
+                "file": "Books/2003 intereating books.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5b851ca2576e83bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Learn React with TypeScript.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 503.5
   },
   "right": {
     "id": "73b18e4a2db5f597",
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/React/Udemy app with .NET and React.md",
+                "file": "Books/Learn React with TypeScript.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/React/Udemy app with .NET and React.md",
+                "file": "Books/Learn React with TypeScript.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/React/Udemy app with .NET and React.md"
+                "file": "Books/Learn React with TypeScript.md"
               }
             }
           },
@@ -156,22 +169,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "543f5d00edccea91",
+  "active": "5b851ca2576e83bb",
   "lastOpenFiles": [
+    "Books/2003 intereating books.md",
+    "Books/Learn React with TypeScript.md",
+    "Books/ZD book list.md",
+    "Books/Blazor in Action.md",
+    "Books/Blazor WebAssembly by Examples 2nd Edition.md",
+    "Books/Exploring Blazor.md",
+    "Books/Hands-on Azure Functions with Csharp.md",
+    "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Projects/React/Udemy app with .NET and React.md",
     "Dot NET 7/random.md",
     "Quotes.md",
     "Tracking-Tasks.md",
     "Projects/Angular.md",
     "Projects/React/Pluralsight Working with Components in React 18.md",
-    "Books/Exploring Blazor.md",
     "Projects/React",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
-    "Books/Mastering Minimal APIs in ASP.NET Core.md",
-    "Books/2003 intereating books.md",
     "Web Development with Blazor.md",
-    "Books/Blazor WebAssembly by Examples 2nd Edition.md",
-    "Books/Blazor in Action.md",
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
@@ -182,9 +198,6 @@
     "EF Core/pluralsights.md",
     "Code Magzine/Interests.md",
     "2023-02-26.md",
-    "2023-02-20.md",
-    "Books/ZD book list.md",
-    "2023-02-13.md",
-    "2023-02-16.md"
+    "2023-02-20.md"
   ]
 }
