@@ -31,6 +31,22 @@ function Alert(){ return ( <div>abc xyz</div> ); }
 const Alert = () => { return ( <div>abc xyz</div> ); }
 
 ### Understanding imports and exports
+import and export statements allow JavaScript to be structured into modules
+
+#### the importance of moduels
+By default, JavaScript code executes in what is called the global scope. This means code from one file is automatically available in another file. 
+Thankfully, JavaScript has a modules feature. A module’s functions and variables are isolated, so functions with the same name in different modules won’t collide.
+
+#### using export statements
+A module is a file with at least one export statement. 
+An export statement references members that are available to other modules. Think of this as making members publicly available. 
+A member can be a function, a class, or a variable within the file. Members not contained within the export statement are private and not available outside the module.
+
+#### using import statements
+**named** and **default** import statements
+
+Unlike default imports, the names of imported members must match the exported members
+
 ### Using props
 ### Introducing React
 ### Using state

@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8f9f8e6ac973463a",
+        "id": "401636351df3eb84",
         "type": "tabs",
         "children": [
           {
-            "id": "543f5d00edccea91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Books/2003 intereating books.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5b851ca2576e83bb",
+            "id": "bf80e54d61ecf00e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -169,9 +156,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b851ca2576e83bb",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
     "Books/2003 intereating books.md",
+    "Dot NET 7/random.md",
     "Books/Learn React with TypeScript.md",
     "Books/ZD book list.md",
     "Books/Blazor in Action.md",
@@ -180,7 +168,6 @@
     "Books/Hands-on Azure Functions with Csharp.md",
     "Books/Mastering Minimal APIs in ASP.NET Core.md",
     "Projects/React/Udemy app with .NET and React.md",
-    "Dot NET 7/random.md",
     "Quotes.md",
     "Tracking-Tasks.md",
     "Projects/Angular.md",
