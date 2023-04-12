@@ -48,9 +48,61 @@ A member can be a function, a class, or a variable within the file. Members not 
 Unlike default imports, the names of imported members must match the exported members
 
 ### Using props
+props make the component output flexible. Consumers of the component can pass appropriate props into the component to get the desired output
+
+The *children* prop is actually a special prop used for the main content of components
+
+- Props allow a component to be configured by the consuming JSX and are passed as JSX attributes
+- Props are received in the component definition in an object parameter and can then be used in its JSX
+
 ### Introducing React
 ### Using state
+The component **state** is a special variable containing information about the component’s current situation. For example, a component may be in a *loading* state or an *error* state.
+
+state is a key part of making a component interactive
+A change to a component state causes the component to refresh, more often referred to as **re-rendering**.
+
+State is defined using a useState function from React
+The useState function is one of React’s hooks
+The syntax for useState is as follows:
+``` javascript
+const [state, setState] = useState(initialState);
+```
+- The initial state value is passed into useState. If no value is passed, it will initially be undefined.
+- useState returns a tuple containing the current state value and a function to update the state value
+
+
 ### Using events
+**Events** are another key part of allowing a component to be interactive
+what React events are and how to use events on DOM elements
+how to create our own React events
+
+React events are a wrapper on top of the browser’s native events
+Event handlers in React are generally registered to an element in JSX using an attribute
+onClick={handleCloseClick}
+onClick={() => {}}
+
+#### custom event
+A custom event in a component is implemented by implementing a prop. 
+The prop is a function that is called to raise the event.
+It is common practice to start an event prop name with on
+   onClose
+
+#zdnote so this can be used for parent to pass in a function to be called when things happen
+
+What is wrong with how the click event is handled in the following JSX:
+```javascript
+<button click={() => console.log("clicked")}>
+Click me
+</button>;
+
+// The problem is that a click prop is passed rather than onClick. Here’s the corrected JSX
+<button onClick={() => console.log("clicked")}>
+Click me
+</button>;
+```
+
+
 
 
 ## chapter 2 introducing TypeScript
