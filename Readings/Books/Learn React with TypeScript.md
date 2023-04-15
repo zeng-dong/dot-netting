@@ -119,6 +119,18 @@ npx create-react-app myapp --template typescript
 ```
 
 ##### adding linting to visual studio code
+CRA has already installed and configured ESLint in our project
+editors can be integrated with ESLint
+install ESLint extension (Microsoft)
+open the Settings (File -> Preferences)
+search eslint: probe
+select the Worksapce tab
+make sure that Typescript and typescriptreact are on the list
+    if not, use the Add Item button
+
+##### adding code formatting
+
+
 
 
 ## chapter 4 using React Hooks
