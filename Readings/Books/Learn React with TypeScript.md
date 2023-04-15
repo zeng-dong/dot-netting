@@ -108,6 +108,18 @@ Click me
 ## chapter 2 introducing TypeScript
 
 ## chapter 3 setting up React and TypeScript
+#### create a project with webpack
+#zdnote : skip (2023.04.14)
+
+#### create a project with cra
+generates a React and TypeScript project with all the common tools we will likely require, including CSS and unit testing support
+command:
+``` cmd
+npx create-react-app myapp --template typescript
+```
+
+##### adding linting to visual studio code
+
 
 ## chapter 4 using React Hooks
 
