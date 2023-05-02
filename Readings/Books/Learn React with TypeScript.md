@@ -129,8 +129,57 @@ make sure that Typescript and typescriptreact are on the list
     if not, use the Add Item button
 
 ##### adding code formatting
+install and configure Prettier in the project:
+1. Install Prettier using the following command in the terminal in Visual Studio Code: 
+``` cmd
+npm i -D prettier
+```
+2. Prettier has overlapping style rules with ESLint, so install the following two libraries to allow Prettier to take responsibility for the styling rules from ESLint:
+```cmd
+npm i -D eslint-config-prettier eslint-plugin-prettier
+```
+eslint-config-prettier disables conflicting ESLint rules, and eslint-plugin-prettier is an ESLint rule that formats code using Prettier
+3. The ESLint configuration needs to be updated to allow Prettier to manage the styling rules. Create React App allows ESLint configuration overrides in an eslintConfig section in package.json. Add the Prettier rules to the eslintConfig section in package.json as follows:
+```json
+{
+...,
+"eslintConfig": {
+"extends": [
+"react-app",
+"react-app/jest",
+"plugin:prettier/recommended"
+]
+},
+...
+}
+```
+4. Prettier can be configured in a file called .prettierrc.json. Create this file with the following content in the root folder:
+```json
+{
+"printWidth": 100,
+"singleQuote": true,
+"semi": true,
+"tabWidth": 2,
+"trailingComma": "all",
+"endOfLine": "auto"
+}
+```
+We have specified the following:
+	- Lines wrap at 100 characters
+	- String qualifiers are single quotes
+	- Semicolons are placed at the end of statements
+	- The indentation level is two spaces
+	- A trailing comma is added to multi-line arrays and objects
+	- Existing line endings are maintained
 
+Visual Studio Code can integrate with Prettier to automatically format code when source files are saved. So, let’s install a Prettier extension into Visual Studio Code
+  open the Settings area in Visual Studio Code. Select the Workspace tab and make sure the Format On Save option is ticked
+  There is one more setting to set. This is the default formatter that Visual Studio Code should use to format code. Click the Workspace tab and make sure Default Formatter is set to Prettier - Code formatter 
 
+##### starting the app in dev mode
+```
+npm start
+```
 
 
 ## chapter 4 using React Hooks

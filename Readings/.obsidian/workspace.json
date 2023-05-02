@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Learn React with TypeScript.md",
+                "file": "Dot NET 7/random.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Learn React with TypeScript.md",
+                "file": "Dot NET 7/random.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Learn React with TypeScript.md",
+                "file": "Dot NET 7/random.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Learn React with TypeScript.md"
+                "file": "Dot NET 7/random.md"
               }
             }
           },
@@ -158,9 +158,10 @@
   },
   "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "Dot NET with Azure/Azure functions.md",
+    "Books/Learn React with TypeScript.md",
     "Books/2003 intereating books.md",
     "Dot NET 7/random.md",
-    "Books/Learn React with TypeScript.md",
     "Books/ZD book list.md",
     "Books/Blazor in Action.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
@@ -184,7 +185,6 @@
     "Dot NET 7/C# 11.md",
     "EF Core/pluralsights.md",
     "Code Magzine/Interests.md",
-    "2023-02-26.md",
-    "2023-02-20.md"
+    "2023-02-26.md"
   ]
 }
