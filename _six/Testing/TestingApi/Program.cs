@@ -13,6 +13,7 @@ public class Program
         builder.Services.AddSwaggerGen();
 
         builder.Services.AddTransient<IHumanResourceService, HumanResourceService>();
+        builder.Services.AddTransient<IAdminService, AdminService>();
 
         var app = builder.Build();
 
