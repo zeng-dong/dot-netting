@@ -15,7 +15,7 @@ public class HumanResourceService : IHumanResourceService
 
     public IList<Employee> ThoseDeservingBonus()
     {
-        return Random();
+        return Fixed();
     }
 
     public IList<Employee> Fixed()
