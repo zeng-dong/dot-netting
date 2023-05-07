@@ -145,20 +145,29 @@ The single HttpClient instance uses the connection limit to determine the max nu
 ## Avoid port exhaustion – Don’t use HttpClient as a request queue.
 
 
-## Only use DefaultRequestHeaders for headers that don’t change.
+### Smell: Temporary Field
 
-
-
-[HttpPost("categories/{id}/update")]  
-public async Task<ActionResult> Update([FromBody] CategoryUpdateDto dto, [FromRoute] Guid id)
+> Another class code smell is the temporary field. Temporary fields are instance variables that only argues in certain circumstances. They can cause confusion and create bugs if developers expect them to typically be in a valid state, but most of the time in the lifetime of the class they're not set or they're not valid. Frequently, these fields are used to pass state between methods within a class instead of using parameters. However, a better approach is typically to use parameters or to otherwise refactor the code so that the variables are always in a valid state for the entire lifetime of the class. Let's look at an example. It's not that unusual within a class to use temporary fields to hold state between methods, but it is a code smell that you should look for. In this example, you can see that calculate bonus will only work correctly if it's called after CalculateEarningsForBonus. In fact, any methods that try to use the temporary field _earningsForBonus will probably not behave as expected if this method is not called first. This kind of side effect is frequently a source of bugs. A better approach is to pass a parameter or call one method directly from another or if there are many such fields, then you can create a parameter object or create a method class by extracting the fields and the methods that use them into their own class. Let's look at one way that we could fix this. We can eliminate the temporary field by extracting the responsibility for calculating bonuses into another class. This is just one of several design approaches that you could take. For instance, if you preferred, you could avoid having the calculator depend on employee and instead just pass in the values that it needs. In any case, the Employee class no longer needs to have a temporary _earningsForBonus field that is only occasionally populated and is not valid unless a certain method has been called first.
 
 
 
 #mayfly by Cory House
 https://app.pluralsight.com/library/courses/csharp-clean-coding-principles/table-of-contents
 
-|>### Mayfly Variables
+### Mayfly Variables
 
-Can you imagine reading a chapter in a book where a dozen characters were listed up front? Traditional books introduce readers to new characters when it's time for them to truly interact with story. Introductions occur just in time. This avoids taxing the reader with a lot of information up front that's not yet value added and totally out of context. Yet, when I started coding, I remember thinking I was being very organized by initializing all of my variables together at the top. Now, the problem with this approach is it runs directly contrary to the Rule of 7. The reader has to keep track of all these variables throughout their reading and can't remove them from their finite memory until they go out of scope at the end of the function. Plus, anyone considering refactoring this code now has to consider the implications on the variables above. This adds unnecessary mental wait since any variable in scope must be considered. Developers run the code and their heads as they read, and having an excessive number of variables in scope is like asking our reader to spin multiple plates at once. Instead, well‑structured functions should contain only mayfly variables. So what's a mayfly variable? Well, the mayfly has one of the shortest lifespans of any creature on earth. Many only live for 30 minutes, and the oldest only live for about 24 hours. We should strive to give our variables mayfly‑style lifetimes. There's two simple ways to do this. First, we should initialize variables just in time. When the variable is needed, bring it to life. In the moment that it's no longer necessary, get it out of scope so that the mental weight is lifted. Second, if you're creating targeted functions that do one thing, you're going to end up with mayfly variables automatically. Short functions mean variables go in and out of scope in a flash, which makes the reader's job less taxing.
+> Can you imagine reading a chapter in a book where a dozen characters were listed up front? Traditional books introduce readers to new characters when it's time for them to truly interact with story. Introductions occur just in time. This avoids taxing the reader with a lot of information up front that's not yet value added and totally out of context. Yet, when I started coding, I remember thinking I was being very organized by initializing all of my variables together at the top. Now, the problem with this approach is it runs directly contrary to the Rule of 7. The reader has to keep track of all these variables throughout their reading and can't remove them from their finite memory until they go out of scope at the end of the function. Plus, anyone considering refactoring this code now has to consider the implications on the variables above. This adds unnecessary mental wait since any variable in scope must be considered. Developers run the code and their heads as they read, and having an excessive number of variables in scope is like asking our reader to spin multiple plates at once. Instead, well‑structured functions should contain only mayfly variables. So what's a mayfly variable? Well, the mayfly has one of the shortest lifespans of any creature on earth. Many only live for 30 minutes, and the oldest only live for about 24 hours. We should strive to give our variables mayfly‑style lifetimes. There's two simple ways to do this. First, we should initialize variables just in time. When the variable is needed, bring it to life. In the moment that it's no longer necessary, get it out of scope so that the mental weight is lifted. Second, if you're creating targeted functions that do one thing, you're going to end up with mayfly variables automatically. Short functions mean variables go in and out of scope in a flash, which makes the reader's job less taxing.
 
-test
+
+
+## Only use DefaultRequestHeaders for headers that don’t change.
+
+[HttpPost("categories/{id}/update")]  
+public async Task<ActionResult> Update([FromBody] CategoryUpdateDto dto, [FromRoute] Guid id)
+
+
+
+
+
+
+
