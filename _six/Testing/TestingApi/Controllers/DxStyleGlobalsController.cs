@@ -21,6 +21,18 @@ public class DxStyleGlobalsController : ControllerBase
         _hrService = humanResourceService;
     }
 
+    [HttpGet("add")]
+    public IActionResult Add(int a, int b)
+    {
+        return Ok(MyVeryComplexOperation(a, b));
+    }
+
+    private static int MyVeryComplexOperation(int a, int b)
+    {
+        /// 7000 lines of algorithm goes here.
+        return a + b;
+    }
+
     [HttpGet("Original")]
     public IActionResult List()
     {
