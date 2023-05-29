@@ -26,9 +26,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "90abc7757cce0f15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Books/Learning Angular.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -102,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Pro Angular.md",
+                "file": "Books/Learning Angular.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Pro Angular.md",
+                "file": "Books/Learning Angular.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Pro Angular.md"
+                "file": "Books/Learning Angular.md"
               }
             }
           },
@@ -175,8 +187,9 @@
   },
   "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
-    "Dot NET 7/random.md",
     "Books/Pro Angular.md",
+    "Books/Learning Angular.md",
+    "Dot NET 7/random.md",
     "Dot NET with Azure/Azure functions.md",
     "Books/Learn React with TypeScript.md",
     "Books/2003 intereating books.md",
@@ -201,7 +214,6 @@
     "2023-03-13.md",
     "Projects",
     "Dot NET 7/C# 11.md",
-    "EF Core/pluralsights.md",
-    "Code Magzine/Interests.md"
+    "EF Core/pluralsights.md"
   ]
 }
