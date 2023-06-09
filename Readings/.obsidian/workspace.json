@@ -33,14 +33,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Learning Angular.md",
+                "file": "Books/Pro Angular.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b82bb89366ee2f94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ASPNET Core Security.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -114,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Books/Learning Angular.md",
+                "file": "ASPNET Core Security.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Books/Learning Angular.md",
+                "file": "ASPNET Core Security.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -154,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Books/Learning Angular.md"
+                "file": "ASPNET Core Security.md"
               }
             }
           },
@@ -185,9 +197,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "b82bb89366ee2f94",
   "lastOpenFiles": [
     "Books/Pro Angular.md",
+    "ASPNET Core Security.md",
+    "Projects/Angular.md",
     "Books/Learning Angular.md",
     "Dot NET 7/random.md",
     "Dot NET with Azure/Azure functions.md",
@@ -202,7 +216,6 @@
     "Projects/React/Udemy app with .NET and React.md",
     "Quotes.md",
     "Tracking-Tasks.md",
-    "Projects/Angular.md",
     "Projects/React/Pluralsight Working with Components in React 18.md",
     "Projects/React",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
@@ -213,7 +226,6 @@
     "Learning DDD/zd notes.md",
     "2023-03-13.md",
     "Projects",
-    "Dot NET 7/C# 11.md",
-    "EF Core/pluralsights.md"
+    "Dot NET 7/C# 11.md"
   ]
 }
