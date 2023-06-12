@@ -22,7 +22,26 @@ builder.WebHost.UseKestrel(options =>
 });
 ```
  
+## Browser security headers
+### Referrer
+* contains the URL of the document that was loaded in the browser window or tab when the current HTTP request was made 
+* The Referer header is sent automatically by web browsers, so it’s not an application feature
+* To give developers control over when to send the header, and if so, whether to limit the information in it, Referrer Policy was created
+* The central element of Referrer Policy is the Referrer-Policy HTTP header.
 
+to use Referrer Policy from an ASP.NET Core application with kestrel
+```c#
+app.Use(async (context, next) => {
+	context.Response.Headers.Add(             
+        "Referrer-Policy", "no-referrer");
+    await next.Invoke();
+})
+
+// or it is also possible to set the HTTP header in an individual page:
+HttpContext.Response.Headers.Add("Referrer-Policy", "no-referrer");
+
+```
+and make sure that you are using this code snippet before any other middleware that might cause a redirect
 
 
 # Andrew Lock nuget package
