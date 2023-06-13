@@ -1,13 +1,14 @@
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Net.Http.Headers;
 using SecurityHeaders;
 using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//builder.WebHost.ConfigureKestrel(serverOptions =>
-//{
-//    serverOptions.AddServerHeader = false;
-//});
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.AddServerHeader = false;
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -23,6 +24,22 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseHsts(opt => opt.MaxAge(365)
+    .IncludeSubdomains());
+app.UseXContentTypeOptions();
+app.UseXXssProtection(opt => opt.EnabledWithBlockMode());
+app.UseXfo(opt => opt.SameOrigin());
+app.UseReferrerPolicy(opt => opt.NoReferrer());
+app.UseCsp(opt => opt
+    .DefaultSources(source => source.Self())
+    .StyleSources(source => source.Self()
+        .UnsafeInline())
+    .ScriptSources(source => source.Self()
+        .UnsafeInline()
+        .UnsafeEval())
+);
+
+/*
 ///app.UseSecurityHeaders();
 var policyCollection = new HeaderPolicyCollection()
         .AddFrameOptionsDeny()
@@ -52,6 +69,7 @@ var policyCollection = new HeaderPolicyCollection()
         .AddCustomHeader("X-My-Test-Header", "Header value");
 
 app.UseSecurityHeaders(policyCollection);
+*/
 
 app.UseHttpsRedirection();
 
