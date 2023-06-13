@@ -1,3 +1,5 @@
+using SecurityHeaders;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.WebHost.ConfigureKestrel(serverOptions =>
@@ -20,6 +22,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseHttpMethodValidation();
 
 app.UseAuthorization();
 

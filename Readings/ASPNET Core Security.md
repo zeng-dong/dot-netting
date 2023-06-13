@@ -43,6 +43,9 @@ HttpContext.Response.Headers.Add("Referrer-Policy", "no-referrer");
 ```
 and make sure that you are using this code snippet before any other middleware that might cause a redirect
 
+### Feature and permission policy
+
+
 
 # Andrew Lock nuget package
 [github](https://github.com/andrewlock/NetEscapades.AspNetCore.SecurityHeaders)
