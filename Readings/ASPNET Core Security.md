@@ -1,3 +1,9 @@
+# security headers resources
+* [https://blog.elmah.io/the-asp-net-core-security-headers-guide/](https://blog.elmah.io/the-asp-net-core-security-headers-guide/)
+* [SCOTT HANSELMAN: Easily adding Security Headers to your ASP.NET Core web app and getting an A grade](https://www.hanselman.com/blog/easily-adding-security-headers-to-your-aspnet-core-web-app-and-getting-an-a-grade)
+* [Manning's online book ASP.NET Core Security](https://livebook.manning.com/book/asp.net-core-security/chapter-9/v-11/)
+
+
 
 # HTTP headers
 from Manning ASP.NET Core Security, chapter 9
@@ -45,6 +51,15 @@ and make sure that you are using this code snippet before any other middleware t
 
 ### Feature and permission policy
 
+With Feature Policy, the W3C tried to implement a standard that limits the use of browser features and APIs. 
+
+And although Feature Policy enjoyed very good browser support (basically everywhere except for Internet Explorer), the team behind the specification restarted their efforts and came up with Permissions Policy
+
+The consequence for us is that we need to look at both
+
+Feature Policy uses the Feature-Policy HTTP header, which contains a list of browser features and APIs as well as when the application is allowed to use them
+
+Permissions Policy, on the other hand, uses the Permissions-Policy HTTP header and a different syntax
 
 
 # Andrew Lock nuget package
