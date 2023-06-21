@@ -11,48 +11,27 @@
             "id": "6004aed3b0e06dd7",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "830a619b700afdfc",
-            "type": "leaf",
-            "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Pro Angular.md",
+                "file": "Projects/Angular.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "90abc7757cce0f15",
+            "id": "09c992b1e8cabdd7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Books/Pro Angular.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b82bb89366ee2f94",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ASPNET Core Security.md",
+                "file": "Git.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -126,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ASPNET Core Security.md",
+                "file": "Projects/Angular.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ASPNET Core Security.md",
+                "file": "Projects/Angular.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ASPNET Core Security.md"
+                "file": "Projects/Angular.md"
               }
             }
           },
@@ -197,10 +176,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b82bb89366ee2f94",
+  "active": "6004aed3b0e06dd7",
   "lastOpenFiles": [
+    "Web Development with Blazor.md",
+    "Git.md",
     "Books/Pro Angular.md",
-    "ASPNET Core Security.md",
+    "Dot NET with Azure/ASPNET Core Security.md",
     "Projects/Angular.md",
     "Books/Learning Angular.md",
     "Dot NET 7/random.md",
@@ -219,13 +200,11 @@
     "Projects/React/Pluralsight Working with Components in React 18.md",
     "Projects/React",
     "Books/Git and Visual Studio 2022 Pluralsight.md",
-    "Web Development with Blazor.md",
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
     "Learning DDD/zd notes.md",
     "2023-03-13.md",
-    "Projects",
-    "Dot NET 7/C# 11.md"
+    "Projects"
   ]
 }

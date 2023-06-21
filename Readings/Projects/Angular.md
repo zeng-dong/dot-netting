@@ -58,3 +58,48 @@ create a shared module:
 ng g m shared\material --dry-run --flat
 remove commons, remove imports, only exports all material modules
 imports this material module in app.module
+
+### create the domo module
+ng g m demo\demo --dry-run --flat --routing
+ng g c demo/buttons --dry-run --skip-tests --inline-style --inline-template
+
+ng g c demo/flexbox --dry-run --skip-tests
+
+#### install flex styling
+npm i -s @angluar/flex-layout@14
+
+
+# ngrx fundamentals project
+copied Duncan Hunter's demo-0 and npm install, npm start: good to go
+
+slices in store
+
+eager global and lazy feature state
+
+## install and init store
+1. npm install @ngrx/store
+2. import StoreModule in app.module and imports StoreModule.forRoot({})
+3. import StoreModule in product.module and imports StoreModule.forFeature('products', {})
+4. inject Store into ProductsPageComponent
+
+
+# routing with APM
+clone and copy starter v14
+npm install => npm start: works (node is v16.15.0)
+
+## setting up routing
+### define base path
+* base : ```<base href="/">```
+* deploy to prod: manual set or use cli: ng build --base-href /APM/
+
+### import router
+* router module; it provides
+	* service: to manage navigation and url manipulation
+	* configuration for configuring our routes
+	* directives for activating and displaying routes
+
+
+
+* configure routes
+* place template
+* activate routes
