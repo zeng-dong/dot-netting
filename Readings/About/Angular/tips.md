@@ -4,8 +4,7 @@
 ### override
 https://stackoverflow.com/questions/63905041/override-browser-back-button-functionality-in-angular
 
-```typesript
-```javascript
+```typescript
 import { LocationStrategy } from '@angular/common';
 
 @Component({
@@ -24,7 +23,6 @@ export class AppComponent {
   }
 }
 ```
-
 
 ### disable browser back button popstate
 ```typescript
@@ -47,3 +45,41 @@ import { LocationStrategy } from '@angular/common';
 
 ### Angular Location Service: go/back/forward
 https://www.tektutorialshub.com/angular/angular-location-service/
+
+
+## don't nest subscribes
+[link](https://www.youtube.com/watch?v=KiJ-e5QuWe4)
+Deborah Kurata
+
+```typescript
+user?: User;
+todos: ToDo[] = [];
+
+getUser(userName: string): void {
+	this.http.get<User>(`${this.userUrl}/${userName}`).pipe(
+		tap(user => this.user = user),
+		tap( user => this.http.get<ToDo[]>(`${this.todoUrl}?userId=$[user.Id]`).pipe(
+			tap( todos => this.todos = todos )
+		).subscribe(console.log)			
+		),
+	).subscribe(console.log);
+}
+
+/// we can use higher-order mapping operators
+
+user?: User;
+todos: ToDo[] = [];
+
+getUser(userName: string): void {
+	this.http.get<User>(`${this.userUrl}/${userName}`).pipe(
+		tap ( user => this.user = user ),
+		switchMap ( user => 
+			this.http.get<ToDo[]>( `${this.todoUrl}?userId=${user.id}` ).pipe(
+				tap(todo => this.todos = todos )
+			)
+		)
+	).subscribe();
+}
+
+
+```

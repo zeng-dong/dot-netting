@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects/Angular.md",
+                "file": "About/Angular/tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -189,14 +188,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7fe6202ae9dfd05b",
+  "active": "6004aed3b0e06dd7",
   "lastOpenFiles": [
     "Projects/Angular.md",
     "About/Angular/tips.md",
+    "About/React/Learning.md",
+    "Git.md",
+    "About/React",
     "About/Angular",
     "About",
     "Web Development with Blazor.md",
-    "Git.md",
     "Books/Pro Angular.md",
     "Dot NET with Azure/ASPNET Core Security.md",
     "Books/Learning Angular.md",
@@ -219,7 +220,6 @@
     "keys in md.md",
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
-    "Learning DDD/zd notes.md",
     "Projects"
   ]
 }
