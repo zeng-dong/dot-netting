@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "7fe6202ae9dfd05b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Angular/tips.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "09c992b1e8cabdd7",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -105,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Angular.md",
+                "file": "About/Angular/tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Projects/Angular.md",
+                "file": "About/Angular/tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Projects/Angular.md"
+                "file": "About/Angular/tips.md"
               }
             }
           },
@@ -176,13 +189,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6004aed3b0e06dd7",
+  "active": "7fe6202ae9dfd05b",
   "lastOpenFiles": [
+    "Projects/Angular.md",
+    "About/Angular/tips.md",
+    "About/Angular",
+    "About",
     "Web Development with Blazor.md",
     "Git.md",
     "Books/Pro Angular.md",
     "Dot NET with Azure/ASPNET Core Security.md",
-    "Projects/Angular.md",
     "Books/Learning Angular.md",
     "Dot NET 7/random.md",
     "Dot NET with Azure/Azure functions.md",
@@ -204,7 +220,6 @@
     "Books/Implementing event-driven microservices architecture in .NET 7.md",
     "Dot NET 7/json.md",
     "Learning DDD/zd notes.md",
-    "2023-03-13.md",
     "Projects"
   ]
 }
