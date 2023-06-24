@@ -83,3 +83,34 @@ getUser(userName: string): void {
 
 
 ```
+
+
+
+## Deborah Kurata's series on higher order mapping
+[link](https://dev.to/deborahk/inner-observables-and-higher-order-mapping-hhe)
+### inner observalbes and higher order mapping
+
+### higher-order mapping operators
+they are used to map inner Observables
+* concatMap
+* mergeMap
+* switchMap
+
+Each higher-order mapping operator:
+
+- Automatically subscribes to the inner Observable
+- Flattens the resulting Observable, returning `Observable<T>` instead of `Observable<Observable<T>>`
+- Automatically unsubscribe from the inner Observable
+
+```
+products$ = this.categorySelected$
+  .pipe(
+       switchMap(catId=>
+            this.http.get<Product[]>(`${this.url}?cat=${catId}`))
+  );
+```
+
+In this code, every time the user selects a new category, `this.categorySelected$` emits the id of the selected category. 
+That id is piped through a higher-order mapping operator (`switchMap` in this case). The `switchMap` automatically subscribes to the inner Observable, flattens the result (emitting an array of type `Product[]` instead of `Observable<Product[]>`), and unsubscribes from the inner Observable.
+
+### concatMap
