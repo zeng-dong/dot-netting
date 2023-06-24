@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Typescript/tips.md",
+                "file": "About/Angular/tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -130,7 +130,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Typescript/tips.md",
+                "file": "About/Angular/tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Typescript/tips.md",
+                "file": "About/Angular/tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -170,7 +170,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Typescript/tips.md"
+                "file": "About/Angular/tips.md"
               }
             }
           },
@@ -201,10 +201,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "94ecc7637015aa50",
   "lastOpenFiles": [
-    "About/Angular/tips.md",
     "About/Typescript/tips.md",
+    "About/Angular/tips.md",
     "Quotes.md",
     "About/Typescript/tips",
     "About/Typescript",

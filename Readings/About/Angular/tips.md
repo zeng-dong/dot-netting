@@ -114,3 +114,31 @@ In this code, every time the user selects a new category, `this.categorySelected
 That id is piped through a higher-order mapping operator (`switchMap` in this case). The `switchMap` automatically subscribes to the inner Observable, flattens the result (emitting an array of type `Product[]` instead of `Observable<Product[]>`), and unsubscribes from the inner Observable.
 
 ### concatMap
+
+
+# refresh button
+## disable
+[link](https://www.itsolutionstuff.com/post/how-to-disable-browser-refresh-button-in-angularexample.html)
+
+```typescript
+import { Component, OnInit } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+
+export class AppComponent implements OnInit  {
+  name = 'Angular';
+
+  ngOnInit(){
+     window.addEventListener("keyup", disableF5);
+     window.addEventListener("keydown", disableF5);
+
+    function disableF5(e) {
+       if ((e.which || e.keyCode) == 116) e.preventDefault(); 
+    };
+  }
+}
+```
