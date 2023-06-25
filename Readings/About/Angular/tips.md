@@ -142,3 +142,15 @@ export class AppComponent implements OnInit  {
   }
 }
 ```
+
+
+
+# to read:
+https://dev.to/angular/simple-yet-powerful-state-management-in-angular-with-rxjs-4f8g
+http://getgoingit.blogspot.com/2018/05/passing-value-from-one-observable-to.html
+https://www.htmlgoodies.com/javascript/executing-rxjs-6-observables-in-order/
+
+(https://gist.github.com/HighSoftWare96/4cd6380371553e3f37b227ae7431db92#how-to-prevent-angular-page-refresh)How to prevent Angular page refresh?
+https://gist.github.com/HighSoftWare96/4cd6380371553e3f37b227ae7431db92
+
+[5 RxJs-Angular pitfalls to be aware of](https://blog.angulartraining.com/5-rxjs-angular-pitfalls-to-be-aware-of-160adfd402d8)
