@@ -85,6 +85,54 @@ getUser(userName: string): void {
 ```
 
 
+## Deborah Kurata on composing 
+[RxJS Best Practices Aren't Always Black and White](https://www.youtube.com/watch?v=rQTSMbeqv7I)
+
+### Procedural vs Declarative
+* Procedural
+```typescript
+getUsers(): Observable<User[]> {
+	return this.http.get<User[]>(this.userUrl).pipe(
+		catchError(this.handleError)
+	);
+}
+```
+* Declarative: declare a variable
+```typescript
+users$ = this.http.get<User[]>(this.userUrl).pipe(
+	catchError(this.handleError)
+);
+```
+
+instead of thinking about something you have to pass to a function, thinking about something you can react to
+
+so
+#### React to User Actions
+1. Declare an action stream
+```typescript
+// Action stream
+private userSelectedSubject = new Subject<number>();
+userSelectedAction$ = this.userSelectedSubject.asObservable();
+```
+2. Emit a notification when the action occurs
+```typescript
+onSelected(userId: number): void {
+this.userSelectedSubject.next(userId);
+}
+```
+3. React to that notification
+```typescript
+selectedUser$ = this.userSelectedAction$.pipe(
+	switchMap((userId) =>
+		this.http.get<User>(`${this.userUrl}/${userId}`).pipe(
+			catchError(this.handleError)
+		))
+	);
+```
+
+```
+
+
 
 ## Deborah Kurata's series on higher order mapping
 [link](https://dev.to/deborahk/inner-observables-and-higher-order-mapping-hhe)
@@ -137,6 +185,7 @@ export class AppComponent implements OnInit  {
      window.addEventListener("keydown", disableF5);
 
     function disableF5(e) {
+	    
        if ((e.which || e.keyCode) == 116) e.preventDefault(); 
     };
   }
