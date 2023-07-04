@@ -117,7 +117,7 @@ userSelectedAction$ = this.userSelectedSubject.asObservable();
 2. Emit a notification when the action occurs
 ```typescript
 onSelected(userId: number): void {
-this.userSelectedSubject.next(userId);
+	this.userSelectedSubject.next(userId);
 }
 ```
 3. React to that notification
@@ -129,6 +129,26 @@ selectedUser$ = this.userSelectedAction$.pipe(
 		))
 	);
 ```
+
+#### when to use forkJoin
+Great for getting related data for each item in an array
+```typescript
+usersWithTodos$ = this.http.get<User[]>(this.userUrl).pipe(
+	mergeMap(users => 
+		forkJoin(users.map(user =>
+			this.http.get<ToDo[]>(`${this.todoUrl}?userId=${user.id}`)
+				.pipe(
+					map(todos => ({
+						user,
+						todos
+					} as UserData))
+				))
+			))
+		);
+```
+
+
+
 
 ```
 
@@ -203,3 +223,21 @@ https://www.htmlgoodies.com/javascript/executing-rxjs-6-observables-in-order/
 https://gist.github.com/HighSoftWare96/4cd6380371553e3f37b227ae7431db92
 
 [5 RxJs-Angular pitfalls to be aware of](https://blog.angulartraining.com/5-rxjs-angular-pitfalls-to-be-aware-of-160adfd402d8)
+
+[Form validation done right with vest](https://www.youtube.com/watch?v=EMUAtQlh9Ko)
+
+
+
+# unit test
+This one is for beginner and is very practical: https://www.youtube.com/@WebTechTalk/videos
+	* no git repo but easy to follow
+
+This one seems covering a lot of things (waitforasync, by.css, debug tests, etc.) in one hour:
+https://www.youtube.com/watch?v=ic_Ez8PO_jc
+
+This one demos how to test a component using shallow integration to pure isolated:
+[Angular component testing - Overcoming the hurdles](https://www.youtube.com/watch?v=xJ45MGDAi6c)
+code: https://bitbucket.org/LMFinney/unit-testing
+
+Testable angular forms ng-conf 2022: https://www.youtube.com/watch?v=rWXWXWMy2lE
+
