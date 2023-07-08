@@ -238,6 +238,12 @@ https://www.youtube.com/watch?v=ic_Ez8PO_jc
 This one demos how to test a component using shallow integration to pure isolated:
 [Angular component testing - Overcoming the hurdles](https://www.youtube.com/watch?v=xJ45MGDAi6c)
 code: https://bitbucket.org/LMFinney/unit-testing
+and also they (angular boot camp) have a github examples: https://stackblitz.com/github/AngularBootCamp/async-unit-tests
+
+this one has detailed setup for jest (removing jasmine and karma, install jest, ...):
+https://www.youtube.com/watch?v=31or_m_xAA0
 
 Testable angular forms ng-conf 2022: https://www.youtube.com/watch?v=rWXWXWMy2lE
 
+Testing Angular components with Material Dialog
+https://medium.com/@aleixsuau/testing-angular-components-with-material-dialog-mddialog-1ae658b4e4b3
