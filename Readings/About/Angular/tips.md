@@ -1,5 +1,8 @@
 
 # back button
+npm package [angular-disable-browser-back-button](https://github.com/Zatikyan/angular-disable-browser-back-button)]
+
+
 
 ### override
 https://stackoverflow.com/questions/63905041/override-browser-back-button-functionality-in-angular
