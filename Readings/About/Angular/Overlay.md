@@ -25,3 +25,15 @@ We are trying to use and create the overlay using the different property provide
 - **getFullscreenElement:** Open element and its child element into the Fullscreen mode.
 - **global:** This method is used to create the global position for overlay.
 - **add:** This method is used to add a new overlay on the list of the available overlay.
+
+
+# Implementing a Page Overlay Loader With Angular CDK
+https://betterprogramming.pub/implementing-a-global-overlay-loader-with-angular-e31ab4665cb1
+
+## Be UX friendly by adding a loader to your pages
+
+```typescript
+function fetchDataWithLatency(millisecond: number) {|
+	return of(ELEMENT_DATA).pipe(delay(millisecond))|
+}
+```

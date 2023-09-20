@@ -38,3 +38,45 @@ export class SomeComponent {
 <my-data-component *ngIf="myData$ | async as data" [data]="data"></my-data-component>
 ```
 
+
+## One Observable to rule them all
+
+Instead of driving the UI with three separate `Observable`s, we can create a "state" interface to wrap the entire state of the request (loading, error and data) and observe a stream of the state changes:
+
+```typescript
+export interface HttpRequestState<T> {  
+	isLoading: boolean;  
+	value?: T;  
+	error?: HttpErrorResponse | Error;
+}
+
+export class SomeComponent {  
+	constructor(    
+		private readonly activatedRoute: ActivatedRoute,    
+		private readonly myDataService: MyDataService  ) {}  
+	
+	readonly myDataState$: Observable<HttpRequestState<MyData>> = this.activatedRoute.params.pipe(    
+		pluck('id'),    
+		switchMap(      
+			(id) => this.myDataService.getMyData(id).pipe(        
+				map((value) => ({isLoading: false, value})),        
+				catchError(error => of({isLoading: false, error})),        
+				startWith({isLoading: true})      
+			)    
+		),  
+	);
+}
+```
+
+Now we have a much simpler pipe, and just one `Observable`. We can use this in our HTML template like so:
+
+```html
+<ng-container *ngIf="myDataState$ | async as data">  
+	<my-loading-spinner *ngIf="data.isLoading"></my-loading-spinner>  
+	
+	<my-error-component *ngIf="data.error" [error]="data.error"></my-error-component>  
+	
+	<my-data-component *ngIf="data.value" [data]="data.value"></my-data-component>
+	
+</ng-container>
+```

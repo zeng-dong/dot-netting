@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/Overlay.md",
+                "file": "About/Angular/tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/Handling data loading states.md",
+                "file": "About/Angular/tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/Handling data loading states.md",
+                "file": "About/Angular/tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/Handling data loading states.md"
+                "file": "About/Angular/tips.md"
               }
             }
           },
@@ -185,14 +184,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "777a41390a88ab92",
   "lastOpenFiles": [
-    "About/Angular/Overlay.md",
     "About/Angular/Handling data loading states.md",
+    "Projects/Angular.md",
     "About/Angular/tips.md",
+    "About/Angular/Overlay.md",
     "About/Typescript/tips.md",
     "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
-    "Projects/Angular.md",
     "Git.md",
     "Books/Reactive Patterns with RxJS for Angular.md",
     "Quotes.md",

@@ -250,3 +250,20 @@ Testable angular forms ng-conf 2022: https://www.youtube.com/watch?v=rWXWXWMy2lE
 
 Testing Angular components with Material Dialog
 https://medium.com/@aleixsuau/testing-angular-components-with-material-dialog-mddialog-1ae658b4e4b3
+
+# custom validator
+```typescript
+
+export function notEarlierThan(numberOfDays: number): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+    var inputDate = new Date(c.value);
+    var comparedToDate = new Date(new Date().setDate(new Date().getDate() - numberOfDays));
+
+    if (inputDate < comparedToDate) {
+      return { 'notEarlierThan': true };
+    }
+    return null;
+  }
+}
+
+```
