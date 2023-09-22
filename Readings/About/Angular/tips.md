@@ -267,3 +267,41 @@ export function notEarlierThan(numberOfDays: number): ValidatorFn {
 }
 
 ```
+
+
+# higher-order mapping operators
+
+```typescript
+
+supplierWitherMap$ = of(1, 5, 8)
+	.pipe(
+		map(id => this.http.get<Supllier>(`https://someapi/supplier/${id}`))
+	);
+...
+this.supplierWitherMap$.subscribe( 
+	i => console.log('map result', i)
+);           // map result Observable {source: Observable, operator: f}
+
+this.supplierWitherMap$.subscribe( o => o.subscribe(
+	i => console.log('map result', i)
+));           // map result {id: 1, name: 'supplier one', ...}
+
+
+```
+
+* family of operators: xxxMap();
+* map each value
+	* from a source(outer) Observable
+	* to a new(inner) Oberservable
+* automatically subscribe to/unsubscribe from inner Observables
+* flattern the result
+* emit the resulting values to the output Observable
+
+
+### using concatMap for above nested subs
+```typescript
+of(1, 5, 8)
+	.pipe(
+		concatMap(id => this.http.get<Apple>(`${this.url}/${id}`))
+	).subscribe(item => console.log(item));
+```
