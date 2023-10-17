@@ -7,6 +7,8 @@
 6. in vs code config launch: 
 	1. type: node
 	2. program: ${file}
+		so we can use a terminal to issue 'tsc -w' 
+		and use debug console to 'F5'
 
 # add jest
 npm i --save-dev jest
