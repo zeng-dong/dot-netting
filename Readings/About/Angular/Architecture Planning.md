@@ -38,3 +38,36 @@
 
 
 
+
+# [style guide]( https://angular.io/guide/styleguide)
+
+
+# other considerations
+Accessibility
+i18n
+environments
+ci/cd
+cdn,container,server
+unit testing
+end-to-end testing
+APIs
+......
+
+# Organizing Features and Modules
+
+## Organizing Features
+LIFT
+
+### Convention-based vs Feature-based
+- ng help in feature-based
+	
+## Feature Modules
+
+
+## Core and Shared Modules
+
+
+
+
+
+
