@@ -305,3 +305,16 @@ of(1, 5, 8)
 		concatMap(id => this.http.get<Apple>(`${this.url}/${id}`))
 	).subscribe(item => console.log(item));
 ```
+
+
+# I used to put error
+## like this:
+```html
+<mat-form-field>
+  <input formControlName="dob" matInput placeholder="Birthdate" id="dob" />
+  <mat-error *ngIf="entityForm.controls.dob.invalid && entityForm.controls.dob.errors.minimalAge">Must be >= 18 years</mat-error>
+  <mat-error *ngIf="entityForm.controls.dob.invalid && entityForm.controls.dob.errors.required">Birthdate is required</mat-error>
+  <mat-error *ngIf="entityForm.controls.dob.invalid && entityForm.controls.dob.errors.usDateFormat">Must be in US format: mm/dd/yyyy</mat-error>
+  <mat-error *ngIf="entityForm.controls.dob.invalid && entityForm.controls.dob.errors.pizzaDateRange">{{dataService.PizzaDateRangeErrorMessage }}</mat-error>
+</mat-form-field>
+```
