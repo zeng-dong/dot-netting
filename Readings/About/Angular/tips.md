@@ -318,3 +318,16 @@ of(1, 5, 8)
   <mat-error *ngIf="entityForm.controls.dob.invalid && entityForm.controls.dob.errors.pizzaDateRange">{{dataService.PizzaDateRangeErrorMessage }}</mat-error>
 </mat-form-field>
 ```
+
+```typescript
+
+function range(min: number, max: number): ValidatorFn {
+	return (c: AbstractControl): {[key: string]: boolean} | null => {
+		if ( c.value < min || c.value > max ){
+			return {'range': true };
+		}
+		return null;
+	}
+}
+
+```
