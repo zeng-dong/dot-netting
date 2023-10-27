@@ -319,6 +319,29 @@ of(1, 5, 8)
 </mat-form-field>
 ```
 
+## or like this
+```html
+<span class="invalid-feedback">
+            <span *ngIf="customerForm.get('lastName').errors?.required">
+              Please enter your last name.
+            </span>
+            <span *ngIf="customerForm.get('lastName').errors?.maxlength">
+              The last name must be less than 50 characters.
+            </span>
+          </span>
+```
+and at the same time style the input like this:
+```html
+ <input class="form-control"
+                 id="lastNameId"
+                 type="text"
+                 placeholder="Last Name (required)"
+                 formControlName="lastName"
+                 [ngClass]="{'is-invalid': (customerForm.get('lastName').touched ||
+                                            customerForm.get('lastName').dirty) &&
+                                            !customerForm.get('lastName').valid }" />
+```
+
 ```typescript
 
 function range(min: number, max: number): ValidatorFn {
