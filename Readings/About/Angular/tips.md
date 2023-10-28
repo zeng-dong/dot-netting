@@ -319,6 +319,15 @@ of(1, 5, 8)
 </mat-form-field>
 ```
 
+
+### use a getter and then
+firstName.invalid && firstName.touched
+### to satisfy typescript and also detect specific validity
+firstName.errors?.['required'] && firstName.touched
+
+### to highlight an input when it is invalid
+<input formControlName="firstName" [class.error]="firstName.invalid && firsName.touched" ...
+	   
 ## or like this
 ```html
 <span class="invalid-feedback">
@@ -354,3 +363,4 @@ function range(min: number, max: number): ValidatorFn {
 }
 
 ```
+
