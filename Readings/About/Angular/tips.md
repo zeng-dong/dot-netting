@@ -364,3 +364,28 @@ function range(min: number, max: number): ValidatorFn {
 
 ```
 
+# reacting to changes
+
+```typescript
+
+controls.name.valueChanges
+	//.pipe(distinctUntilChanged( (a, b) => JSON.stringify(a) === JSON.stringify(b) ))
+	.pipe(distinctUntilChanged( this.stringifyCompare ))   // prevent potential infinite loop when value really changed
+	.subscribe({
+	next: (value) => {
+		if ( value === ){
+			fg.controls.email.addValidators([Validators.required]);
+		}
+		else {
+			fg.controls.email.removeValidators([Validators.required]);
+		}
+		controls.email.updateValueAndValidity()	      // infinite loop possible  // use distinctUntilChanged
+	
+	}
+});
+
+stringifyCompare(a: any, b: any): boolean {
+	return JSON.stringify(a) === JSON.stringify(b);
+}
+
+```
