@@ -366,6 +366,7 @@ function range(min: number, max: number): ValidatorFn {
 
 # reacting to changes
 
+## react to value changes
 ```typescript
 
 controls.name.valueChanges
@@ -386,6 +387,43 @@ controls.name.valueChanges
 
 stringifyCompare(a: any, b: any): boolean {
 	return JSON.stringify(a) === JSON.stringify(b);
+}
+
+```
+
+## adding reactive transformations
+- more of rxjs
+
+### debounceTime transformation
+
+```typescript
+subscribeToAddressChanges() {
+	const addressGroup = this.form.controls.address;
+	addressGroup.valueChanges.
+		pipe(
+			debounceTime(2000),
+			distinctUntilChanged( this.stringifyCompare ))   
+		.subscribe({
+			next: (v) => {
+				for( const controlName in addressGroup.controls ) {
+					addressGroup.get(controlName)?.removeValidators([Validators.required]);
+					addressGroup.get(controlName)?.updateValueAndValidity();
+				}
+			};
+		});
+
+	 // we sub to this valueChanges a seconde time
+	addressGroup.valueChanges.
+		pipe(distinctUntilChanged( this.stringifyCompare ))   
+		.subscribe({
+			next: (v) => {
+				for( const controlName in addressGroup.controls ) {
+					addressGroup.get(controlName)?.addValidators([Validators.required]);
+					addressGroup.get(controlName)?.updateValueAndValidity();
+				}
+			};
+		})
+
 }
 
 ```
