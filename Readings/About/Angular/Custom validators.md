@@ -117,3 +117,246 @@ describe('CustomValidatorsService', () => {
   });
 });
 ```
+
+## example 2
+```typescript
+
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+
+import { CONSTANTS } from '../constants';
+
+export class PasswordValidator {
+  static validPassword(isRequired: boolean = false): ValidatorFn {
+    return (control: AbstractControl): ValidationErrors | null => {
+      if (!control.value) {
+        return isRequired ? { invalidPassword: `Password is required.` } : null;
+      }
+      if (control.value.length < 8) {
+        return { invalidPassword: `Password is too short.` };
+      }
+      if (!CONSTANTS.SYMBOL_REGEX.test(control.value)) {
+        return {
+          invalidPassword: `Password requires at least one special character.`,
+        };
+      }
+      if (!CONSTANTS.DIGIT_REGEX.test(control.value)) {
+        return {
+          invalidPassword: `Password requires at least one numeric character.`,
+        };
+      }
+
+      return null;
+    };
+  }
+}
+
+
+import { FormControl } from '@angular/forms';
+
+import { PasswordValidator } from './password-validator';
+
+describe('[Unit] PasswordValidator', () => {
+  describe('validPassword() Required', () => {
+    const passwordValidator = PasswordValidator.validPassword(true);
+    const passwordControl = new FormControl('');
+
+    it(`should return null if value matches RegEx`, () => {
+      passwordControl.setValue('passwordTest1!');
+      expect(passwordValidator(passwordControl)).toEqual(null);
+    });
+
+    it(`should return { invalidPassword: 'Password is required.' } when value is an empty string`, () => {
+      passwordControl.setValue('');
+      const expectedValue = { invalidPassword: 'Password is required.' };
+      expect(passwordValidator(passwordControl)).toEqual(expectedValue);
+    });
+
+    it(`should return { invalidPassword: 'Password is too short.' } when value is too short`, () => {
+      passwordControl.setValue('test');
+      const expectedValue = { invalidPassword: 'Password is too short.' };
+      expect(passwordValidator(passwordControl)).toEqual(expectedValue);
+    });
+
+    it(`should return { invalidPassword: 'Password requires at least one special character.' } when missing special characters`, () => {
+      passwordControl.setValue('passwordTest1');
+      const expectedValue = {
+        invalidPassword: 'Password requires at least one special character.',
+      };
+      expect(passwordValidator(passwordControl)).toEqual(expectedValue);
+    });
+
+    it(`should return { invalidPassword: 'Password requires at least one numeric character.' } when missing numeric characters`, () => {
+      passwordControl.setValue('passwordTest!');
+      const expectedValue = {
+        invalidPassword: 'Password requires at least one numeric character.',
+      };
+      expect(passwordValidator(passwordControl)).toEqual(expectedValue);
+    });
+  });
+
+  describe('validPassword() Not Required', () => {
+    it(`should return null when value is an empty string`, () => {
+      const passwordValidator = PasswordValidator.validPassword(false);
+      const passwordControl = new FormControl('');
+      passwordControl.setValue('');
+      expect(passwordValidator(passwordControl)).toEqual(null);
+    });
+
+    it(`should return null when value is an empty string`, () => {
+      const passwordValidator = PasswordValidator.validPassword();
+      const passwordControl = new FormControl('');
+      passwordControl.setValue('');
+      expect(passwordValidator(passwordControl)).toEqual(null);
+    });
+  });
+});
+
+
+```
+
+
+## example 3
+```typescript
+import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+
+export class MatchFieldValidator {
+  static validFieldMatch(
+    controlName: string,
+    confirmControlName: string,
+    fieldName: string = 'Password',
+  ): ValidatorFn {
+    return (control: AbstractControl): ValidationErrors | null => {
+      const controlValue: unknown | null = control.get(controlName)?.value;
+      const confirmControlValue: unknown | null = control.get(
+        confirmControlName,
+      )?.value;
+
+      if (!confirmControlValue) {
+        control.get(confirmControlName)?.setErrors({
+          confirmFieldRequired: `Confirm ${fieldName} is required.`,
+        });
+      }
+
+      if (controlValue !== confirmControlValue) {
+        control
+          .get(confirmControlName)
+          ?.setErrors({ fieldsMismatched: `${fieldName} fields do not match.` });
+      }
+
+      if (controlValue && controlValue === confirmControlValue) {
+        control.get(confirmControlName)?.setErrors(null);
+      }
+
+      return null;
+    };
+  }
+}
+
+
+import { FormControl, FormGroup } from '@angular/forms';
+
+import { MatchFieldValidator } from './match-field-validator';
+
+describe('[Unit] MatchFieldValidator', () => {
+  describe('validFieldMatch() default field name', () => {
+    const matchFieldValidator = MatchFieldValidator.validFieldMatch(
+      'controlName',
+      'confirmControlName',
+    );
+    const form = new FormGroup({
+      controlName: new FormControl(''),
+      confirmControlName: new FormControl(''),
+    });
+    const controlName = form.get('controlName');
+    const confirmControlName = form.get('confirmControlName');
+
+    it(`should set control error as { confirmFieldRequired: 'Confirm Password is required.' } when value is an empty string`, () => {
+      controlName?.setValue('');
+      confirmControlName?.setValue('');
+      matchFieldValidator(form);
+      const expectedValue = {
+        confirmFieldRequired: 'Confirm Password is required.',
+      };
+      expect(confirmControlName?.errors).toEqual(expectedValue);
+    });
+
+    it(`should set control error as { fieldsMismatched: 'Password fields do not match.' } when values do not match`, () => {
+      controlName?.setValue('password123!');
+      confirmControlName?.setValue('password123');
+      matchFieldValidator(form);
+      const expectedValue = {
+        fieldsMismatched: 'Password fields do not match.',
+      };
+      expect(confirmControlName?.errors).toEqual(expectedValue);
+    });
+
+    it(`should set control error as null when values match`, () => {
+      controlName?.setValue('password123!');
+      confirmControlName?.setValue('password123!');
+      matchFieldValidator(form);
+      expect(controlName?.errors).toEqual(null);
+      expect(confirmControlName?.errors).toEqual(null);
+    });
+
+    it(`should set control error as null when control matches confirm after not matching`, () => {
+      controlName?.setValue('password123!');
+      confirmControlName?.setValue('password123!');
+      matchFieldValidator(form);
+      controlName?.setValue('password123');
+      matchFieldValidator(form);
+      controlName?.setValue('password123!');
+      matchFieldValidator(form);
+      expect(controlName?.errors).toEqual(null);
+      expect(confirmControlName?.errors).toEqual(null);
+    });
+
+    it(`should set control error as null when confirm matches control after not matching`, () => {
+      controlName?.setValue('password123!');
+      confirmControlName?.setValue('password123!');
+      matchFieldValidator(form);
+      controlName?.setValue('password123');
+      matchFieldValidator(form);
+      confirmControlName?.setValue('password123');
+      matchFieldValidator(form);
+      expect(controlName?.errors).toEqual(null);
+      expect(confirmControlName?.errors).toEqual(null);
+    });
+  });
+
+  describe(`validFieldMatch('Email') parameter field name`, () => {
+    const matchFieldValidator = MatchFieldValidator.validFieldMatch(
+      'controlName',
+      'confirmControlName',
+      'Email',
+    );
+    const form = new FormGroup({
+      controlName: new FormControl(''),
+      confirmControlName: new FormControl(''),
+    });
+    const controlName = form.get('controlName');
+    const confirmControlName = form.get('confirmControlName');
+
+    it(`should set control error as { confirmFieldRequired: 'Confirm Email is required.' } when value is an empty string`, () => {
+      controlName?.setValue('');
+      confirmControlName?.setValue('');
+      matchFieldValidator(form);
+      const expectedValue = {
+        confirmFieldRequired: 'Confirm Email is required.',
+      };
+      expect(confirmControlName?.errors).toEqual(expectedValue);
+    });
+
+    it(`should set control error as { fieldsMismatched: 'Email fields do not match.' } when values do not match`, () => {
+      controlName?.setValue('password123!');
+      confirmControlName?.setValue('test@test.co');
+      matchFieldValidator(form);
+      const expectedValue = {
+        fieldsMismatched: 'Email fields do not match.',
+      };
+      expect(confirmControlName?.errors).toEqual(expectedValue);
+    });
+  });
+});
+
+
+```
