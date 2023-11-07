@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2b116dfcc5fc8e36",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Angular/Custom validators.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Angular/Custom validators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Angular/Custom validators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/tips.md"
+                "file": "About/Angular/Custom validators.md"
               }
             }
           },
@@ -182,15 +195,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "efa3c7f37a9a9e2e",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "About/Angular/tips.md",
+    "About/Angular/Custom validators.md",
     "About/Angular/Handling data loading states.md",
     "About/Angular/Architecture Planning.md",
     "About/Angular/Services.md",
     "About/Typescript/setup a project.md",
     "About/Typescript/tips.md",
     "Projects/Angular.md",
-    "About/Angular/tips.md",
     "About/Angular/Overlay.md",
     "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
     "Git.md",
@@ -214,7 +228,6 @@
     "Books/Blazor in Action.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "Books/Exploring Blazor.md",
-    "Books/Hands-on Azure Functions with Csharp.md",
     "Projects/React",
     "Projects"
   ]
