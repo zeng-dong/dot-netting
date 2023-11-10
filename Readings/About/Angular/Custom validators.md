@@ -461,3 +461,126 @@ class TestComponent {
 }
 
 ```
+
+# some of my previous
+```typescript
+
+export function noWhitespaceValidator(control: FormControl) {
+  const isWhitespace = (control.value || '').trim().length === 0;
+  const isValid = !isWhitespace;
+  return isValid ? null : { 'whitespace': true };
+}
+
+export function minimalAge(min: number): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+    if (calcAge(c.value) < min) {
+      return { 'minimalAge': true };
+    }
+    return null;
+  }
+}
+
+
+export function setPatternValidatorToControl(rule: string, licenseControl: AbstractControl): void {  
+  licenseControl.clearValidators();
+  licenseControl.setValidators([Validators.pattern(rule), Validators.required]);
+  licenseControl.updateValueAndValidity();
+}
+
+export function notEarlierThan(numberOfDays: number): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+    var inputDate = new Date(c.value);
+    var comparedToDate = new Date(new Date().setDate(new Date().getDate() - numberOfDays));
+
+    if (inputDate < comparedToDate) {
+      return { 'notEarlierThan': true };
+    }
+    return null;
+  }
+}
+
+export function pizzaDateRange(): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+
+    // they decided to not have this range so I am simply validate all
+    return null;
+
+    //if (!c.value) return null;
+    //
+    //var today = new Date();
+    //var inputDate = new Date(c.value);
+    //
+    //var currentYear = today.getFullYear();
+    //var currentMonth = today.getMonth();
+    //var currentDay = today.getDate();
+    //
+    //var seventyYearsAgo = new Date(currentYear - 70, currentMonth, currentDay);
+    //var fiveYearsLater = new Date(currentYear + 20, currentMonth, currentDay);
+    //
+    ////console.log("70 Years Ago: ", seventyYearsAgo);
+    ////var days = (today.getTime() - seventyYearsAgo.getTime()) / (1000 * 3600 * 24);
+    ////console.log(days + " Days");
+    ////console.log("5 years later: ", fiveYearsLater);
+    ////days = (fiveYearsLater.getTime() - today.getTime()) / (1000 * 3600 * 24);
+    ////console.log(days + " Days");
+    //
+    //if (inputDate < seventyYearsAgo || inputDate > fiveYearsLater) {
+    //  return { 'pizzaDateRange': true };
+    //}
+    //return null;
+  }
+}
+
+
+export function usDateFormat(): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+    let usDatePattern = /^[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}$/;
+    
+    //  /^02\/(?:[01]\d|2\d)\/(?:19|20)(?:0[048]|[13579][26]|[2468][048])|(?:0[13578]|10|12)\/(?:[0-2]\d|3[01])\/(?:19|20)\d{2}|(?:0[469]|11)\/(?:[0-2]\d|30)\/(?:19|20)\d{2}|02\/(?:[0-1]\d|2[0-8])\/(?:19|20)\d{2}$/;
+
+    if (c.value && !c.value.match(usDatePattern)) {
+      return { 'usDateFormat': true };
+    }
+    return null;
+  }
+}
+
+export function tenDigitsFormat(): ValidatorFn {
+  return (c: AbstractControl): { [key: string]: boolean } | null => {
+    let pattern = /^[1-9]{1}[0-9]{9}$/;
+
+    if (c.value && !c.value.match(pattern)) {
+      return { 'tenDigitsFormat': true };
+    }
+    return null;
+  }
+}
+
+export function passwordMatcher(c: AbstractControl): { [key: string]: boolean } | null {
+  const p = c.get('password');
+  const cp = c.get('confirmPassword');
+
+  if (p.pristine || cp.pristine) { return null; }
+  if (p.value === cp.value) {
+    cp.setErrors(null);
+    return null;
+  }
+  cp.setErrors({ match: true });       // seems the validator not setting error to nested group
+  return { match: true };
+}
+
+export function existingAccountNameValidator(api: AdminApiService): AsyncValidatorFn {
+  return (control: AbstractControl): Promise<ValidationErrors | null> | Observable<ValidationErrors | null> => {
+    return timer(500).pipe(
+      switchMap(() => {
+        return api.checkAccountNameTaken$(control.value).pipe(
+          map((data: IResponseForAdminRequest) => {
+            console.log("valFn sitting in a file");
+            return (data.accountNameExists === true) ? { "accountNameTake": true } : null;
+          })
+        );
+      }));
+  }
+}
+
+```
