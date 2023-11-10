@@ -360,3 +360,104 @@ describe('[Unit] MatchFieldValidator', () => {
 
 
 ```
+
+## example 4
+
+``` typescript
+import {Directive, Input, OnChanges, SimpleChanges} from "@angular/core";
+import {
+  AbstractControl, NG_VALIDATORS, NgModel, ValidationErrors, Validator, ValidatorFn,
+  Validators
+} from "@angular/forms";
+
+@Directive({
+  selector: '[fieldMatches]',
+  providers: [{
+    provide: NG_VALIDATORS,
+    useExisting: FieldMatchesValidatorDirective,
+    multi: true
+  }]
+})
+export class FieldMatchesValidatorDirective implements Validator, OnChanges {
+  @Input() fieldMatches: NgModel;
+
+  private validationFunction = Validators.nullValidator;
+
+  ngOnChanges(changes: SimpleChanges): void {
+    let change = changes['fieldMatches'];
+    if (change) {
+      const otherFieldModel = change.currentValue;
+      this.validationFunction = fieldMatchesValidator(otherFieldModel);
+    } else {
+      this.validationFunction = Validators.nullValidator;
+    }
+  }
+
+  validate(control: AbstractControl): ValidationErrors | any {
+    return this.validationFunction(control);
+  }
+}
+
+export function fieldMatchesValidator(otherFieldModel: NgModel): ValidatorFn {
+  return (control: AbstractControl): ValidationErrors => {
+    return control.value === otherFieldModel.value ? null : {'fieldMatches': {match: false}};
+  };
+}
+
+/*
+Now we could write **isolated unit tests** to test our validator, but these would only really be useful to verify our validation logic, which amounts to one line of code in this case. Or we could use Angular **testing utilities** to do something similar to an integration test, and see how our validator interacts with Angular and (most importantly) with a template.
+*/
+
+
+import {CommonModule} from "@angular/common";
+import {FormsModule} from "@angular/forms";
+import {Component} from "@angular/core";
+import {async, ComponentFixture, ComponentFixtureAutoDetect, TestBed} from "@angular/core/testing";
+import {By} from "@angular/platform-browser";
+
+describe('FieldMatchesValidatorDirective', () => {
+  let component: TestComponent;
+  let fixture: ComponentFixture<TestComponent>;
+
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      imports: [CommonModule, FormsModule],
+      declarations: [TestComponent],
+      providers: [
+        { provide: ComponentFixtureAutoDetect, useValue: true },
+      ]
+    }).compileComponents();
+  }));
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(TestComponent);
+    component = fixture.componentInstance;
+  });
+
+  it('should invalidate two fields that do not match', async(() => {
+    component.field1 = '12345678901234';
+    component.field2 = '12345678999999';
+
+    fixture.detectChanges();
+    fixture.whenStable().then(() => {
+      fixture.detectChanges();
+
+      let field2Model = fixture.debugElement.query(By.css('input[name=field2]')).references['field2Model'];
+
+      expect(field2Model.valid).toBe(false);
+    });
+  }));
+});
+
+@Component({
+  template: '<form #form1="ngForm">' +
+            '<input name="field1" #field1Model="ngModel" [(ngModel)]="field1">' +
+            '<input name="field2" #field2Model="ngModel" [fieldMatches]="field1Model" [(ngModel)]="field2">' +
+            '</form>'
+})
+class TestComponent {
+  field1: string;
+  field2: string;
+}
+
+```

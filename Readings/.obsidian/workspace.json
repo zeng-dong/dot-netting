@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a0af067e7157b61e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Angular/Custom validators.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -195,8 +207,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "a0af067e7157b61e",
   "lastOpenFiles": [
+    "About/Angular/rxjs.md",
     "About/Angular/tips.md",
     "About/Angular/Custom validators.md",
     "About/Angular/Handling data loading states.md",
@@ -227,7 +240,6 @@
     "Books/ZD book list.md",
     "Books/Blazor in Action.md",
     "Books/Blazor WebAssembly by Examples 2nd Edition.md",
-    "Books/Exploring Blazor.md",
     "Projects/React",
     "Projects"
   ]
