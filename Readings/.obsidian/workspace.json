@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/Custom validators.md",
+                "file": "About/Angular/rxjs.md",
                 "mode": "source",
                 "source": false
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/Custom validators.md",
+                "file": "About/Angular/rxjs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/Custom validators.md",
+                "file": "About/Angular/rxjs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/Custom validators.md"
+                "file": "About/Angular/rxjs.md"
               }
             }
           },
@@ -209,9 +209,9 @@
   },
   "active": "a0af067e7157b61e",
   "lastOpenFiles": [
+    "About/Angular/Custom validators.md",
     "About/Angular/rxjs.md",
     "About/Angular/tips.md",
-    "About/Angular/Custom validators.md",
     "About/Angular/Handling data loading states.md",
     "About/Angular/Architecture Planning.md",
     "About/Angular/Services.md",
