@@ -30,3 +30,31 @@ productsWithCategory$ = combineLatest([
 );
 
 ```
+
+
+### given people, for each of them, get more info
+using switchMap and mergeMap:
+
+```typescript
+getCharactersAndHomeworlds() {
+
+    return this.http.get(this.baseUrl + 'people/')
+      .pipe(
+        switchMap((res: any) => {
+          // convert array to observable
+          return from(res.results);                      /// this will emit one person at a time
+        }),
+        // concatMap((person: any) => {
+        mergeMap((person: any) => {
+            return this.http.get(person.homeworld)
+              .pipe(
+                map(hw => {
+                  person.homeworld = hw;
+                  return person;
+                })
+              );
+        }),
+        toArray()                                            /// another operator, so we get all in one batch
+      );
+  }
+```
