@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "2b116dfcc5fc8e36",
+            "id": "f63fe7cce1eb5148",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/Custom validators.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a0af067e7157b61e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "About/Angular/rxjs.md",
+                "file": "Books/Training stats.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -118,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/rxjs.md",
+                "file": "Books/Training stats.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/rxjs.md",
+                "file": "Books/Training stats.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -158,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/rxjs.md"
+                "file": "Books/Training stats.md"
               }
             }
           },
@@ -207,11 +195,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0af067e7157b61e",
+  "active": "f63fe7cce1eb5148",
   "lastOpenFiles": [
-    "About/Angular/Custom validators.md",
-    "About/Angular/rxjs.md",
+    "Books/ZD book list.md",
+    "Books/Training stats.md",
     "About/Angular/tips.md",
+    "About/Angular/rxjs.md",
+    "About/Angular/Custom validators.md",
     "About/Angular/Handling data loading states.md",
     "About/Angular/Architecture Planning.md",
     "About/Angular/Services.md",
@@ -237,9 +227,7 @@
     "Dot NET with Azure/Azure functions.md",
     "Books/Learn React with TypeScript.md",
     "Books/2003 intereating books.md",
-    "Books/ZD book list.md",
     "Books/Blazor in Action.md",
-    "Books/Blazor WebAssembly by Examples 2nd Edition.md",
     "Projects/React",
     "Projects"
   ]

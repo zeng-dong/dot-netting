@@ -45,7 +45,7 @@ getCharactersAndHomeworlds() {
           return from(res.results);                      /// this will emit one person at a time
         }),
         // concatMap((person: any) => {
-        mergeMap((person: any) => {
+        mergeMap((person: any) => {                      /// for each person, we have a http.get, so multiple inner observable here, but we don't care about their specific order
             return this.http.get(person.homeworld)
               .pipe(
                 map(hw => {
