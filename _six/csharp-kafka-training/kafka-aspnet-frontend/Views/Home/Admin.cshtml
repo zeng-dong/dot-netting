@@ -1,0 +1,14 @@
+﻿@{
+
+}
+
+<div class="text-center">
+  <h1 class="display-4">Kafka AdminClient Functionalities</h1>
+  <form asp-controller="Home" asp-action="Admin" method="post">
+    <p>
+      <a asp-action="DeleteTopic" asp-controller="Home" class="btn btn-danger">Delete Topic</a>
+      <a asp-action="CreateTopic" asp-controller="Home" class="btn btn-secondary">Create Topic</a>
+    </p>
+    <p>@ViewBag.Message</p>
+  </form>
+</div>
