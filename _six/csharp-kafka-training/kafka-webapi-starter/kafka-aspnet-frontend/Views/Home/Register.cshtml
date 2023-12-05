@@ -1,0 +1,13 @@
+@model kafka_aspnet_frontend.Models.UserRegistrationModel
+
+<div>
+  <form asp-controller="Home" asp-action="Register" method="post">
+    <p><label asp-for="FirstName">First Name</label>: <input asp-for="FirstName" class="form-control"></p>
+    <p><label asp-for="LastName">Last Name</label>: <input asp-for="LastName" class="form-control"></p>
+    <p><label asp-for="Email">Email</label>: <input asp-for="Email" class="form-control"></p>
+    <p>
+      <button class="btn btn-primary" type="submit">Register User</button>
+    </p>
+    <p>@ViewBag.Message</p>
+  </form>
+</div>
