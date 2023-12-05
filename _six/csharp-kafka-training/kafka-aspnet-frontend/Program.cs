@@ -7,7 +7,7 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// TODO: map configuration file
+builder.Services.Configure<KafkaConfigModel>(builder.Configuration.GetSection("KafkaConfig"));
 
 var app = builder.Build();
 

@@ -8,6 +8,7 @@ using Microsoft.Extensions.Logging;
 using kafka_aspnet_frontend.Models;
 using Confluent.Kafka;
 using Newtonsoft.Json;
+using Microsoft.Extensions.Options;
 
 namespace kafka_aspnet_frontend.Controllers
 {
@@ -15,11 +16,12 @@ namespace kafka_aspnet_frontend.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        // TODO: appsettings/dependency injection
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IOptions<KafkaConfigModel>? _appSettings;
+        public HomeController(ILogger<HomeController> logger,
+        IOptions<KafkaConfigModel> appSettings)
         {
             _logger = logger;
+            _appSettings = appSettings;
         }
 
         public IActionResult Index()
@@ -36,15 +38,16 @@ namespace kafka_aspnet_frontend.Controllers
         public IActionResult Register(UserRegistrationModel model)
         {
             // TODO: client config - hard-coded
-            ClientConfig clientConfig = new ClientConfig();
-            clientConfig.BootstrapServers = "your endpoint";
-            clientConfig.SecurityProtocol = SecurityProtocol.SaslSsl;
-            clientConfig.SaslMechanism = SaslMechanism.Plain;
-            clientConfig.SaslUsername = "your key";
-            clientConfig.SaslPassword = "your secret";
-            clientConfig.SslCaLocation = "probe";
+            // ClientConfig clientConfig = new ClientConfig();
+            // clientConfig.BootstrapServers = "your endpoint";
+            // clientConfig.SecurityProtocol = SecurityProtocol.SaslSsl;
+            // clientConfig.SaslMechanism = SaslMechanism.Plain;
+            // clientConfig.SaslUsername = "your key";
+            // clientConfig.SaslPassword = "your secret";
+            // clientConfig.SslCaLocation = "probe";
 
             // TODO: client config with appsettings/dependency injection
+            ClientConfig clientConfig = GetKafkaConfig();
 
             // TODO: Register logic
             string topicName = "user-registration";
@@ -57,9 +60,18 @@ namespace kafka_aspnet_frontend.Controllers
             return View(model);
         }
 
-        // TODO: GetKafkaConfig method
+        ClientConfig GetKafkaConfig()
+        {
+            ClientConfig clientConfig = new ClientConfig();
+            clientConfig.BootstrapServers = _appSettings?.Value.BootstrapServers;
+            clientConfig.SecurityProtocol = SecurityProtocol.SaslSsl;
+            clientConfig.SaslMechanism = SaslMechanism.Plain;
+            clientConfig.SaslUsername = _appSettings?.Value.SaslUsername;
+            clientConfig.SaslPassword = _appSettings?.Value.SaslPassword;
+            clientConfig.SslCaLocation = _appSettings?.Value.SslCaLocation;
+            return clientConfig;
+        }
 
-        // TODO: deliveryHandler method
         void deliveryHandler(DeliveryReport<string, string> deliveryReport)
         {
             if (deliveryReport.Error.Code == ErrorCode.NoError)
