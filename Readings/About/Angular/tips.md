@@ -2,7 +2,9 @@
 # back button
 npm package [angular-disable-browser-back-button](https://github.com/Zatikyan/angular-disable-browser-back-button)]
 
+### Applying Postel's Law
 
+When designing the models to use with your web API, you should keep in mind Postel's Law, also known as the robustness principle. It applies to systems that must interoperate with one another. Postel's Law states, "Be conservative in what you send, but be liberal in what you accept."
 
 ### override
 https://stackoverflow.com/questions/63905041/override-browser-back-button-functionality-in-angular
