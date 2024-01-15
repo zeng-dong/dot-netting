@@ -12,3 +12,16 @@ from Joe Eames Angular 11 Fundamentals
 	* npx eslint ./src/app        // lint specific dir and its sub dirs
 	* 
 	1. 
+
+
+## https://www.freecodecamp.org/news/how-to-add-eslint-to-an-angular-application/
+
+```
+ng add @angular-eslint/schematics
+```
+
+```
+npm run lint
+```
+
+and you are all set
