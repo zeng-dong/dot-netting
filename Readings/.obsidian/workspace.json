@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "0e91ec46cadd5f87",
+        "id": "325d0a71b92bc7f6",
         "type": "tabs",
         "children": [
           {
-            "id": "349a7a5b14c9e097",
+            "id": "79bc7490d005303a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/tips.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a8b0aca369dbe8e9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "About/Angular/ESLint.md",
+                "file": "About/Angular/interceptors.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/ESLint.md",
+                "file": "About/Angular/interceptors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/ESLint.md",
+                "file": "About/Angular/interceptors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/ESLint.md"
+                "file": "About/Angular/interceptors.md"
               }
             }
           },
@@ -172,7 +159,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -195,8 +184,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a8b0aca369dbe8e9",
+  "active": "79bc7490d005303a",
   "lastOpenFiles": [
+    "About/Angular/interceptors.md",
     "About/Angular/tips.md",
     "About/Angular/ESLint.md",
     "Books/Training stats.md",
@@ -227,7 +217,6 @@
     "Books/Learning Angular.md",
     "Dot NET 7/random.md",
     "Dot NET with Azure/Azure functions.md",
-    "Books/Learn React with TypeScript.md",
     "Projects/React",
     "Projects"
   ]
