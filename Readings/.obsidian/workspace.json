@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/interceptors.md",
+                "file": "About/Quick book UI.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/interceptors.md",
+                "file": "About/Quick book UI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/interceptors.md",
+                "file": "About/Quick book UI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/interceptors.md"
+                "file": "About/Quick book UI.md"
               }
             }
           },
@@ -186,9 +186,13 @@
   },
   "active": "79bc7490d005303a",
   "lastOpenFiles": [
+    "Pasted image 20240218173631.png",
+    "Pasted image 20240218173539.png",
+    "Pasted image 20240218173437.png",
+    "About/Angular/ESLint.md",
+    "About/Quick book UI.md",
     "About/Angular/interceptors.md",
     "About/Angular/tips.md",
-    "About/Angular/ESLint.md",
     "Books/Training stats.md",
     "About/Angular/Reactive Forms.md",
     "Books/ZD book list.md",
@@ -215,8 +219,6 @@
     "Books/Pro Angular.md",
     "Dot NET with Azure/ASPNET Core Security.md",
     "Books/Learning Angular.md",
-    "Dot NET 7/random.md",
-    "Dot NET with Azure/Azure functions.md",
     "Projects/React",
     "Projects"
   ]
