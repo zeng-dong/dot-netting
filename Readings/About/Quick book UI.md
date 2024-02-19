@@ -10,8 +10,9 @@
 	side effects
 	when it is time to navigate, it is not navigating, for now
 		2.2 code quality
+		 2..3 there is no spec, really don't know what the acceptance criteria are.
 
-			overall: will not approve
+			overall: very difficult to approve
 
 1. over hyped ui principles
 	unpresentable, to whom，
