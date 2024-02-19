@@ -1,4 +1,17 @@
+1. concepts: navigation vs transaction 
+	left side stepper: illusion of a nav bar
+	it does not reflect the business workflow, it is not a navigation to independent resources, it has to be a transaction in sequential steps
+	previous designer, and entire team, likely made the painful, difficult, but more thoughtful, more reasonable decision.
 
+2. promised function:
+	side effects
+	when it is time to navigate, it is not navigating, for now
+
+3. over hyped ui principles
+	unpresentable, to whom
+	3 buttons principle
+	must be all modals principle
+	
 ![[Pasted image 20240218173840.png]]
 
 
