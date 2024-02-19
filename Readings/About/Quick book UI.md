@@ -3,14 +3,24 @@
 	it does not reflect the business workflow, it is not a navigation to independent resources, it has to be a transaction in sequential steps
 	previous designer, and entire team, likely made the painful, difficult, but more thoughtful, more reasonable decision.
 
-2. promised function:
+		overall: not recommended
+
+2. promised functionalities:
+		2.1 
 	side effects
 	when it is time to navigate, it is not navigating, for now
+		2.2 code quality
 
-3. over hyped ui principles
-	unpresentable, to whom
+			overall: will not approve
+
+1. over hyped ui principles
+	unpresentable, to whom，
+	balance:  aesthetics vs business flows, artists vs business clients
 	3 buttons principle
 	must be all modals principle
+
+	balance: ae
+example software
 	
 ![[Pasted image 20240218173840.png]]
 
