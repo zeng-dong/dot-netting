@@ -1,4 +1,27 @@
 
+# customize material mat-form-field style (material 17)
+
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading {
+	border-color: blue !important;
+}
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__notch {
+	border-color: blue !important;
+}
+:host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__trailing {
+	border-color: blue !important;
+}
+
+// now focus:
+:host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__leading {
+	border-color: red !important;
+}
+:host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__notch {
+	border-color: red !important;
+}
+:host ::ng-deep .mdc-text-field--outlined.mdc-text-field--focused .mdc-notched-outline__trailing {
+	border-color: red !important;
+}
+
 # customize angular material form field 
 ## input outline
 #### change mat input color and background and font -Size on focus
