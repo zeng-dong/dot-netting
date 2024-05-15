@@ -1,4 +1,59 @@
 
+# customize angular material form field 
+## input outline
+#### change mat input color and background and font -Size on focus
+::ng-deep .mdc-text-field--focusd:not(.mdc-text-field--disabled) .mdc-floating-label{
+	 color: orangered;   // label color
+	 background-color: yellow;       // label background
+	 font-size: 14px !important;      // label font size
+	 padding: 0 10px;                     // add padding in label
+}
+####  change mat input floating label bydefault color
+::ng-deep .mdc-text-field:not(.mdc-test-field-disabled) .mdc-floating-label{
+	color: red;
+}
+
+####  change lable font position
+::ng-deep .mdc-text-field-wrapper .mat-mdc-form-field-flex .mdc-floating-label {
+	top: 12 px !important;
+	 font-size: 12px;	 
+}
+
+#### change label color, background & font-size when focus after change label position
+::ng-deep .mat-mdc-form-field .mdc-text-field--outlined .mdc-notched-outline--upgraded .mdc-floating-label--float-above {
+	color: red;
+	top: 28px;
+		position: relative !important;
+		font-weight: 300 !important;
+		background-color: green;		
+}
+
+// change input left side border-radius 
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading { 
+	border-top-left-radius: var(--mdc-shape-small, 12px) !important; 
+	border-bottom-left-radius: var(--mdc-shape-small, 12px) !important; 
+	} 
+	
+// change input right side border-radius 
+::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__trailing { 
+border-top-right-radius: var(--mdc-shape-small, 12px) !important; 
+border-bottom-right-radius: var(--mdc-shape-small, 12px) !important; 
+}
+## input fill
+// change bottom border color 
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-line-ripple::before {
+	border-bottom-color: rgba(212, 0, 0, 0.42);
+}
+
+// hover to change bottom border color
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled):hover .mdc-line-ripple::before {
+	border-bottom-color: rgba(212, 0, 0, 0.42);
+}
+
+// focus to change bottom border color
+::ng-deep .mdc-text-field--filled .mdc-line-ripple::after {
+	border-bottom: 2px solid rgba(212, 0, 0, 0.42);
+}
 # back button
 npm package [angular-disable-browser-back-button](https://github.com/Zatikyan/angular-disable-browser-back-button)]
 
