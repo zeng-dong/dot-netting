@@ -25,8 +25,61 @@
 	top: 28px;
 		position: relative !important;
 		font-weight: 300 !important;
-		background-color: green;		
+		background-color: green;
+		--mat-mdc-form-field-floating-label-scale: 1.5;		
 }
+
+#### change mat input value color
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input::placeholder {
+	color: red; 
+	   
+}
+
+#### change mat input placeholder color
+::ng-deep .mdc-text-field:not(.mdc-text-field--disabled) .mdc-text-field__input {
+	color: red;    
+	font-size: 12px !important;
+}
+
+#### change caret color on focus (|)
+::ng-deep .mdc-text-field .mdc-text-field__input {
+	caret-color: red;	
+}
+
+#### change mat input border color and width
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline--leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline--notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled) .mdc-notched-outline--trailing {
+	border-color: red;
+	border-width: 2px;
+}
+
+#### hover to change outline color 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focusd):hover .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focusd):hover .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled):not(.mdc-text-field--focusd):hover .mdc-notched-outline__trailing{
+	border-color: red;
+}
+
+#### focus to change border color 
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focusd .mdc-notched-outline__leading,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focusd .mdc-notched-outline__notch,
+::ng-deep .mdc-text-field--outlined:not(.mdc-text-field--disabled).mdc-text-field--focusd .mdc-notched-outline__trailing{
+	border-color: red;
+		border-width: 3px;
+}
+
+#### change mat form field input height
+::ng-deep .mat-mdc-text-field-wrapper {
+	height: 30px !important;
+}
+
+#### change mat form field inside input with text position 
+::ng-deep .mat-mdc-input-element {
+	top: -10px !important;
+	position: relative !important;
+}
+
 
 // change input left side border-radius 
 ::ng-deep .mdc-text-field--outlined .mdc-notched-outline .mdc-notched-outline__leading { 
