@@ -1,4 +1,4 @@
-
+![[Pasted image 20240722220627.png]]
 # customize material mat-form-field style (material 17)
 
 :host ::ng-deep .mdc-text-field--outlined .mdc-notched-outline__leading {
