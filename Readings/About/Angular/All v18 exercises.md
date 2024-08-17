@@ -1,4 +1,3 @@
-
 # upgrading
 [Updating to Angular Material 18](https://angular-material.dev/articles/updating-to-angular-material-18)
 _update Angular Material 17 to 18, with Material 2 and also Material 3_
@@ -88,3 +87,62 @@ Now, include and call this mixin in main `styles.scss` file:
     @include layout-component.theme($theme);
 }
 ```
+
+
+
+# follow pro angular 16
+I use 18
+
+node: nvm install 20.16.0  at 2014.08.12
+nvm use 20.16.0
+npm -v shows: 10.8.1
+
+I use [local env setup]([Local set-up • Angular](https://angular.dev/tools/cli/setup-local))
+1. install angular CLI: npm install -g @angular/cli
+2. and 'ng version' 
+Angular CLI: 18.1.4
+Node: 20.16.0
+Package Manager: npm 10.8.1
+OS: win32 x64
+
+Angular: undefined
+...
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1801.4 (cli-only)
+@angular-devkit/core         18.1.4 (cli-only)
+@angular-devkit/schematics   18.1.4 (cli-only)
+@schematics/angular          18.1.4 (cli-only)
+
+#### another way to install ng and create an app
+npx -p @angular/cli@18 ng new my-app
+
+then I create the example project (in his book he calls it exampleApp), mine is proangular:
+ng new proangular --routing false --style css --skip-git --skip-tests
+
+bootstrap
+npm install bootstrap@5.2        (his is 5.2.3)
+there is no schematics API so need manual change to angular.config file to include Bootstrap CSS stylesheet in the styles bundle. issue this command:
+ng config projects.proangular.architect.build.options.styles 
+'[""src/styles.css"",
+""node_modules/bootstrap/dist/css/bootstrap.min.css""]'
+
+
+# I add angular material
+ng add @angular/material
+
+
+# multi-apps
+I use this command: npx -p @angular/cli@18 ng new multi-apps
+my ng version (global): 18.1.4, and this command prompt me:  
+```
+Need to install the following packages:
+@angular/cli@18.2.0
+Ok to proceed? (y) y
+```
+
+I cd into multi-apps and 'ng serve', works
+
+
+

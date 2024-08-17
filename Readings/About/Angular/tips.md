@@ -1441,3 +1441,11 @@ subscribeToAddressChanges() {
 }
 
 ```
+
+
+
+
+# cli tips
+ng new new-app --skip-install
+ng new new-app --dry-run
+ng new new-app --defaults

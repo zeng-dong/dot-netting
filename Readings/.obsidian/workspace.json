@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ccd181c72d91f511",
+        "id": "6a1a42881c361ccd",
         "type": "tabs",
         "children": [
           {
-            "id": "635f9b935048547f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-02-15.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c6750ebc15078792",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "About/Angular/tips.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0116addee95f6b08",
+            "id": "047342c40eadb257",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -43,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -209,12 +184,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0116addee95f6b08",
+  "active": "047342c40eadb257",
   "lastOpenFiles": [
-    "Pasted image 20240722220627.png",
     "About/Angular/All v18 exercises.md",
     "2023-02-15.md",
     "About/Angular/tips.md",
+    "Pasted image 20240722220627.png",
     "About/Angular/All v17 exercises.md",
     "About/Quick book UI.md",
     "Pasted image 20240218184419.png",
@@ -226,7 +201,6 @@
     "Pasted image 20240218180243.png",
     "Pasted image 20240218180230.png",
     "Pasted image 20240218180211.png",
-    "Pasted image 20240218175654.png",
     "About/Angular/ESLint.md",
     "About/Angular/interceptors.md",
     "Books/Training stats.md",
