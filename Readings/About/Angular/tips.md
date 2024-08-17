@@ -1443,7 +1443,26 @@ subscribeToAddressChanges() {
 ```
 
 
+# my bootstrapping different modules
+1. app module
+2. app2 module
+	1. can still name it app component
+	2. can still give it app-root selector
+	3. can still be a standalone
+3. in main.ts
+```typescript
+import { bootstrapApplication } from '@angular/platform-browser';
 
+// import { appConfig } from './app/app.config';
+// import { AppComponent } from './app/app.component';
+import { appConfig } from './app2/app.config';
+import { AppComponent } from './app2/app.component';
+
+bootstrapApplication(AppComponent, appConfig).catch((err) =>
+  console.error(err)
+);
+
+```
 
 # cli tips
 ng new new-app --skip-install
