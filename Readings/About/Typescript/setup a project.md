@@ -1,9 +1,11 @@
 # steps
+## I adopted from PL Course "Using Arrays and Collections in Typescript"
 1. mkdir
 2. cd into it
 3. npm init -y
 4. npm i -g typescript
 5. tsc init --outDir dist --rootDir ts --sourceMap
+	1. this will create ts config file
 6. in vs code config launch: 
 	1. type: node
 	2. program: ${file}

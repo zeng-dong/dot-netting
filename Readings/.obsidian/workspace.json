@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Typescript/setup a project.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Typescript/setup a project.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Typescript/setup a project.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/tips.md"
+                "file": "About/Typescript/setup a project.md"
               }
             }
           },
@@ -186,12 +186,16 @@
   },
   "active": "047342c40eadb257",
   "lastOpenFiles": [
-    "About/Angular/All v18 exercises.md",
-    "2023-02-15.md",
-    "About/Angular/tips.md",
-    "Pasted image 20240722220627.png",
-    "About/Angular/All v17 exercises.md",
+    "About/Typescript/tips.md",
+    "About/Typescript/setup a project.md",
     "About/Quick book UI.md",
+    "About/Angular/tips.md",
+    "About/Angular/Reactive Forms.md",
+    "About/Angular/ESLint.md",
+    "About/Angular/All v18 exercises.md",
+    "About/Angular/All v17 exercises.md",
+    "2023-02-15.md",
+    "Pasted image 20240722220627.png",
     "Pasted image 20240218184419.png",
     "Pasted image 20240218183545.png",
     "Pasted image 20240218181536.png",
@@ -201,18 +205,14 @@
     "Pasted image 20240218180243.png",
     "Pasted image 20240218180230.png",
     "Pasted image 20240218180211.png",
-    "About/Angular/ESLint.md",
     "About/Angular/interceptors.md",
     "Books/Training stats.md",
-    "About/Angular/Reactive Forms.md",
     "Books/ZD book list.md",
     "About/Angular/rxjs.md",
     "About/Angular/Custom validators.md",
     "About/Angular/Handling data loading states.md",
     "About/Angular/Architecture Planning.md",
     "About/Angular/Services.md",
-    "About/Typescript/setup a project.md",
-    "About/Typescript/tips.md",
     "Projects/Angular.md",
     "About/Angular/Overlay.md",
     "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
