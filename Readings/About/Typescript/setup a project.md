@@ -19,3 +19,9 @@ modify package.json script section: "test": "jest"
 	so now we can run 'npm test'
 
 
+
+
+server:
+node server.js
+client:
+npm run start

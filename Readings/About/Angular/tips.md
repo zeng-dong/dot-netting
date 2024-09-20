@@ -1468,3 +1468,7 @@ bootstrapApplication(AppComponent, appConfig).catch((err) =>
 ng new new-app --skip-install
 ng new new-app --dry-run
 ng new new-app --defaults
+
+
+# azure cost optimizaiont
+![[Pasted image 20240920134427.png]]

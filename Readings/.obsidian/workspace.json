@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Typescript/setup a project.md",
+                "file": "About/Angular/tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Typescript/setup a project.md",
+                "file": "About/Angular/tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Typescript/setup a project.md",
+                "file": "About/Angular/tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Typescript/setup a project.md"
+                "file": "About/Angular/tips.md"
               }
             }
           },
@@ -186,8 +186,9 @@
   },
   "active": "047342c40eadb257",
   "lastOpenFiles": [
-    "About/Typescript/tips.md",
+    "Pasted image 20240920134427.png",
     "About/Typescript/setup a project.md",
+    "About/Typescript/tips.md",
     "About/Quick book UI.md",
     "About/Angular/tips.md",
     "About/Angular/Reactive Forms.md",
