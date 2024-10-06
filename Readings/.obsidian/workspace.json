@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "2023-02-20.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bf7397c3d7f49fb0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Git Tips and Tricks.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Git Tips and Tricks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Git Tips and Tricks.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Angular/tips.md"
+                "file": "About/Git Tips and Tricks.md"
               }
             }
           },
@@ -184,13 +197,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "047342c40eadb257",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
+    "About/Git.md",
+    "About/Git Tips and Tricks.md",
+    "2023-02-20.md",
+    "2023-02-13.md",
+    "Tracking-Tasks.md",
+    "SOLID/SOLID in React.md",
+    "About/Angular/tips.md",
     "Pasted image 20240920134427.png",
     "About/Typescript/setup a project.md",
     "About/Typescript/tips.md",
     "About/Quick book UI.md",
-    "About/Angular/tips.md",
     "About/Angular/Reactive Forms.md",
     "About/Angular/ESLint.md",
     "About/Angular/All v18 exercises.md",
@@ -205,7 +224,6 @@
     "Pasted image 20240218180311.png",
     "Pasted image 20240218180243.png",
     "Pasted image 20240218180230.png",
-    "Pasted image 20240218180211.png",
     "About/Angular/interceptors.md",
     "Books/Training stats.md",
     "Books/ZD book list.md",
@@ -217,16 +235,11 @@
     "Projects/Angular.md",
     "About/Angular/Overlay.md",
     "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
-    "Git.md",
-    "Books/Reactive Patterns with RxJS for Angular.md",
-    "Quotes.md",
     "About/Typescript/tips",
     "About/Typescript",
-    "About/React/Learning.md",
     "About/React",
     "About/Angular",
     "About",
-    "Web Development with Blazor.md",
     "Projects/React",
     "Projects"
   ]
