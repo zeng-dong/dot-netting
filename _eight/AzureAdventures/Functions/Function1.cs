@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.DurableTask;
@@ -50,6 +52,27 @@ namespace Functions
             // Returns an HTTP 202 response with an instance management payload.
             // See https://learn.microsoft.com/azure/azure-functions/durable/durable-functions-http-api#start-orchestration
             return await client.CreateCheckStatusResponseAsync(req, instanceId);
+        }
+
+        //[Function("Hello_foo")]
+        //public static async Task<HttpResponseData> Foo([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequestData req, FunctionContext executionContext)
+        //{
+        //    ILogger logger = executionContext.GetLogger("Function1_foo");
+        //    logger.LogInformation("Saying hello from foo");
+
+        //    var response = req.CreateResponse(System.Net.HttpStatusCode.OK);
+        //    response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
+        //    response.WriteString("Hello from foo");
+        //    return await Task.FromResult(response);
+        //}
+
+        [Function("Hello_Foo")]
+        public static IActionResult Foo([HttpTrigger(AuthorizationLevel.Function, "get", "post")] HttpRequest req, FunctionContext executionContext)
+        {
+            ILogger logger = executionContext.GetLogger("Function1_foo");
+            logger.LogInformation("HTTP triggered foo.");
+
+            return new OkObjectResult("Hello world from foo");
         }
     }
 }
