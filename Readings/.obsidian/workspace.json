@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Git Tips and Tricks.md",
+                "file": "About/Git.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Git Tips and Tricks.md",
+                "file": "About/Git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Git Tips and Tricks.md",
+                "file": "About/Git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Git Tips and Tricks.md"
+                "file": "About/Git.md"
               }
             }
           },
@@ -197,11 +197,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "bf7397c3d7f49fb0",
   "lastOpenFiles": [
+    "keys in md.md",
+    "Books/Hands-on Azure Functions with Csharp.md",
+    "Dot NET with Azure/Azure functions.md",
+    "2023-02-20.md",
+    "Dot NET 7/random.md",
+    "Dot NET 7/json.md",
+    "Excalidraw/Drawing 2024-10-06 09.04.55.excalidraw.md",
     "About/Git.md",
     "About/Git Tips and Tricks.md",
-    "2023-02-20.md",
     "2023-02-13.md",
     "Tracking-Tasks.md",
     "SOLID/SOLID in React.md",
@@ -229,12 +235,6 @@
     "Books/ZD book list.md",
     "About/Angular/rxjs.md",
     "About/Angular/Custom validators.md",
-    "About/Angular/Handling data loading states.md",
-    "About/Angular/Architecture Planning.md",
-    "About/Angular/Services.md",
-    "Projects/Angular.md",
-    "About/Angular/Overlay.md",
-    "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
     "About/Typescript/tips",
     "About/Typescript",
     "About/React",

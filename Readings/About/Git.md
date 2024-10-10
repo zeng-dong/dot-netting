@@ -26,7 +26,7 @@ git fetch
 git revert
 git reset
 
-
+曾东
 ## how to stash
 1. simply run git stash
 2. git status: working tree clean
