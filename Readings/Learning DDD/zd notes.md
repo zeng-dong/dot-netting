@@ -1,3 +1,5 @@
+flowchart TD
+Start --> Stop
 #### What is the point of an aggregate?
 
 It operates to a large degree as one thing. 
@@ -64,3 +66,35 @@ So we'll probably want to have separate classes for appointments and surgeries.
 
 
 ‑Okay, so I have another quick question. Do we have to worry about multiple staff members scheduling appointments at the same time? ‑No, there should only ever be one person doing the scheduling at a time, although I could see if we grew in the future that could change. But I don't think that'll happen in the next couple of years. Okay, then we don't have to worry about the rare occurrence of two people creating a conflict if they're trying to schedule an appointment for different patients in the same room or with the same doctor. That'll keep things a lot simpler. And we need to know before an appointment if certain resources are available, like rooms and doctors. And then if they are and we want to schedule the appointment, then we need to be able to book the doctor, the room, and any other resources. Hey, is it okay if we refer to doctors as resources? ‑Sure, that makes sense. You know, I think it makes sense to use the term resources to refer to the doctors, the rooms, and the technicians since those are all things that can affect whether or not an appointment can be scheduled. But remember, sometimes it'll be just a vet tech in a room, and other times it might be the doctor in the room, but sometimes you might need the doctor, the technician, and a room. ‑Wow, this is a lot more complicated than we'd realized, but it's interesting. This is going to be cool to model in the application.
+
+
+- using: Furthermore, there is generally no “owner” of the relationship for associations
+```mermaid
+	classDiagram
+		Title -- Genre
+```
+
+```mermaid
+flowchart LR
+Start --> Stop
+```
+
+```mermaid
+graph TB
+	A[Start] -.-> B(process 1)
+	A --> C[[Process 2]]
+	B ==o D([Stop])
+	C --> D
+
+```
+
+```mermaid
+classDiagram
+	class Quote {
+		+Id : Guid
+		+Program : string
+		-OwnerFein : string
+		#OwnerEmail : string
+	}
+```
+

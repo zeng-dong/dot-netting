@@ -6,4 +6,10 @@ docker container list
 docker container stop xyzabc
 docker container rm xyzabc
 
+I have 4.34 and I have trouble to pull images from mcr.
+Googled and some say downgrade to 4.32 helps
+So I downloaded 4.32 installer and go to the folder and issue this command:
+	 & '.\Docker Desktop_432 Installer.exe' install --disable-version-check
+	it prompts something like "do you want to replace " and I confirm
+
 

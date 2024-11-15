@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6a1a42881c361ccd",
+        "id": "57f97e2da9a9cd4e",
         "type": "tabs",
         "children": [
           {
-            "id": "047342c40eadb257",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2023-02-20.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf7397c3d7f49fb0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "About/Git.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "2369cf9dd55c2f40",
+            "id": "31fcc284021286e2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -40,19 +16,51 @@
                 "file": "About/Powershell.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Powershell"
             }
           },
           {
-            "id": "ddb61308b8eed2bd",
+            "id": "58a44c72d0271d51",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Docker.md",
+                "file": "About/Azure free services.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Azure free services"
+            }
+          },
+          {
+            "id": "5363f05428a18b15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Powershell.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Powershell"
+            }
+          },
+          {
+            "id": "fa8b8afd6eea012d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "About/Code Review.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Code Review"
             }
           }
         ],
@@ -76,7 +84,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -85,13 +95,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "merm",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -99,7 +111,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -107,14 +121,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 226.5
+    "width": 376.5
   },
   "right": {
     "id": "73b18e4a2db5f597",
@@ -130,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "About/Docker.md",
+                "file": "Learning DDD/zd notes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +154,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for zd notes"
             }
           },
           {
@@ -147,10 +165,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "About/Docker.md",
+                "file": "Learning DDD/zd notes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from zd notes"
             }
           },
           {
@@ -161,7 +181,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -170,8 +192,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "About/Docker.md"
-              }
+                "file": "Learning DDD/zd notes.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of zd notes"
             }
           },
           {
@@ -179,7 +203,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -187,7 +213,9 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           },
           {
@@ -199,15 +227,27 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "3dd7140c7248202d",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 239.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -218,35 +258,40 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "ddb61308b8eed2bd",
+  "active": "f88b6dbbc947393e",
   "lastOpenFiles": [
     "About/Powershell.md",
-    "About/Docker.md",
+    "About/Code Review.md",
+    "About/Quick book UI.md",
+    "About/Azure free services.md",
+    "Learning DDD/zd notes.md",
+    "Excalidraw/insurance coverage model.excalidraw.md",
+    "Excalidraw/Drawing 2024-10-23 14.00.33.excalidraw.md",
+    "Excalidraw/Drawing 2024-10-06 09.04.55.excalidraw.md",
+    "Excalidraw/Drawing 2023-08-24 20.47.17.excalidraw.md",
+    "Learning DDD/Hands-on DDD with .NET Core.md",
+    "Learning DDD/Learning DDD by Vlad Khononov.md",
+    "Learning DDD/Patterns of Enterprise Application Architecture.md",
+    "Learning DDD/Patterns, Principles, and Practices of DDD.md",
+    "Learning DDD/Strategic Design.md",
+    "Untitled.canvas",
+    "Tracking-Tasks.md",
+    "2023-02-20.md",
     "About/Git.md",
+    "About/Docker.md",
+    "Dot NET with Azure/Azure Event Hub Emulator.md",
     "keys in md.md",
     "Books/Hands-on Azure Functions with Csharp.md",
     "Dot NET with Azure/Azure functions.md",
-    "2023-02-20.md",
     "Dot NET 7/random.md",
     "Dot NET 7/json.md",
-    "Excalidraw/Drawing 2024-10-06 09.04.55.excalidraw.md",
     "About/Git Tips and Tricks.md",
     "2023-02-13.md",
-    "Tracking-Tasks.md",
-    "SOLID/SOLID in React.md",
-    "About/Angular/tips.md",
     "Pasted image 20240920134427.png",
-    "About/Typescript/setup a project.md",
-    "About/Typescript/tips.md",
-    "About/Quick book UI.md",
-    "About/Angular/Reactive Forms.md",
-    "About/Angular/ESLint.md",
-    "About/Angular/All v18 exercises.md",
-    "About/Angular/All v17 exercises.md",
-    "2023-02-15.md",
     "Pasted image 20240722220627.png",
     "Pasted image 20240218184419.png",
     "Pasted image 20240218183545.png",
@@ -256,9 +301,6 @@
     "Pasted image 20240218180311.png",
     "Pasted image 20240218180243.png",
     "Pasted image 20240218180230.png",
-    "About/Angular/interceptors.md",
-    "Books/Training stats.md",
-    "Books/ZD book list.md",
     "About/Typescript/tips",
     "About/Typescript",
     "About/React",
