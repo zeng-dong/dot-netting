@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Code Review.md",
+                "file": "About/Powershell.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Code Review"
+              "title": "Powershell"
             }
           }
         ],
@@ -262,10 +262,10 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f88b6dbbc947393e",
+  "active": "fa8b8afd6eea012d",
   "lastOpenFiles": [
-    "About/Powershell.md",
     "About/Code Review.md",
+    "About/Powershell.md",
     "About/Quick book UI.md",
     "About/Azure free services.md",
     "Learning DDD/zd notes.md",
