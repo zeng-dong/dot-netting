@@ -13,3 +13,17 @@ So I downloaded 4.32 installer and go to the folder and issue this command:
 	it prompts something like "do you want to replace " and I confirm
 
 
+# command
+docker
+docker ps
+docker pull
+docker rm
+
+# examples
+docker pull nginx:alpine
+docker images                    // see it
+docker run -p 8080:80 nginx:alpine              // in vervose mode, ctrl c to exit it  
+	go to localhost:8080 to see it
+ctrl c
+docker ps -a                  // list all the containers
+docker rm [container id ...]
