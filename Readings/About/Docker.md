@@ -1,3 +1,9 @@
+
+## version 2024.11.24
+engine 27.03
+desktop: 4.32.0 (157355)
+
+
 docker container run --rm -it -p 8080:80 nginx
 docker container run -i -t --rm -p 8080:8080 jenkins/jenkins:latest
 
