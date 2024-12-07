@@ -1,0 +1,7 @@
+docker compose -f <PathToDockerComposeFile> up -d
+
+
+docker compose -f "C:\_github\DotNetting\_nine\Azures\AzureServiceBusEmulatorDockerCompose\Emulator\docker-compose.yaml" up -d
+
+docker compose -f "C:\_github\DotNetting\_nine\Azures\AzureServiceBusEmulatorDockerCompose\Emulator\docker-compose.yaml" down
+
