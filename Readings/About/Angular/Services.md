@@ -54,3 +54,27 @@ describe('UserComponent', () => {
   });
 });
 ```
+Key Points:
+
+- **TestBed.inject:**
+    
+    Use `TestBed.inject` to get an instance of a dependency that you want to mock or spy on.
+    
+- **Spying on Dependencies:**
+    
+    Utilize `spyOn` to mock the behavior of dependencies, allowing you to isolate the component under test.
+    
+- **detectChanges:**
+    
+    Call `fixture.detectChanges()` to trigger change detection and update the component's view.
+    
+- Testing Functions with `inject`:
+    
+    If you're testing functions that use `inject`, you can use `TestBed.runInInjectionContext` to create an injection context for the test.
+    
+
+Benefits of Using `inject` in Tests:
+
+- **Cleaner Syntax:** Tests are more readable and less verbose.
+- **Easier to Mock Dependencies:** Mocking dependencies becomes straightforward with `TestBed.inject`.
+- **Improved Isolation:** Promotes better isolation of the component under test.
