@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace ChainOfResponsibility.Models;
 
-namespace ChainOfResponsibility.Models;
-internal class RiskState
+public class RiskState
 {
+    public bool Description { get; set; }
+    public string Code { get; set; }
 }
