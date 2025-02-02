@@ -5,6 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ChainOfResponsibility.Validators;
-internal interface IValidator
+
+public interface IValidator<T> where T : class
 {
+    IValidator<T> SetNext(IValidator<T> nextValidator);
+
+    void Validate(T value);
 }
