@@ -43,3 +43,9 @@ example software
 
 ![[Pasted image 20240218180952.png]]![[Pasted image 20240218181536.png]]
 ![[Pasted image 20240218183545.png]]![[Pasted image 20240218184419.png]]
+
+## training links
+https://app.pluralsight.com/library/courses/product-design-fundamentals
+https://app.pluralsight.com/library/courses/product-design-design-patterns
+https://app.pluralsight.com/library/courses/product-design-user-research-analysis
+https://app.pluralsight.com/library/courses/user-experience-design-fundamentals

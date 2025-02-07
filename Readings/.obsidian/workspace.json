@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/tips.md",
+                "file": "About/Quick book UI.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "tips"
+              "title": "Quick book UI"
             }
           }
         ],
@@ -250,13 +250,14 @@
   },
   "active": "e36ef3a1ae7d16b1",
   "lastOpenFiles": [
+    "About/Angular/tips.md",
+    "About/understanding-empiricism-slides.pdf",
     "About/Docker.md",
     "multi-roles-aws.png",
     "multi-roles-azure.png",
     "About/Angular/Routing.md",
     "About/Any.md",
     "About/Angular/Services.md",
-    "About/Angular/tips.md",
     "YouTube.md",
     "Web Development with Blazor.md",
     "keys in md.md",
@@ -278,7 +279,6 @@
     "Dot NET with Azure/ASPNET Core Security.md",
     "Dot NET with Azure/ASP.NET Core 6 Performance.md",
     "Dot NET 7/random.md",
-    "Dot NET 7/Generics.md",
     "Pasted image 20240920134427.png",
     "Pasted image 20240722220627.png",
     "Pasted image 20240218184419.png",
