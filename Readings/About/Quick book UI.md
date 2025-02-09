@@ -49,3 +49,11 @@ https://app.pluralsight.com/library/courses/product-design-fundamentals
 https://app.pluralsight.com/library/courses/product-design-design-patterns
 https://app.pluralsight.com/library/courses/product-design-user-research-analysis
 https://app.pluralsight.com/library/courses/user-experience-design-fundamentals
+
+
+# business rules > math rules
+
+![[Pasted image 20250209131801.png]]
+
+## button not disabled when there is no input
+![[Pasted image 20250209132719.png]]![[Pasted image 20250209133512.png]]

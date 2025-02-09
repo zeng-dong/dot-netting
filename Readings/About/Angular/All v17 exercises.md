@@ -10,6 +10,6 @@ Package Manager: npm 10.5.2
 
 # Angular cook book
 
-github: [GitHub - PacktPublishing/Angular-Cookbook-2E](https://github.com/PacktPublishing/Angular-Cookbook-2E)
+[github:](https://github.com/PacktPublishing/Angular-Cookbook-2E)
 
 
