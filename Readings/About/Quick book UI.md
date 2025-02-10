@@ -56,4 +56,20 @@ https://app.pluralsight.com/library/courses/user-experience-design-fundamentals
 ![[Pasted image 20250209131801.png]]
 
 ## button not disabled when there is no input
-![[Pasted image 20250209132719.png]]![[Pasted image 20250209133512.png]]
+
+new balance
+![[Pasted image 20250209132719.png]]
+
+adidas
+![[Pasted image 20250209133512.png]]
+ebay:
+![[Pasted image 20250209152336.png]]e
+
+nike:
+![[Pasted image 20250209152626.png]]
+
+azure:
+![[Pasted image 20250209152815.png]]
+
+intuit
+![[Pasted image 20250209152944.png]]
