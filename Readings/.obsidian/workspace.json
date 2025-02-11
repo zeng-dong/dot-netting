@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Quick book UI.md",
+                "file": "About/Scrum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quick book UI"
+              "title": "Scrum"
             }
           }
         ],
@@ -293,16 +293,16 @@
   },
   "active": "7a25f1105fd427fb",
   "lastOpenFiles": [
+    "About/QA.md",
+    "About/Scrum.md",
+    "About/Quick book UI.md",
     "Pasted image 20250209152944.png",
     "Pasted image 20250209152815.png",
     "Pasted image 20250209152626.png",
     "Pasted image 20250209152336.png",
-    "About/QA.md",
-    "About/Quick book UI.md",
     "Pasted image 20250209133512.png",
     "Pasted image 20250209132719.png",
     "Pasted image 20250209131801.png",
-    "About/Scrum.md",
     "About/Angular/All v17 exercises.md",
     "About/understanding-empiricism-slides.pdf",
     "About/Git Tips and Tricks.md",
@@ -330,7 +330,6 @@
     "SOLID/SOLID in React.md",
     "Dot NET with Azure/Secure Microservice with Azure AD.md",
     "Pasted image 20240920134427.png",
-    "Pasted image 20240722220627.png",
     "About/Typescript/tips",
     "About/Typescript",
     "About/React",
