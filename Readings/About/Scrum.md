@@ -511,3 +511,8 @@ In Scrum, **Functional Requirements Review** is **not a one-time event** but a *
 - Sprint reviews to validate outcomes.  
 
 By integrating FRR into Scrum rituals, teams ensure they build the **right features**, with **clear expectations**, and **minimize rework**. The goal is to foster a culture where **shared understanding** drives quality.
+
+
+
+
+![[Pasted image 20250221102657.png]]
