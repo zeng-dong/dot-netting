@@ -14,6 +14,53 @@ The pillars of empiricism are transparency, inspection and adaptation. Every eve
 > The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
 
 
+# scrum backlog: what vs how
+```
+Okay, so I need to figure out why a Scrum backlog shouldn't define how to do things. Let me start by recalling what a Scrum backlog is. From what I know, the Product Backlog is a list of features, enhancements, bugs, etc., that need to be addressed in the product. It's prioritized by the Product Owner.
+
+Now, the question is asking why the backlog shouldn't specify the "how." So, maybe it's about not dictating the technical details or methods. Let me think about Scrum principles. Scrum is part of Agile, which values individuals and interactions over processes and tools, and responding to change over following a plan. So, if the backlog starts prescribing how to do things, maybe that's against these principles.
+
+The team is self-organizing, right? So they should decide the best way to tackle the work. If the Product Backlog items (PBIs) are too prescriptive, that might take away the team's autonomy. For example, if a user story says "Implement the login feature using OAuth 2.0," that's specifying the how. But maybe the team has a better or more efficient method. By not specifying, the team can innovate or adapt based on their expertise.
+
+Also, the Product Owner is responsible for the "what" and the "why," while the Development Team handles the "how." So if the PO starts dictating the how, it could blur those responsibilities. The PO focuses on value and priorities, while the team focuses on delivering that value effectively.
+
+Another angle is that the backlog is meant to be adaptable. If you define the how upfront, changes become harder. The team might be locked into a specific approach, which could be problematic if new information comes up during the Sprint. Agile is all about adapting, so the how should emerge during the Sprint as the team works through the PBIs.
+
+Also, too much detail in the backlog could lead to micromanagement. The team might feel disempowered if every task is spelled out in detail. It could slow them down if they have to follow strict instructions instead of using their own judgment. Plus, the backlog might become too bulky and hard to maintain if every item includes detailed technical steps.
+
+But wait, aren't there times when some technical details are necessary? Like, maybe non-functional requirements or constraints. For example, if the product must use a specific API for compliance reasons. So maybe the "how" is acceptable when it's a constraint rather than a method. But in general, the team should decide the implementation details.
+
+Also, splitting the what and the how allows for better collaboration. The team can discuss the best approach during Sprint Planning or refinement meetings. This collaboration can lead to better solutions than if the approach was predetermined.
+
+Another thought: if the how is defined in the backlog, it might not account for the team's current context. For example, their skills, past experiences, or existing tech debt. The team is in the best position to assess what approach is feasible and effective given their unique situation.
+
+So putting this all together, the main reasons are respecting the team's autonomy, maintaining role clarity between PO and team, keeping the backlog flexible, avoiding micromanagement, allowing adaptation, and leveraging the team's expertise. The backlog should focus on the value and outcomes, not the implementation specifics.
+```
+
+The Scrum Product Backlog should avoid defining the "how" to uphold Agile principles and empower the team. Here's a structured breakdown of the reasoning:
+
+1. **Self-Organizing Teams**: 
+   - Scrum trusts the Development Team to determine the best technical approach. Prescribing methods undermines their autonomy and stifles innovation, as they are closest to the work and understand the practical constraints.
+
+2. **Role Clarity**:
+   - The Product Owner focuses on the "what" (priorities) and "why" (value), while the Development Team owns the "how." Blurring these roles risks inefficiency and conflicts, as it encroaches on the team's responsibilities.
+
+3. **Flexibility and Adaptability**:
+   - Agile emphasizes responding to change. Detailed "how" specifications in the Backlog create rigidity, making it harder to adapt to new insights or feedback during Sprints. Solutions should emerge iteratively.
+
+4. **Avoiding Micromanagement**:
+   - Overly prescriptive Backlog items can demotivate the team, reducing ownership and creativity. Trusting the team fosters engagement and leverages their expertise for better outcomes.
+
+5. **Focus on Value, Not Implementation**:
+   - The Backlog should articulate user-centric outcomes (e.g., "Users can securely log in") rather than technical steps (e.g., "Use OAuth 2.0"). This keeps the focus on delivering value, allowing the team to choose the most efficient path.
+
+6. **Collaboration and Context**:
+   - Teams can factor in their unique context (skills, tech debt, tools) during Sprint Planning. Predefined solutions might ignore these nuances, leading to suboptimal results.
+
+**Exceptions**: 
+- Non-functional requirements (e.g., compliance, performance standards) or organizational constraints (e.g., mandated tools) may necessitate specifying some "how" details, but these should be minimal and justified.
+
+In summary, separating the "what" from the "how" respects the team’s expertise, maintains agility, and aligns with Scrum’s core values of collaboration and adaptability.
 # Functional Review
 
 ## functional requirements
@@ -516,3 +563,5 @@ By integrating FRR into Scrum rituals, teams ensure they build the **right featu
 
 
 ![[Pasted image 20250221102657.png]]
+
+
