@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/screenshots.md",
+                "file": "About/Scrum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "screenshots"
+              "title": "Scrum"
             }
           }
         ],
@@ -237,9 +237,10 @@
   },
   "active": "f9e051d735abceeb",
   "lastOpenFiles": [
+    "About/screenshots.md",
+    "Pasted image 20250405190448.png",
     "Pasted image 20250405190317.png",
     "About/QA.md",
-    "About/screenshots.md",
     "Untitled.md",
     "About/Scrum.md",
     "About/Angular/Materials.md",
@@ -259,8 +260,6 @@
     "About/Git Tips and Tricks.md",
     "About/Angular/tips.md",
     "About/Docker.md",
-    "multi-roles-aws.png",
-    "multi-roles-azure.png",
     "About/Angular/Routing.md",
     "About/Angular/Services.md",
     "YouTube.md",

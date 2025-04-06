@@ -14,6 +14,83 @@ The pillars of empiricism are transparency, inspection and adaptation. Every eve
 > The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
 
 
+
+# acceptance criteria
+In a **multi-developer Scrum team**, an individual developer **can technically define acceptance criteria (AC) for a PBI without involving others**, but doing so **violates Agile principles** and risks creating inefficiencies, misalignment, or quality gaps. Here’s why:
+
+---
+
+### **Key Risks of Not Involving the Team**
+1. **Lack of Shared Understanding**:
+   - AC define the "done" criteria for a PBI. If one developer writes AC in isolation, other team members may misinterpret requirements, leading to rework or conflict.
+   - Example: A developer defines AC for an API endpoint but misses edge cases another developer would have identified (e.g., rate limiting, error handling).
+
+2. **Undermines Collaboration**:
+   - Scrum emphasizes **collective ownership** and cross-functional collaboration. Siloing AC creation erodes trust and shared responsibility.
+   - Developers may feel excluded or resentful if their expertise isn’t leveraged.
+
+3. **Narrow Focus**:
+   - A single developer might prioritize technical implementation over user value (e.g., "Use X library" vs. "User can upload files under 10MB").
+   - Non-functional requirements (security, performance) or integration points may be overlooked.
+
+4. **Product Owner Misalignment**:
+   - The Product Owner (PO) owns the backlog and AC. If a developer unilaterally defines AC without PO input, the work may not align with business goals.
+
+---
+
+### **When Is It Acceptable?**
+A developer **might draft AC alone** only in these scenarios:
+1. **Temporary Drafting**: Creating a *starting point* for team refinement (e.g., during Sprint Planning or Backlog Refinement).
+2. **Simple/Technical PBIs**: For low-complexity tasks with clear requirements (e.g., "Add logging for X feature").
+3. **Hybrid Roles**: If the developer is also acting as the PO or proxy (e.g., in small teams with role overlap).
+
+**Even then**, the AC should be **validated by the team and PO** before finalization.
+
+---
+
+### **Best Practices for AC in Multi-Developer Teams**
+1. **Collaborate During Refinement**:
+   - Use backlog refinement sessions to collectively define AC with the PO, developers, and testers.
+   - Ask: *“What does ‘done’ look like for everyone?”*
+
+2. **Leverage Team Expertise**:
+   - Developers bring unique perspectives (e.g., frontend vs. backend concerns). Use their input to catch gaps or risks early.
+
+3. **Use a Template**:
+   - Structure AC with user-centric language (e.g., BDD’s *Given-When-Then*):
+     ```
+     Given a user is logged in,
+     When they click "Delete Account",
+     Then they receive a confirmation email,
+     And their data is removed within 24 hours.
+     ```
+
+4. **PO Approval**:
+   - Ensure the PO reviews and signs off on AC to confirm alignment with business goals.
+
+5. **Avoid Ambiguity**:
+   - Write testable, specific criteria (e.g., “Response time < 2 seconds under 1,000 concurrent users”).
+
+---
+
+### **Example of Poor vs. Effective AC**
+**PBI**: *"Improve login page performance."*  
+❌ **Poor (Siloed AC)**:
+- “Use React.memo to optimize rendering.” (Focuses on implementation, not outcome.)  
+✅ **Effective (Collaborative AC)**:
+- “Login page loads in < 1.5 seconds on 3G networks (Lighthouse score ≥ 90).”  
+- “User can submit credentials without UI freezing.”  
+
+---
+
+### **Conclusion**
+While an individual developer **can** write AC alone, **they shouldn’t** in a Scrum team without collaboration. Agile thrives on shared ownership, transparency, and collective intelligence. By involving the team and PO, you ensure AC are:  
+- Aligned with user/business needs,  
+- Technically feasible,  
+- Free of blind spots.  
+
+If time constraints exist, draft AC as a starting point—but always refine them with the team.
+
 # scrum backlog: what vs how
 ```
 Okay, so I need to figure out why a Scrum backlog shouldn't define how to do things. Let me start by recalling what a Scrum backlog is. From what I know, the Product Backlog is a list of features, enhancements, bugs, etc., that need to be addressed in the product. It's prioritized by the Product Owner.
@@ -563,5 +640,6 @@ By integrating FRR into Scrum rituals, teams ensure they build the **right featu
 
 
 ![[Pasted image 20250221102657.png]]
+
 
 
