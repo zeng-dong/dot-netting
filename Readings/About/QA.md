@@ -572,3 +572,21 @@ QA professionals are **standards influencers** rather than unilateral setters. T
 In organizations that prioritize quality, QA’s voice is pivotal in shaping standards. In others, they may need to proactively demonstrate the ROI of robust quality practices to gain influence.
 
 
+
+
+
+# User Stories as Non-functional Requirements
+
+User stories as the less obvious nonfunctional requirements
+
+. One of the benefits of focusing on user stories is that it helps us get a better perspective than just looking at and thinking about a single functional requirement or just a nonfunctional requirement because a user's perspective is generally often both. What I mean by that is that they are interested in both functional and nonfunctional. They are interested in the core functionality of the system, but they also want quality aspects, like performance, reliability, usability. It's all part of the same experience as far as the user is concerned. And as I talked about earlier, 
+
+we can write nonfunctional requirements as user stories, and they work well, allowing us to describe what is important and why it is important. 
+
+But there are a couple of things to keep in mind. Phrasing is one of those things that is very important to keep in mind. 
+
+For example, so, you can say I want the website to be reliable, so I don't get annoyed and leave. Now, it's true that there are certain nonfunctional requirements that could seem oddly specific when phrased as a user story. For example, being with a user story that acts as a nonfunctional requirement, like a website user, I want the website to be reliable so I don't get annoyed and leave. Okay. Now, the team would want to refine this further because they want to make it more measurable. So to make it more measurable, they'll say I want the website to be available 99.9% of the time, so I don't get frustrated and leave. Now that becomes measurable. It's unlikely that any one of the website users personally, you know, thinks in specific uptime percentages, but we will need to add a level of specificity that is buried under a more generic phrase, like reliable. But we could have also taken a slightly different perspective, not the user, but as the, let's say, CIO, Chief Information Officer, that I want the website to be available 99% of the time, so that our customers don't get frustrated and leave. But one thing worth mentioning, 
+
+defining nonfunctional requirements as user stories like we're doing here is quite simple, but they don't often fall into that same level of achievable work. The availability of a website is something that has many different factors. So this isn't a user story that you're going to give to a developer and, here, go with it, you know, go ahead and do this. It needs to be clearly defined. It can still be given their own set of acceptance criteria and kept as a way to put a stake in the ground about this. 
+
+Now, if you're following Scrum, nonfunctional requirements written as user stories are often treated as constraints in the backlog rather than individual achievable backlog items by themselves. And you simply need to stay aware of them behind the scenes, like reliability. It's not just an achieve and finish sort of a thing. As your system grows, you need to remember of this constraint that it needs to remain reliable. Constraints. Constraints themselves are something we're going to talk a lot more about in the next module because we've been very focused on nonfunctional requirements, mainly as quality aspects of a system, but these days we also need to be concerned about constraints, not just technical, but legal issues, governance, privacy, constraints around costs, business rules, deployment choices. So in the next module, we're going to get into that.
