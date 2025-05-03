@@ -17,6 +17,11 @@ wt -M -p "PowerShell BlueDolphin"; split-pane -V -p "PowerShell Ubuntu"
 
 # monorepo
 
+### some links
+https://www.reddit.com/r/rust/comments/1d1oi3i/why_are_monorepos_a_thing/
+https://en.wikipedia.org/wiki/Monorepo
+https://www.sonarsource.com/blog/mono-repository-support-for-github-and-azure-devops/
+
 ## is monorepo better
 
 Whether a monorepo (monolithic repository) is "better" depends on your team's goals, scale, workflow, and tooling. There is no one-size-fits-all answer, but here’s a breakdown to help decide:
