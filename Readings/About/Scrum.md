@@ -16,6 +16,24 @@ The pillars of empiricism are transparency, inspection and adaptation. Every eve
 
 
 # acceptance criteria
+```
+Okay, the user is asking if a single developer on a Scrum team can define acceptance Criteria (AC) for a Product Backlog Item (PBI) without involving other developers. Let me break this down.
+
+First, I remember that in Scrum, the Product Owner typically owns the backlog and AC, but the team collaborates. The user's previous question was about an individual developer, maybe a solo context. Now, they're in a team setting but want to exclude others. That might be a problem.
+
+I need to address the roles in Scrum. The Product Owner is responsible for the backlog, but the team works together. If a developer writes AC alone, without input, it could lead to misunderstandings. For example, maybe they missed a requirement or the AC are too technical, not user-focused.
+
+The user might be thinking about efficiency. Maybe they feel involving everyone takes too long. But collaboration is key in Agile. I should explain the risks of not involving others: like incomplete AC, lack of shared understanding, or technical debt.
+
+Also, the team's ownership of the work. If one person defines AC, others might not feel committed. It could cause friction or silos. I should mention how collaboration improves quality and shared responsibility.
+
+But maybe there are scenarios where a developer can draft AC first. Like if they're working on a specific technical task. Then, others review it. So I should offer best practices: draft AC individually but get team feedback, use refinement sessions, involve the PO, etc.
+
+I should also highlight the importance of AC being user-centric and testable. If a developer writes AC alone, they might focus on code rather than user needs. Examples would help here. Maybe compare good vs bad AC.
+
+In conclusion, while possible, it's not advisable. The answer should balance acknowledging that technically a developer can write AC, but emphasizing the need for collaboration in a Scrum team to ensure quality and alignment.
+```
+
 In a **multi-developer Scrum team**, an individual developer **can technically define acceptance criteria (AC) for a PBI without involving others**, but doing so **violates Agile principles** and risks creating inefficiencies, misalignment, or quality gaps. Here’s why:
 
 ---
