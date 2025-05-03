@@ -314,6 +314,122 @@ jobs:
 
 By following these steps, you can efficiently integrate SonarQube with Azure DevOps for a monorepo, ensuring each module is analyzed independently while maintaining centralized reporting. Adjust the pipeline and properties based on your tech stack (e.g., Java, .NET, JavaScript).
 
+
+## who use monorepo
+```reasoning
+Okay, the user is asking "who use monorepo?" after previously discussing the pros and cons of monorepos and how to set up SonarQube for one in Azure DevOps. They might be looking for examples to validate if monorepos are a good choice by seeing who else uses them.
+
+First, I need to recall the major companies known for using monorepos. The previous response mentioned Google, Facebook, Microsoft, Twitter. I should expand on that list and maybe include more recent examples.
+
+Also, the user might be interested in understanding the industries or types of projects where monorepos are common. For example, tech giants, open-source projects, specific frameworks. Maybe they're considering a monorepo for their own project and want to see if similar companies or projects use it.
+
+I should categorize the users into different groups: tech giants, open-source projects, startups, specific frameworks/tools. That structure can help the user see the context in which monorepos are applied.
+
+Including some benefits those companies gain from monorepos would add value. For example, Google's unified codebase, Facebook's cross-project refactoring. Also, mentioning challenges they face, like scalability, can provide a balanced view.
+
+The user might also be curious about the tools these companies use to manage their monorepos, such as Bazel, Nx, Lerna. Including that information can be helpful for someone planning to implement a monorepo.
+
+I should make sure to mention both successful cases and the trade-offs involved. Maybe add a section on when it's practical to use a monorepo based on these examples. Also, clarify that not all companies use monorepos, and it's a choice dependent on specific needs.
+
+Need to check if there are any recent updates or new companies adopting monorepos. For example, Uber or Airbnb might have case studies. Also, Microsoft's use with TypeScript and VS Code is a good example.
+
+Including open-source projects like React, Angular, Babel can show that monorepos aren't just for big companies. Startups and smaller teams might use them too for certain benefits.
+
+I should structure the answer with clear headings for each category, examples under each, key benefits, challenges, and tools. Ending with a summary to help the user decide if a monorepo suits their needs based on who else uses them.
+
+Make sure the answer is comprehensive but not overwhelming. Use bullet points for readability. Also, link back to the previous discussion on pros and cons to maintain context.
+```
+Many prominent tech companies, open-source projects, and organizations use monorepos to manage their codebases. Here are some notable examples and their use cases:
+
+---
+
+### **1. Tech Giants**
+#### **Google**
+- **Use Case**: Google’s entire codebase (billions of lines of code) is stored in a single monorepo.
+- **Benefits**: Unified versioning, atomic changes, and simplified dependency management.
+- **Tools**: Custom tools like **Piper** (version control) and **Bazel** (build system).
+
+#### **Meta (Facebook)**
+- **Use Case**: Manages core products (Facebook, Instagram, WhatsApp) in a single monorepo.
+- **Benefits**: Cross-project refactoring, shared libraries, and unified CI/CD.
+- **Tools**: **Mercurial** (with extensions) and **Buck** (build system).
+
+#### **Microsoft**
+- **Use Case**: Uses monorepos for products like **TypeScript**, **VS Code**, and parts of Windows.
+- **Benefits**: Streamlined collaboration between teams and shared tooling.
+- **Tools**: **Git Virtual File System (GVFS)** for handling large repos.
+
+#### **Twitter (X)**
+- **Use Case**: Consolidated backend services into a monorepo to reduce dependency conflicts.
+- **Benefits**: Faster iteration and simplified code reuse.
+
+#### **Uber**
+- **Use Case**: Migrated to a monorepo for its web and mobile apps to improve consistency.
+- **Benefits**: Reduced duplication and centralized testing.
+
+---
+
+### **2. Open-Source Projects**
+#### **React, Jest, Babel (Meta OSS)**
+- **Use Case**: Meta’s open-source projects are managed in a single monorepo ([`facebook/react`](https://github.com/facebook/react)).
+- **Benefits**: Simplified cross-project updates (e.g., React and React Native).
+
+#### **Angular**
+- **Use Case**: Angular’s framework, CLI, and documentation are in one monorepo.
+- **Tools**: **Nx** for workspace management.
+
+#### **Vue.js**
+- **Use Case**: Core libraries (Vue 2/3, Vue Router, Vuex) are in a monorepo.
+- **Tools**: **pnpm** workspaces.
+
+#### **Babel**
+- **Use Case**: Plugins, presets, and core compiler are managed in a monorepo.
+- **Tools**: **Lerna** and **Yarn** workspaces.
+
+---
+
+### **3. Startups and Scaleups**
+- **Startups**: Many use monorepos for full-stack apps (frontend + backend + shared libraries) to avoid code duplication.
+- **Examples**: Companies like **Netflix**, **Airbnb**, and **Spotify** have experimented with monorepos for specific teams or projects.
+
+---
+
+### **4. Tools/Frameworks Built for Monorepos**
+- **Nx**: Used by enterprises like **Cisco** and **SAP** for monorepo management.
+- **Turborepo**: Adopted by startups and teams for JavaScript/TypeScript monorepos.
+- **Rush**: Microsoft’s tool for large-scale monorepos (used internally and by external teams).
+
+---
+
+### **Why These Companies/Projects Choose Monorepos**
+1. **Atomic Changes**: Update multiple projects in a single commit (e.g., fixing a shared library).
+2. **Code Reuse**: Shared utilities, design systems, and configurations.
+3. **Simplified CI/CD**: Unified testing and deployment pipelines.
+4. **Cross-Team Collaboration**: Break down silos between frontend, backend, and infrastructure teams.
+5. **Consistency**: Enforce coding standards, linting, and tooling across all projects.
+
+---
+
+### **Challenges They Face**
+- **Scalability**: Large repos require advanced tooling (e.g., **sparse checkouts**, **scalable CI**).
+- **Tooling Overhead**: Companies like Google and Meta build custom tools to manage their monorepos.
+- **Access Control**: Harder to restrict visibility in open-source projects or mixed public/private codebases.
+
+---
+
+### **Should You Use a Monorepo?**
+- **Yes, if**:
+  - Your team values tight collaboration and code reuse.
+  - You’re building interconnected projects (e.g., microservices, mobile + web apps).
+  - You can invest in tooling (e.g., **Bazel**, **Nx**, **Turborepo**).
+- **No, if**:
+  - Your projects are unrelated or have independent release cycles.
+  - Your team lacks resources to manage scalability.
+
+---
+
+### **Key Takeaway**
+Monorepos are widely adopted by companies and projects that prioritize **collaboration**, **code sharing**, and **unified workflows**. However, they require robust infrastructure and tooling to scale effectively. If your workflow aligns with the needs of these organizations, a monorepo might be a good fit.
 # build
 
 ## youtube
