@@ -14,7 +14,8 @@ The pillars of empiricism are transparency, inspection and adaptation. Every eve
 > The purpose of the Daily Scrum is to inspect progress toward the Sprint Goal and adapt the Sprint Backlog as necessary, adjusting the upcoming planned work.
 
 
-
+### hero dysfunction
+In Malignant Hero Dysfunction this person thinks they're a god and that the rules no longer apply to them, so here are some of the things that start to go wrong. Everything's written with unit tests. "Fuggedaboudit! " Everything's compiled as part of an automated build. Never mind. No patches are made directly against production servers. Everything passes code review? Don't even worry about it. Definition of Done, does it comply with Definition of Done? Nah, don't even worry about it, forget about it, so this starts to become a bit of a problem because well, Hero dysfunction in any form starts to kill self-organization. This one here is pretty effective at killing team-orientation. Tends to kill team morale because well, no one gets to do anything anymore. This hero jumps in and does all the cool stuff. Now the downside is that because this person is above the law, as they stop paying attention to the Definition of Done, and they start making shortcuts to make this stuff all happen, it can tend to introduce quality problems, and if they're not following the full Definition of Done you're almost, well you're literally by definition introducing technical debt into your system, and that technical debt is going to become a problem, so as a Scrum Master you really have to look out for this particular flavor of hero dysfunction, and my advice with this one is that there's something that this person needs. This is ego driven. You have to find a way to stroke their ego and make it okay for them to hang back. Maybe coach them to be more of a mentor role than a straight up hero role, but whatever it is, notice that it's happening because it can wreck your self-organizing team if you're not careful. Next up, let's talk about the changing Sprint Length dysfunction.
 # acceptance criteria
 ```
 Okay, the user is asking if a single developer on a Scrum team can define acceptance Criteria (AC) for a Product Backlog Item (PBI) without involving other developers. Let me break this down.
@@ -660,4 +661,7 @@ By integrating FRR into Scrum rituals, teams ensure they build the **right featu
 ![[Pasted image 20250221102657.png]]
 
 
+
+
+```
 
