@@ -9,6 +9,54 @@ Angular
 Generative AI
 Scrum
 
+
+# 2025 first half topics
+Scaling Agile Foundations	
+Enterprise Architecture: Adapting to Lean and Agile	
+Organizing Software Teams for Success
+Scaling Agile: Starting an Agile Program
+Agile Planning and Estimation
+Creating a Culture of Collaborative Ownership
+Listen and Learn from Failure
+Scrum Product Owner: Product Backlog Management
+
+Refactor and Optimize Code with GitHub Copilot
+Writing Tests with GitHub Copilot
+GitHub Copilot Code Review
+
+
+# 三人成虎
+The Chinese idiom **"三人成虎"** (sān rén chéng hǔ) translates literally to **"Three people create a tiger"**, but its deeper meaning is more nuanced. Here are two common English interpretations:
+
+---
+
+### **Literal Translation**  
+**"If three people say there’s a tiger, others will believe it exists."**
+
+### **Idiomatic Translation**  
+**"Repeat a lie often enough, and it becomes the truth."**  
+*(or)*  
+**"A rumor repeated by many is mistaken for reality."**
+
+---
+
+### **Origin & Meaning**  
+This idiom comes from a Warring States Period (475–221 BCE) story. A minister warned his king:  
+*"If one person claims there’s a tiger in the marketplace, you’d dismiss it. If a second person says the same, you might doubt. But if a third repeats it, you’ll believe the tiger truly exists—even though it’s impossible."*  
+
+The phrase critiques how **repetition of falsehoods can sway public belief**, emphasizing the dangers of misinformation and herd mentality. It parallels the English concept of **"the bandwagon effect"** or the adage **"A lie told a thousand times becomes the truth"** (often misattributed to propaganda).
+
+---
+
+### **Usage Notes**  
+- Applies to politics, media, or social dynamics where unchecked rumors spread.  
+- Warns against blind trust in hearsay and encourages critical thinking.  
+
+Example:  
+*"The conspiracy theory went viral online—it’s a classic case of 三人成虎."*
+
+Let me know if you'd like further details! 😊
+
 # 朝闻道夕可死矣
 
 The Chinese phrase **"朝闻道，夕可死矣"** (zhāo wén dào, xī kě sǐ yǐ) is a classical saying from Confucian philosophy, often attributed to Confucius in *The Analects* (《论语》). Here are two common English translations, along with context:
