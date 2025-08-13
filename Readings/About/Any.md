@@ -11,14 +11,15 @@ Scrum
 
 
 # 2025 first half topics
-Scaling Agile Foundations	
-Enterprise Architecture: Adapting to Lean and Agile	
-Organizing Software Teams for Success
-Scaling Agile: Starting an Agile Program
-Agile Planning and Estimation
-Creating a Culture of Collaborative Ownership
-Listen and Learn from Failure
-Scrum Product Owner: Product Backlog Management
+* Scaling Agile Foundations	
+* Enterprise Architecture: Adapting to Lean and Agile	
+* Organizing Software Teams for Success
+* Scaling Agile: Starting an Agile Program
+* Agile Planning and Estimation
+* Creating a Culture of Collaborative Ownership
+* Listen and Learn from Failure
+* Goal Setting for Leaders and Team Members: Strengthening Vague Goals
+* Scrum Product Owner: Product Backlog Management
 
 Refactor and Optimize Code with GitHub Copilot
 Writing Tests with GitHub Copilot
