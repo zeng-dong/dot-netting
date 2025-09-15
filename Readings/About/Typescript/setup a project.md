@@ -25,3 +25,19 @@ server:
 node server.js
 client:
 npm run start
+
+
+# 2025 setup - simpler than before with tsx
+
+## if locally
+1. npm i typescript --save-dev
+2. npm i tsx --save-dev
+3. npx tsx hello.ts
+
+so I simply create a folder, cd into the folder and execute the 3 command above, output of hello.ts is actually seen in console
+no need to init a project or anything
+## if globally
+1. get node
+2. npm i -g typescript
+3. tsc --version
+4. 
