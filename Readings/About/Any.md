@@ -20,6 +20,7 @@ Scrum
 * Listen and Learn from Failure
 * Goal Setting for Leaders and Team Members: Strengthening Vague Goals
 * Scrum Product Owner: Product Backlog Management
+* Implementing Scrum and Avoiding Scrum Anti-Patterns
 
 Refactor and Optimize Code with GitHub Copilot
 Writing Tests with GitHub Copilot
