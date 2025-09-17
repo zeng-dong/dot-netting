@@ -1,0 +1,8 @@
+[Creating Developer Documentation with GitHub Copilot](https://app.pluralsight.com/library/courses/creating-developer-documentation-github-copilot)
+[Navigating and Analyzing Codebases with GitHub Copilot](https://app.pluralsight.com/library/courses/navigating-analyzing-codebases-github-copilot)
+[GitHub Copilot Code Review](https://app.pluralsight.com/library/courses/github-copilot-code-review)
+[Debug and Troubleshoot Code with GitHub Copilot](https://app.pluralsight.com/library/courses/debug-troubleshoot-code-github-copilot)
+[Secure Development with GitHub Copilot](https://app.pluralsight.com/library/courses/secure-development-github-copilot)
+[Writing Tests with GitHub Copilot](https://app.pluralsight.com/library/courses/writing-tests-github-copilot)
+[Refactor and Optimize Code with GitHub Copilot](https://app.pluralsight.com/library/courses/refactor-optimize-code-github-copilot)
+[CI/CD Integration with GitHub Copilot](https://app.pluralsight.com/library/courses/ci-cd-integration-github-copilot)
