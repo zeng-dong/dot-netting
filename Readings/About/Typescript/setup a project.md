@@ -64,6 +64,29 @@ Errors  Files
 4. to make this error go away: npm install @types/node --save
 5. now I can run 'npx tsx hello.ts' and it works
 
+### add rxjs to this non-angular project
+same as adding angular/core
+1. npm install rxjs --save
+2. write rxjs code like 
+```javascript
+import { signal } from "@angular/core";
+import { of } from "rxjs";
+import { map } from "rxjs/operators";
+
+console.log("hello world");
+const s = signal<string>("hello signals");
+console.log(s());
+
+of(1, 2, 3)
+    .pipe(map((x) => x * x))
+    .subscribe((v) => console.log(`value: ${v}`));
+```
+3. run 'npx tsx hello.ts': it works
+
+### to see the compiled js file
+1. run npx tsc hello.ts
+2. a "hello.js" is generated and you can view it.
+
 so I simply create a folder, cd into the folder and execute the 3 command above, output of hello.ts is actually seen in console
 no need to init a project or anything
 ## if globally
