@@ -27,6 +27,29 @@ Writing Tests with GitHub Copilot
 GitHub Copilot Code Review
 
 
+# nerd code
+```c#
+[ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/accounting/credit-reasons")]
+    [ApiController]
+    public class CreditReasonsController : ApiControllerBase
+    {
+        public CreditReasonsController(IMediator mediator, IMapper mapper) : base(mediator, mapper)
+        {
+        }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanAddCreditReason)]
+        [HttpPost("create")]
+        public async Task<ActionResult> Create([FromBody] CreateCreditReason createCreditReason)
+        {
+            return await ResultForCommand(RequestDispatcher
+                .RequestingTo(createCreditReason)
+                .OnSuccess<RequestConfirmation<CreditReason>>((confirmation, response) => response.Message = CreditReasonAdded)
+                .OnFailure(response => response.Message = FailedToAddCreditReason)
+            );
+        }
+```
+
 # 三人成虎
 The Chinese idiom **"三人成虎"** (sān rén chéng hǔ) translates literally to **"Three people create a tiger"**, but its deeper meaning is more nuanced. Here are two common English interpretations:
 
