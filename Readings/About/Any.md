@@ -115,6 +115,88 @@ GitHub Copilot Code Review
         }
     }
 }
+
+// some integration tests
+{
+    [Collection("Non-Parallel Collection")]
+    public class creating_credit_reason
+        : _credit_reason_context, IClassFixture<CreatingCreditReasonWebAppFactory>
+    {
+        [Fact]
+        public void using_automatic_accounts()
+        {
+            this.scenario(
+                given_new_credit_reason_that_uses_automatic_accounts,
+                when_calling_the_endpoint,
+                then_valid_response_is_returned
+                );
+        }
+
+        [Fact]
+        public void invalid_reason_gets_validation_errors()
+        {
+            this.scenario(
+                given_new_reason_to_be_created_is_invalid,
+                when_calling_the_endpoint,
+                then_valid_response_with_validation_errors_is_returned
+                );
+        }
+
+// some unit tests
+{
+    public class code_is_validated : _validating_context
+    {
+        [Fact]
+        public void code_not_provided()
+        {
+            this.scenario(
+                given_code_not_provided,
+                when_being_validated,
+                then_validation_error_should_be_reported_on_code_field
+            );
+        }
+        
+        [Fact]
+        public void code_provided()
+        {
+            this.scenario(
+                given_code_is_provided,
+                when_being_validated,
+                then_validation_error_should_NOT_be_reported_on_code_field
+            );
+        }
+
+        [Fact]
+        public void code_length_exceeds_limit()
+        {
+            this.scenario(
+                given_code_is_provided,
+                given_code_length_exceeds_limit,
+                when_being_validated,
+                then_validation_error_should_be_reported_on_code_field
+            );
+        }
+
+        [Fact]
+        public void code_already_exists()
+        {
+            this.scenario(
+                given_code_already_exists,
+                when_being_validated,
+                then_validation_error_should_be_reported_on_code_field
+            );
+        }
+
+        [Fact]
+        public void code_is_unique()
+        {
+            this.scenario(
+                given_code_is_unique,
+                when_being_validated,
+                then_validation_error_should_NOT_be_reported_on_code_field
+            );
+        }
+
 ```
 
 # 三人成虎
