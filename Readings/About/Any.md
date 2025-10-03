@@ -29,13 +29,28 @@ GitHub Copilot Code Review
 
 # nerd code
 ```c#
-[ApiVersion("1.0")]
+{
+    [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/accounting/credit-reasons")]
     [ApiController]
     public class CreditReasonsController : ApiControllerBase
     {
         public CreditReasonsController(IMediator mediator, IMapper mapper) : base(mediator, mapper)
         {
+        }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanAddCreditReason)]
+        [HttpGet("new")]
+        public async Task<ActionResult> StartNew()
+        {
+            return await ResultForQuery(RequestDispatcher
+                .RequestingTo(new StartNewCreditReason())
+                .OnSuccess<RequestConfirmation<Recipe>>((confirmation, response) =>
+                {
+                    response.Data = confirmation.Data.Lite();
+                })
+                .OnFailure(response => response.Data = null)
+            );
         }
 
         [Authorize(Policy = PolicyDefinitions.Accounting.CanAddCreditReason)]
@@ -48,6 +63,58 @@ GitHub Copilot Code Review
                 .OnFailure(response => response.Message = FailedToAddCreditReason)
             );
         }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanListCreditReason)]
+        [HttpGet]
+        public async Task<ActionResult> List()
+        {
+            return await ResultForQuery(RequestDispatcher
+                .RequestingTo(new GetCreditReasons())
+                .OnSuccess<RequestConfirmation<IEnumerable<CreditReasonApiModel>>>((confirmation, response) =>
+                {
+                    response.Data = confirmation.Data;
+                })
+                .OnFailure(response => { response.Data = null; })
+            );
+        }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanUpdateCreditReason)]
+        [HttpGet("{creditReasonId}/edit")]
+        public async Task<ActionResult> RequestEdit([FromRoute] Guid creditReasonId)
+        {
+            return await ResultForQuery(RequestDispatcher
+                .RequestingTo(new EditCreditReason(creditReasonId))
+                .OnSuccess<RequestConfirmation<Recipe>>((confirmation, response) =>
+                {
+                    response.Data = confirmation.Data;
+                })
+                .OnFailure(response => response.Data = null)
+            );
+        }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanUpdateCreditReason)]
+        [HttpPost("{creditReasonId}/update")]
+        public async Task<ActionResult> Update([FromBody] UpdateCreditReason updateCreditReason)
+        {
+            return await ResultForCommand(RequestDispatcher
+                .RequestingTo(updateCreditReason)
+                .OnSuccess<RequestConfirmation<CreditReason>>((confirmation, response) => response.Message = CreditReasonUpdated)
+                .OnFailure(response => response.Message = FailedToUpdateCreditReason)
+            );
+        }
+
+        [Authorize(Policy = PolicyDefinitions.Accounting.CanRetireCreditReason)]
+        [HttpPost("{creditReasonId}/retire")]
+        public async Task<ActionResult> Retire([FromRoute] RetireCreditReason retireCreditReason)
+        {
+            return await ResultForCommand(RequestDispatcher
+                .RequestingTo(retireCreditReason)
+                .OnSuccess<RequestConfirmation>((confirmation, response) => response.Message = CreditReasonRetired)
+                .OnFailure(response => response.Message = FailedToRetireCreditReason)
+            );
+        }
+    }
+}
 ```
 
 # 三人成虎
