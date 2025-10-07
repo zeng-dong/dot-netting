@@ -1,4 +1,12 @@
 
+# fish
+**Adage**‌
+Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime.
+It's better to teach someone a skill than to give them charity.
+Empowering others with knowledge is more valuable than providing temporary aid.
+
+- _"Give a man a fish, he eats for a day; show him how to catch fish, he eats for a lifetime."
+
 # Refactor and optimize code
 
 ## identifying refactoring opportunities
@@ -23,12 +31,6 @@ for OrderService.cs
 * You are an expert senior programmer, please review this code and provide suggestions for making it more maintainable and following best practices => o3-mini
 * Please review this code for resilience issues - does it handle errors appropriately => Claude 3.5 Sonnet
 
-**Adage**‌
-Give a man a fish, and you feed him for a day; teach a man to fish, and you feed him for a lifetime.
-It's better to teach someone a skill than to give them charity.
-Empowering others with knowledge is more valuable than providing temporary aid.
-
-- _"Give a man a fish, he eats for a day; show him how to catch fish, he eats for a lifetime."_
 
 ## refactoring with Inline Chat
 
@@ -114,4 +116,32 @@ https://github.com/vriesmarcel/copilot_debug.git
 * analyzing stack traces
 * getting targeted fixes for common c# , EF Core exceptions
 * writing prompts to identify root causes
-* 
+
+## diagnosing bugs and troubleshooting logic issues
+```
+it is good to dissect first the difference between a bug and a logic error. 
+
+So a bug is a broad term for any flaw, error, or defect in the software that can cause it to behave unexpectedly or incorrectly. 
+
+Now bugs come in all different flavors. One of them is the notion of a logic issue. A logic issue is a specific type of bug where the program runs without any syntax error or runtime errors, but the output or behavior is incorrect because the code does not implement the intended logic. 
+
+So why are we making this difference? What is the big deal here? Well, the way you approach finding these logic issues is a bit different from finding bugs. This has to do with the fact that in case of a bug, you often have something to give to Copilot in the form of an exception information or crash information or debug trace or console log information. With a logic issue, this is less simple because we witness something in the software that is not working as expected. This is often not reflected in any logs. It's more behavior we witness, and then we need to describe this to Copilot. 
+
+This means you need to write down what the behavior is you witnessed and what you had expected. It can help if you know which part of the software is manifesting itself and then select a part of the code to provide it as context to Copilot to reason over. 
+
+	* how to solve the bug
+	* how to prompt Copilot to find and fix logic issues
+```
+
+### diagnosing bugs
+
+
+
+
+# Writing Tests with GitHub Copilot
+
+## setting up a Test Project with Chat
+
+prompt: I want to unit test the code in GloboTicket.TicketManageMent.Application. Can you help me set up the test project GloboTicket.TicketManagement.Testing? Don't add nuget package that aren't necessary.
+model: Claude Sonnet 3.7  ? 
+model I used: gpt5-mini
