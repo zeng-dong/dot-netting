@@ -145,3 +145,28 @@ This means you need to write down what the behavior is you witnessed and what y
 prompt: I want to unit test the code in GloboTicket.TicketManageMent.Application. Can you help me set up the test project GloboTicket.TicketManagement.Testing? Don't add nuget package that aren't necessary.
 model: Claude Sonnet 3.7  ? 
 model I used: gpt5-mini
+
+
+# 5 # Copilot Chat Prompts .NET Devs Should Steal
+
+[the Awesome GitHub Copilot Customizations repo](https://github.com/github/awesome-copilot?tab=readme-ov-file#-reusable-prompts)
+
+## 1. “Explain this code and suggest optimizations.”
+
+When you inherit a legacy project or revisit old code, understanding what’s going on can be daunting. Add the files for your C# code into Copilot Chat and ask for not only an explanation but also recommendations for performance, readability, or maintainability improvements. You’ll save time and might learn a new trick or two!
+
+## 2. “Write unit tests for this method/class.”
+
+Testing is essential but often overlooked when deadlines loom. Put your cursor in the method or class and let Copilot Chat generate robust unit tests using xUnit, MSTest, or NUnit. It’s a great way to ensure coverage and catch edge cases you might have missed.
+
+## 3. “Convert this code to use async/await.”
+
+Modern .NET apps should leverage asynchronous programming for scalability and responsiveness. If you’ve got synchronous code, ask Copilot Chat to rewrite it with async/await patterns. This helps future-proof your codebase and enhances user experience.
+
+## 4. “Find and fix potential security issues in this snippet.”
+
+Security is everyone’s responsibility, but it can be tough to spot every vulnerability. Ask Copilot Chat to review your code for common security pitfalls like SQL injection, XSS, or improper input validation. Let AI be your extra set of eyes before pushing to production.
+
+## 5. “Generate sample data or mock objects for this model.”
+
+Whether you’re prototyping an API or writing tests, realistic data is crucial. Copilot Chat can instantly generate mock data or objects for any model, helping you simulate real-world scenarios and get your app off the ground faster.
