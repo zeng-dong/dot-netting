@@ -170,3 +170,26 @@ Security is everyone’s responsibility, but it can be tough to spot every vulne
 ## 5. “Generate sample data or mock objects for this model.”
 
 Whether you’re prototyping an API or writing tests, realistic data is crucial. Copilot Chat can instantly generate mock data or objects for any model, helping you simulate real-world scenarios and get your app off the ground faster.
+
+# Navigating and Analyzing Codebases
+#### sample prompt
+##### get a general idea
+Please create a project cheat sheet for me that contains the following
+* Archtecture Overview - What are the main directories and files?
+* Key Components & Patterns - What React patterns are being used?
+* APIs & Data Flow - How does the frontend communicate with the backend?
+* Reusable Utilities & Helpers - Are there existing functions you should use instead of reinventing the wheel?	   
+##### ask for adding instruction
+Create a folder in the root of the project called .github and create a Markdown file in it called copilot-instructions.md containing all of the contents from our project cheat sheet
+
+
+# Creating Developer Documentation 
+https://github.com/adbertram
+
+
+# General Tips
+
+### make sure your codebase is indexed so GHC understands everything
+two options
+1. "Build remote workspace index" button. This will read all files in repo and build index and update the repo
+2. Ctrl+Shift+P => typing "index"  => Build Local Workspace Index
