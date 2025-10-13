@@ -9,41 +9,41 @@ namespace GhcIntegrationTesting.IntegrationTests;
 
 /// <summary>
 /// Demonstrates integration testing using Named HttpClient pattern.
-/// 
+///
 /// Named HttpClient pattern offers several advantages over traditional HttpClient usage:
-/// 
+///
 /// 1. Lifecycle Management:
 ///    - Prevents socket exhaustion by reusing HttpClient instances
 ///    - Automatically handles DNS changes through connection pooling
 ///    - Manages the lifetime of HttpClient instances properly
-/// 
+///
 /// 2. Dependency Injection Integration:
 ///    - Allows clean dependency injection of HTTP clients
 ///    - Makes it easier to swap implementations for testing
 ///    - Enables typed clients for different services
-/// 
+///
 /// 3. Configuration Management:
 ///    - Centralizes HTTP client configuration
 ///    - Allows different configurations for different endpoints
 ///    - Makes it easy to add middleware, handlers, or policies
-/// 
+///
 /// 4. Testing Benefits:
 ///    - Enables easy mocking through custom handlers
 ///    - Allows verification of HTTP requests
 ///    - Supports different test configurations without changing code
-/// 
+///
 /// 5. Resilience and Security:
 ///    - Can integrate with Polly for retry policies
 ///    - Centralizes security configuration (certificates, headers)
 ///    - Makes it easier to implement circuit breakers
-/// 
+///
 /// For testing specifically, named HttpClient pattern enables:
 /// - Replacing real HTTP calls with mocked responses
 /// - Verifying exact requests made by the application
 /// - Testing error handling and retry logic
 /// - Simulating different network conditions
 /// - Testing timeout and cancellation scenarios
-/// 
+///
 /// This test class demonstrates these concepts by:
 /// - Using a custom TestMessageHandler to mock responses
 /// - Verifying request details (URL, headers, etc.)
