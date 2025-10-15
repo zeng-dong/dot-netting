@@ -36,8 +36,8 @@ some other scenarios of bridge/interface we can think:
 
 have we considered:
 WireMock or WireMock.net, 
-who do they even exist
-who so many downloads
+why do they even exist
+why so many downloads
 
 # weather forecast with integration test with wiremock.net
 zeng-dong: create a simple asp.net core web api project in this folder, with the goal to demo how to develope integration tests mocking external api calls, pleae use wiremock.net
