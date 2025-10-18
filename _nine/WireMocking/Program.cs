@@ -1,4 +1,5 @@
 ﻿using System.Net.Mime;
+using WireMock.Matchers;
 using WireMock.RequestBuilders;
 using WireMock.ResponseBuilders;
 using WireMock.Server;
@@ -21,6 +22,30 @@ server.Given(Request.Create().WithPath("/test").UsingGet())
         .WithHeader("Content-Type", "application/json")
         .WithBody("Welcome to WireMocking!"));
 
+server.Given(Request.Create().WithPath("/headers").UsingGet())
+    .RespondWith(Response.Create()
+        .WithStatusCode(200)
+        .WithHeaders(new Dictionary<string, string>
+        {
+            { "Content-Type", "application/json" },
+            { "x-custom-header", "custom-value" },
+            { "accept", MediaTypeNames.Application.Json },
+            { "Cache-Control", "no-cache" }
+        })
+        .WithBody("Welcome to WireMocking!"));
+
+// stub productId - match one particular value
+server.Given(Request.Create().WithPath("/product/123").UsingGet())
+    .RespondWith(Response.Create()
+        .WithStatusCode(200)
+        .WithHeader("Content-Type", "application/json")
+        .WithBody("{ \"productId\": 123, \"productName\": \"Sample Product\" }"));
+
+server.Given(Request.Create().WithPath(new RegexMatcher("/product/[0-9]+$")).UsingGet())
+    .RespondWith(Response.Create()
+        .WithStatusCode(200)
+        .WithHeader("Content-Type", "application/json")
+        .WithBody("{ \"productId\": 123, \"productName\": \"Sample Product\" }"));
 
 Console.ReadLine();
 
