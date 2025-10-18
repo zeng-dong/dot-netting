@@ -47,6 +47,13 @@ server.Given(Request.Create().WithPath(new RegexMatcher("/product/[0-9]+$")).Usi
         .WithHeader("Content-Type", "application/json")
         .WithBody("{ \"productId\": 123, \"productName\": \"Sample Product\" }"));
 
+
+server.Given(Request.Create().WithPath(new WildcardMatcher("/product/*")).UsingGet())
+    .RespondWith(Response.Create()
+        .WithStatusCode(200)
+        .WithHeader("Content-Type", "application/json")
+        .WithBody("{ \"productId\": 123, \"productName\": \"Sample Product\", \"description\": \"can match any alphabet\" }"));
+
 Console.ReadLine();
 
 // create the sub
