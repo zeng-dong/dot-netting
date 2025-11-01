@@ -3,3 +3,10 @@ GET http://localhost:7103/api/Function1_HttpStart
 
 ####
 GET http://localhost:7103/runtime/webhooks/durabletask/instances/830c298680f7481a97d04ba8f2aaaf33?code=TBqAZOI8OuiLQgiQl-BO1E-ilmFoRlLmyNOF5Db2UrHuAzFuQwafAw==
+
+####
+GET http://localhost:7103/api/NewOrderOrchestration_HttpStart
+
+
+####
+GET http://localhost:7103/runtime/webhooks/durabletask/instances/d8ff171d1ca848b1b97d3bc53debca56?code=TBqAZOI8OuiLQgiQl-BO1E-ilmFoRlLmyNOF5Db2UrHuAzFuQwafAw==

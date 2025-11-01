@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "57f97e2da9a9cd4e",
+        "id": "0c219fc03be76f26",
         "type": "tabs",
         "children": [
           {
-            "id": "c7d7147f8adc2fd4",
+            "id": "d7e94076ffe83365",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/QA.md",
+                "file": "About/Azure Function/Using Visual Studio Code.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "QA"
-            }
-          },
-          {
-            "id": "f9e051d735abceeb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "About/Scrum.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Scrum"
+              "title": "Using Visual Studio Code"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "merm",
+                "query": "azurite",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,8 +70,8 @@
             "state": {
               "type": "starred",
               "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-ghost",
+              "title": "starred"
             }
           },
           {
@@ -99,7 +84,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -216,7 +202,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -224,6 +210,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": false,
@@ -235,19 +222,46 @@
       "mermaid-tools:Open Mermaid Toolbar": false
     }
   },
-  "active": "f9e051d735abceeb",
+  "active": "d7e94076ffe83365",
   "lastOpenFiles": [
+    "Books/Hands-on Azure Functions with Csharp.md",
+    "Dot NET with Azure/Azure functions.md",
+    "Dot NET with Azure/Azure Event Hub Emulator.md",
+    "About/Any.md",
+    "About/Azure free services.md",
+    "About/Azure Function/Using Visual Studio Code.md",
+    "About/Docker/Docker.md",
+    "About/Docker/Podman.md",
+    "About/Code Review.md",
+    "About/Typescript/setup a project.md",
+    "About/Github Copilot/any.md",
+    "About/AspnetCore/Any.md",
+    "About/AspnetCore",
+    "About/Github Copilot/prompts.md",
+    "About/Github Copilot/Github Copilot.md",
+    "About/Github Copilot/trainings.md",
+    "About/Claude/Any.md",
+    "About/Claude",
+    "About/Github Copilot/Untitled 1.base",
+    "About/Github Copilot/Untitled.base",
+    "About/Github Copilot/Untitled 2.base",
+    "About/understanding-empiricism-slides.pdf",
+    "About/Scrum.md",
     "About/screenshots.md",
+    "About/Git Tips and Tricks.md",
+    "About/Git.md",
+    "About/Docker/Docker and SQL Server.md",
+    "About/Docker/Docker for Software Development.md",
+    "About/Github Copilot",
+    "About/Docker",
+    "About/Powershell.md",
+    "2023-02-13.md",
+    "About/Angular/signal store.md",
+    "Dot NET with Azure/Key vault.md",
+    "About/Azure Function",
     "Pasted image 20250405190448.png",
     "Pasted image 20250405190317.png",
-    "About/QA.md",
-    "Untitled.md",
-    "About/Scrum.md",
-    "About/Angular/Materials.md",
-    "About/Code Review.md",
     "Pasted image 20250221102657.png",
-    "About/Any.md",
-    "About/Quick book UI.md",
     "Pasted image 20250209152944.png",
     "Pasted image 20250209152815.png",
     "Pasted image 20250209152626.png",
@@ -255,31 +269,7 @@
     "Pasted image 20250209133512.png",
     "Pasted image 20250209132719.png",
     "Pasted image 20250209131801.png",
-    "About/Angular/All v17 exercises.md",
-    "About/understanding-empiricism-slides.pdf",
-    "About/Git Tips and Tricks.md",
-    "About/Angular/tips.md",
-    "About/Docker.md",
-    "About/Angular/Routing.md",
-    "About/Angular/Services.md",
-    "YouTube.md",
-    "Web Development with Blazor.md",
-    "keys in md.md",
-    "Projects/Angular.md",
     "Untitled.canvas",
-    "Tracking-Tasks.md",
-    "Quotes.md",
-    "2023-03-13.md",
-    "2023-02-26.md",
-    "2023-02-20.md",
-    "2023-02-16.md",
-    "2023-02-15.md",
-    "About/Typescript/tips",
-    "About/Typescript",
-    "About/React",
-    "About/Angular",
-    "About",
-    "Projects/React",
-    "Projects"
+    "About/Typescript/tips"
   ]
 }

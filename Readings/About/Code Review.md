@@ -1,4 +1,7 @@
-
+besides finding defects
+sharing patterns, 
+sharing knowledge,
+increased a sense of mutual ownership
 # Code Review Benefits
 
 * Catch bugs

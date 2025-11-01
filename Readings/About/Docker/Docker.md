@@ -1,4 +1,7 @@
 
+
+
+
 ## system requirement
 
 
@@ -153,3 +156,10 @@ ENTRYPOINT ["dotnet", "ASP.NETCoreDemos.dll"]
 # 1. docker build -t aspnetcoredemos:2.0 .
 # 2. docker run -d -p 8080:80 aspnetcoredemos:2.0
 ```
+
+# mastering container: a practical guide for .net developers - NDC Oslo 2025
+## how we run things, better always use --rm
+docker run --rm hello-world
+
+docker inspect hello-world
+

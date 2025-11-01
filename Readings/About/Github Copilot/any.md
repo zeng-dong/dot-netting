@@ -455,6 +455,200 @@ Would you like me to add more examples or explain any specific aspect in more de
 Made changes.
 
 
+# I asked deepseek to give me an example of flaky api test in csharp
+Here's a concrete example of a flaky API test in C# that calls an external API:
+
+## Flaky Test Example
+
+```csharp
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Xunit;
+
+public class FlakyWeatherApiTest : IDisposable
+{
+    private readonly HttpClient _httpClient;
+
+    public FlakyWeatherApiTest()
+    {
+        // This is the first problem - using the real external API in tests
+        _httpClient = new HttpClient
+        {
+            BaseAddress = new Uri("https://api.weatherapi.com/")
+        };
+    }
+
+    [Fact]
+    public async Task GetWeather_ValidCity_ReturnsWeatherData()
+    {
+        // Arrange
+        var apiKey = "test-key-123"; // Could be invalid/expired
+        var city = "London";
+        
+        // Act - This call is flaky for multiple reasons
+        var response = await _httpClient.GetAsync($"/v1/current.json?key={apiKey}&q={city}");
+        
+        // Assert
+        response.EnsureSuccessStatusCode(); // This will fail randomly
+        
+        var content = await response.Content.ReadAsStringAsync();
+        Assert.Contains("temperature", content); // Assuming structure that might change
+    }
+
+    [Fact]
+    public async Task GetWeather_RateLimited_ThrowsException()
+    {
+        // This test is especially flaky - depends on external rate limiting
+        for (int i = 0; i < 100; i++) // Might trigger rate limiting
+        {
+            var response = await _httpClient.GetAsync($"/v1/current.json?key=test-key&q=London{i}");
+            // Sometimes passes, sometimes gets 429 Too Many Requests
+        }
+    }
+
+    public void Dispose()
+    {
+        _httpClient?.Dispose();
+    }
+}
+```
+
+## Why This Test is Flaky
+
+**1. Network Issues**
+```csharp
+// These can fail randomly:
+// - DNS resolution fails
+// - Connection timeout  
+// - SSL handshake issues
+// - Network latency
+var response = await _httpClient.GetAsync($"/v1/current.json?key={apiKey}&q={city}");
+```
+
+**2. External API Availability**
+```csharp
+// The external service might be:
+// - Down for maintenance
+// - Experiencing outages
+// - Deployed with breaking changes
+response.EnsureSuccessStatusCode(); // Random 500, 503, 404 errors
+```
+
+**3. Authentication/Authorization**
+```csharp
+var apiKey = "test-key-123"; // Could be:
+// - Expired
+// - Rate limited  
+// - Revoked
+// - Invalid format
+```
+
+**4. Data Volatility**
+```csharp
+var city = "London";
+// The response structure or data might change:
+// - API version updates
+// - Field names changed ("temp" → "temperature")
+// - Data format changes (string → object)
+Assert.Contains("temperature", content);
+```
+
+**5. Rate Limiting**
+```csharp
+// Making multiple calls quickly:
+for (int i = 0; i < 100; i++)
+{
+    var response = await _httpClient.GetAsync($"...");
+    // Eventually returns 429 Too Many Requests
+}
+```
+
+## Better Approach: Mock the External API
+
+```csharp
+using System;
+using System.Net;
+using System.Net.Http;
+using System.Threading;
+using System.Threading.Tasks;
+using Moq;
+using Moq.Protected;
+using Xunit;
+
+public class ReliableWeatherApiTest
+{
+    [Fact]
+    public async Task GetWeather_ValidCity_ReturnsWeatherData()
+    {
+        // Arrange - Create a mock HTTP client
+        var mockHttpHandler = new Mock<HttpMessageHandler>();
+        var response = new HttpResponseMessage
+        {
+            StatusCode = HttpStatusCode.OK,
+            Content = new StringContent(@"{
+                ""location"": { ""name"": ""London"" },
+                ""current"": { ""temp_c"": 15.0, ""condition"": { ""text"": ""Cloudy"" } }
+            }")
+        };
+
+        mockHttpHandler.Protected()
+            .Setup<Task<HttpResponseMessage>>(
+                "SendAsync",
+                ItExpr.IsAny<HttpRequestMessage>(),
+                ItExpr.IsAny<CancellationToken>()
+            )
+            .ReturnsAsync(response);
+
+        var httpClient = new HttpClient(mockHttpHandler.Object)
+        {
+            BaseAddress = new Uri("https://api.weatherapi.com/")
+        };
+
+        var weatherService = new WeatherService(httpClient);
+
+        // Act
+        var weather = await weatherService.GetWeatherAsync("London");
+
+        // Assert
+        Assert.Equal(15.0, weather.Temperature);
+        Assert.Equal("Cloudy", weather.Condition);
+    }
+}
+
+public class WeatherService
+{
+    private readonly HttpClient _httpClient;
+
+    public WeatherService(HttpClient httpClient)
+    {
+        _httpClient = httpClient;
+    }
+
+    public async Task<WeatherData> GetWeatherAsync(string city)
+    {
+        var response = await _httpClient.GetAsync($"/v1/current.json?key=test-key&q={city}");
+        response.EnsureSuccessStatusCode();
+        
+        // Deserialize and return weather data
+        return new WeatherData(15.0, "Cloudy");
+    }
+}
+
+public record WeatherData(double Temperature, string Condition);
+```
+
+## Key Fixes in the Better Approach:
+
+1. **Mocked HTTP calls** - No real network calls
+2. **Controlled responses** - Consistent test data
+3. **No external dependencies** - Tests run in isolation
+4. **Fast execution** - No network latency
+5. **Deterministic results** - Same outcome every time
+
+The flaky test will pass sometimes and fail other times based on factors completely outside your control, making it unreliable for continuous integration and developer workflow.
+
+
 # zd's generic question to ghc without a concrete context
 zeng-dong: explain how to mock external api calls in asp.net core integration tests, can you also give me a simple esampel
 
@@ -725,3 +919,6 @@ If you'd like, I can:
 - Integrate this example into your repository (create files under your project layout) and run the tests here.
 - Show an example using a named HttpClient or WireMock.Net.
 - Add assertions for request headers or a sequence of responses (e.g., retries).
+
+
+I asked deepseek to give me a flaky test in c#

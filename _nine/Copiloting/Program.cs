@@ -1,8 +1,11 @@
-﻿using Copiloting.diagnosing;
+﻿using Copiloting.debugging;
+using Copiloting.diagnosing;
 
-Console.WriteLine("Hello, Copiloting!");
+//Console.WriteLine("Hello, Copiloting!");
 
-new Buggy().LogicIssue();
+new Example().Run(new string[] { "-1" });
+
+//new Buggy().LogicIssue();
 
 /*
  1. exception:
