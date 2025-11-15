@@ -1,4 +1,14 @@
 
+# angular deep dive: NgRx
+### install and configure NgRx store to a project
+npm install @ngrx/store @ngrx/effect
+open the app.config file and register the ngrx store
+	provideStore()
+	provide Effects()
+	 
+
+
+
 # my first training
 
 Welcome to this Guided Lab where you’ll build a product catalog app from scratch! You’ll use Angular’s Signal Store API to create reactive state containers, enabling your app to manage shared form data and async operations efficiently. You’ll configure stores with state, methods, computed signals, and RxJS methods; use effects for async workflows; integrate state for zoneless updates; compare to traditional patterns; and apply advanced techniques like computed business logic. The goal is to create a reactive app that handles state using modern practices, equipping you with skills for scalable Angular development.

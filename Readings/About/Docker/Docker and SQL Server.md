@@ -38,3 +38,16 @@ docker context use default
 ```
 
 now 'docker ps' works and also I am able to 'docker pull mcr.microsoft.com/mssql/server:2022-latest'
+
+### running Ardalis clean-arch templated solution
+with Docker Desktop running, docker pull sql server fails, even with some latest versions (4.50 for example)
+so I switch to Rancher Desktop and I have to run
+```
+docker context use default
+```
+now the Aspire dashboard sees resources are running, include Papercut and Sqlserver
+use this conn string to connect with ssms
+```
+Server=127.0.0.1,57537;User ID=sa;Password=p_.G~W!)MdH98TCgQF~ujx;TrustServerCertificate=true
+```
+
