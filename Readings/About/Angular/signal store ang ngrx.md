@@ -1,12 +1,34 @@
 
 # angular deep dive: NgRx
+
+I have two projects in my monorepo: 
+	ngrx-fundamentals: this is the starting project. The Product List component does everything: fetch, state man, display 
+	ngrx-fundamentals-to-ngrx: convert to ngrx
+
 ### install and configure NgRx store to a project
-npm install @ngrx/store @ngrx/effect
+npm install @ngrx/store @ngrx/effects
+	zdnotes: as of 12/6/2025, I have to downgrade angular from 21 to 20 to be able to use latest ngrx
 open the app.config file and register the ngrx store
 	provideStore()
 	provide Effects()
-	 
+verify it works
+	in a component, inject store, and in its ngOnInit: this.store.select(state => state).subscribe(s => console.log('App State: ', s));  and see output in dev console
 
+### actions
+they are events, not commands
+naming: event source and category
+dispatch
+
+### reducers
+pure functions
+transition from state to next state
+
+### effects
+
+### selectors
+the bridge between store and component
+pure functions, for obtaining slices
+memorized
 
 
 # my first training

@@ -27,14 +27,14 @@ Signals should generally be the default choice when 
 generally speaking, signals should be your go to for local, state, general state management, and straightforward reactivity
 
 
+# monorepo
+1. create a single workspace without any angular projects: ng new angular-patterns-monorepo --no-create-application
+2. cd into the workspace
+3. generate individual application project: 
+	1. ng generate application shop
+	2. ng generate application account
+	3. ng generate application admin
+4. generate other types of project:
+	1. ng generate library my-shared-lib
 
-<table border="0">
- <tr>
-    <td><b style="font-size:30px">Title</b></td>
-    <td><b style="font-size:30px">Title 2</b></td>
- </tr>
- <tr>
-    <td>Lorem ipsum ...</td>
-    <td>Lorem ipsum ...</td>
- </tr>
-</table>
+

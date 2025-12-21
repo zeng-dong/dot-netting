@@ -776,3 +776,49 @@ How to structure a .NET Solution (project separation & architecture)
 	https://www.youtube.com/watch?v=YiVqwoFMieg&ab_channel=NickChapsas
 
 https://www.youtube.com/@RahulNath/videos
+
+
+
+# global variables vs "Favor Local Variables and Function Parameters"
+
+## does global variable make unit testing difficult
+==Yes, global variables make unit testing significantly more difficult== primarily because they introduce **shared mutable state** and **hidden dependencies**. 
+
+Core Difficulties in Unit Testing
+
+- **Test Pollution and Lack of Isolation**: Global variables persist between tests. If one test modifies a global variable and doesn't reset it, subsequent tests may fail or pass erroneously because they started with an unexpected state.
+- **Hidden Dependencies**: When a function relies on a global variable, its inputs are no longer just its parameters. This makes it unclear what "context" needs to be set up before calling the function to ensure a predictable result.
+- **Difficulty in Parallelization**: Modern test runners often run tests in parallel to save time. Tests that read and write to the same global variables will interfere with each other (race conditions), leading to "flaky" tests that fail intermittently.
+- **Brittle Setup and Tear-down**: To ensure a "clean" environment, you must manually reset every global variable in a `setUp()` or `tearDown()` function. This is error-prone; if you add a new global and forget to add it to your test reset logic, you introduce hidden bugs.
+- **Challenges with Mocking**: It is often harder to replace a global variable with a "mock" or "stub" (for example, to simulate a database failure) compared to variables passed via Dependency Injection. 
+
+Better Alternatives
+
+To make code more testable, developers typically replace global variables with: 
+
+- **Dependency Injection**: Passing necessary data or objects as function arguments so dependencies are explicit and easily mocked.
+- **Configuration Objects**: Grouping related settings into a single object passed where needed, rather than using individual global flags.
+- **Constants**: If a value never changes (immutable), it is generally safe to keep global as it cannot cause side effects or state pollution.
+## Favor Local Variables and Function Parameters
+Favoring local variables and function parameters is ==a core principle of modular and clean programming==. This approach prioritizes keeping data within the narrowest possible scope to improve code reliability and maintainability. 
+
+**Core Benefits**
+
+- **Reduced Side Effects:** Local variables exist only within the function or block where they are declared. This prevents accidental modification of data by other parts of the program, which is a common source of bugs when using global variables.
+- **Improved Readability:** When you pass data as parameters, the function’s requirements are explicitly stated in its definition. This makes it clear what information the function needs to operate, without requiring a developer to hunt through the entire codebase for hidden global dependencies.
+- **Easier Debugging:** Because a local variable's value can only be changed within its specific function, you only need to look at a small segment of code to track down where an error might be occurring.
+- **Memory Efficiency:** Local variables are typically stored on the stack and are only allocated memory while the function is executing. Once the function finishes, that memory is automatically reclaimed.
+- **Encapsulation:** Using local variables allows you to hide implementation details. A function can perform complex internal calculations using temporary variables without exposing those details to the rest of the application. 
+
+**Local Variables vs. Parameters**
+
+While both have local scope, they serve distinct purposes:
+
+- **Function Parameters:** Act as the "input" for the function. They are initialized with the values (arguments) provided by the caller.
+- **Local Variables:** These are declared inside the function body to hold intermediate results or manage internal state during execution. 
+
+**Best Practices**
+
+- **Avoid Global Variables:** Treat globals as a "code smell". If you find yourself needing to share data across many functions, consider passing it through parameters or using object-oriented design.- 
+- **Keep Parameters Read-Only:** It is generally considered good practice to treat parameters as immutable within the function. If you need to modify an input, assign it to a new local variable first to maintain clarity and avoid confusing the caller.
+- **Narrow Scope:** Declare variables as close to their point of use as possible to make the code easier to follow.
