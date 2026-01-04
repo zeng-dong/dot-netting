@@ -1525,3 +1525,195 @@ Try this in your next retrospective:
 Remember: **Standards are tools, not commandments.** Use them when they help, ignore them when they don't. That's what being Agile actually means.
 
 The goal isn't to be compliant. **The goal is to deliver value sustainably.** Choose standards that serve that goal, and question ones that don't.
+
+
+# one page checklist through vs studio github copilot
+GitHub Copilot
+One‑page Angular code review checklist — concise, actionable, copyable for PRs.
+•	PR scope
+•	[ ] Title and description explain intent, scope, and user impact.
+•	[ ] Ticket/acceptance criteria referenced.
+•	[ ] PR size reasonable; large changes split into smaller PRs.
+•	Build / automation
+•	[ ] ng build --prod (or CI) completes without errors.
+•	[ ] Linting passed (ng lint / ESLint rules) and no new rule disables left.
+•	[ ] All CI checks green (build, lint, unit, e2e where applicable).
+•	Tests
+•	[ ] Unit tests added/updated for new logic; run ng test.
+•	[ ] Meaningful assertions, not just implementation details.
+•	[ ] Coverage OK for changed modules (meet team threshold).
+•	[ ] E2E or integration tests updated if behavior impacts flows.
+•	TypeScript & code quality
+•	[ ] No any or // @ts-ignore without justification and a linked ticket.
+•	[ ] Functions and components small, single responsibility.
+•	[ ] No dead/commented-out code; remove unused imports and variables.
+•	[ ] Meaningful names for components, services, variables.
+•	[ ] Avoid complex nested conditionals — prefer small helpers.
+•	Angular best practices
+•	[ ] Prefer OnPush change detection where applicable; verify no broken bindings.
+•	[ ] Use async pipe in templates instead of manual subscribe/unsubscribe when possible.
+•	[ ] Subscriptions unsubscribed or handled via takeUntil, AsyncPipe, or take(1).
+•	[ ] No heavy logic in templates; keep templates declarative.
+•	[ ] Use trackBy on *ngFor for list rendering performance.
+•	[ ] Avoid direct DOM manipulation; use Renderer2 or directives.
+•	[ ] Modules are logically organized and lazily loaded where appropriate.
+•	RxJS
+•	[ ] Use proper operators (map, switchMap vs mergeMap) appropriate to intent.
+•	[ ] No memory leaks from Subjects/Observables.
+•	[ ] Side effects placed in services/effects, not in component templates.
+•	Security
+•	[ ] No untrusted innerHTML or bypassing sanitizer without reason; use DomSanitizer where needed.
+•	[ ] HTTP requests use HttpClient with typed responses; error handling present.
+•	[ ] Secrets never checked into repo (environment.ts excluded, use secure store).
+•	[ ] Validate input and output where accepting external data.
+•	Performance
+•	[ ] Avoid unnecessary change detection triggers; use OnPush or ChangeDetectorRef appropriately.
+•	[ ] Lazy load large feature modules and assets.
+•	[ ] Images and assets optimized; large JS bundles examined (ng build --stats if needed).
+•	Accessibility (a11y)
+•	[ ] Semantic HTML used; interactive elements keyboard-focusable.
+•	[ ] aria-* attributes present where needed; labels associated with inputs.
+•	[ ] Color contrast and focus indicators checked.
+•	[ ] Screen-reader flows validated for new UI.
+•	Styling / CSS
+•	[ ] Styles scoped (component styles) or justified global styles.
+•	[ ] No duplicated CSS; variables/mixins used from design system.
+•	[ ] Responsive behavior validated for breakpoints.
+•	Architecture / dependencies
+•	[ ] New dependencies approved and minimal; security review for new packages.
+•	[ ] Avoid adding heavy libraries for small features — prefer lightweight alternatives.
+•	[ ] Public API surface of modules/components documented and stable.
+•	Docs / runbooks / supportability
+•	[ ] README.md / storybook updated for new components or usage examples.
+•	[ ] Release notes / changelog updated if applicable.
+•	[ ] Monitoring/telemetry events added or updated if feature requires it.
+•	[ ] Runbook or support notes created for operational concerns (errors, rollback).
+•	Commit hygiene
+•	[ ] Commits focused, rebased/clean history if required by team.
+•	[ ] No debug logs or console statements left (console.log, debugger removed).
+•	Acceptance & UX
+•	[ ] Acceptance criteria verified manually where needed.
+•	[ ] Edge cases and error states covered (empty lists, network failure).
+•	[ ] UX matches designs (pixel/behavior review) or deviations documented.
+Optional (team-specific)
+•	[ ] Feature toggle implemented for incremental rollout.
+•	[ ] Internationalization (i18n) keys added/updated where UI text changed.
+•	[ ] Storybook story added/updated for visual regression and QA.
+Paste this into your PR template or docs/code-review-checklist.md and adapt thresholds (test coverage, dependency rules) to team policy.
+
+#  What are some best practices for conducting effective code reviews in an Angular project?
+Breathe.
+Concise best practices for doing effective code reviews in an Angular project — actionable, easy to enforce.
+Process & scope
+•	Keep PRs small and focused — one behavior / feature / bug per PR.
+•	Include clear title, description, referenced ticket, and acceptance criteria.
+•	Assign 1–2 reviewers and a time-window for review to avoid blocking the sprint.
+•	Use a checklist for recurring items (lint, tests, docs, a11y, telemetry).
+Automate first, review second
+•	Enforce style and trivial checks with linters, formatters, and pre-commit hooks (ESLint, Prettier).
+•	Require CI to pass (build, unit tests, lint, e2e if applicable) before human review.
+•	Automate performance/security scans where possible.
+Technical focus areas (high ROI)
+•	Correctness & intent: does code do what the ticket requires? Are edge cases handled?
+•	Tests: unit tests for logic, integration/e2e for flows; avoid brittle implementation-only assertions.
+•	Typesafety: prefer strict types; avoid any and // @ts-ignore without justification.
+•	RxJS: ensure correct operator (switchMap vs mergeMap) and proper error handling; prefer async pipe.
+•	Subscriptions: avoid manual unsubscribed subscribe(); use | async, takeUntil, or take(1).
+•	Change detection: prefer ChangeDetectionStrategy.OnPush where appropriate and verify bindings. Example:
+@Component({
+  selector: 'app-my',
+  templateUrl: './my-component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class MyComponent { /* ... */ }
+•	Performance: use trackBy with *ngFor, lazy-load modules, optimize large assets and third-party libs.
+•	HTTP: use typed HttpClient calls (http.get<MyModel>()) and robust error handling / retries when needed.
+•	Accessibility: check semantic HTML, keyboard nav, aria-*, color contrast.
+Security & maintainability
+•	Avoid unsafe innerHTML / bypassing sanitization; require explicit justification and review.
+•	Vet new dependencies for size and vulnerabilities; prefer lightweight packages.
+•	Keep components small and single-responsibility; extract services for side effects.
+Review hygiene & communication
+•	Focus comments on behavior and maintainability, not style (automate style).
+•	Give concrete suggestions and, when possible, link to docs or code examples.
+•	If a change is large, request a spike or split the work; don’t overload a single PR with infra + feature.
+•	Use inline comments for lines and a short summary comment for higher-level concerns.
+Follow-up & learning
+•	Require docs/storybook/runbook updates when relevant.
+•	Track recurring review items in the team retro and update team guidelines or DoD.
+•	Rotate reviewers to spread knowledge; pair-review complex changes.
+Quick PR reviewer checklist (copy into PR template)
+•	[ ] CI/build/lint/tests passed
+•	[ ] Scope matches ticket; acceptance criteria verified
+•	[ ] Types and interfaces correct; no unjustified any
+•	[ ] RxJS/subscriptions handled safely (async / takeUntil)
+•	[ ] OnPush and trackBy used where applicable
+•	[ ] Security: no unsafe innerHTML, secrets, or unvetted deps
+•	[ ] Accessibility, performance, and docs updated
+If you want, I can convert the checklist into a single-file docs/code-review-checklist.md you can drop into the repo. Which format do you prefer?
+
+# What are some common pitfalls to avoid during code reviews in an Angular project?
+Breathe.
+GitHub Copilot
+Common pitfalls to avoid during code reviews in an Angular project (concise, with quick mitigations)
+•	Poor change-detection choices
+•	Problem: Default change detection leads to unnecessary re-renders.
+•	Avoid by: Prefer ChangeDetectionStrategy.OnPush where feasible and verify bindings still work.
+•	Unsubscribed Observables / memory leaks
+•	Problem: subscribe() without cleanup causes leaks.
+•	Avoid by: Use async pipe, takeUntil, take(1), or manage subscriptions in ngOnDestroy.
+•	Excessive logic in templates
+•	Problem: Heavy computations or method calls in templates harm performance and testability.
+•	Avoid by: Move logic to component getters/methods or services and cache results.
+•	Using any and disabling TypeScript checks
+•	Problem: Weak typing hides bugs.
+•	Avoid by: Keep strict typing, remove // @ts-ignore, and open tickets if a temporary any is used.
+•	Direct DOM manipulation and bypassing Angular APIs
+•	Problem: document.querySelector / direct DOM changes break SSR/testing and lifecycle.
+•	Avoid by: Use Renderer2, directives, or Angular APIs.
+•	Not using async pipe for Observables
+•	Problem: Manual subscribe/unsubscribe boilerplate and potential leaks.
+•	Avoid by: Use | async in templates for streams.
+•	Not using trackBy with *ngFor lists
+•	Problem: Re-rendering entire lists on small changes reduces performance.
+•	Avoid by: Implement trackBy functions.
+•	Heavy components / poor separation of concerns
+•	Problem: Large components mixing UI, logic, state, and side effects.
+•	Avoid by: Extract services, child components, and presentational vs container patterns.
+•	Incorrect RxJS operator choices
+•	Problem: Using mergeMap instead of switchMap or missing error handling changes behavior.
+•	Avoid by: Review operator semantics, handle errors with catchError, and add tests.
+•	Insufficient HTTP typing and error handling
+•	Problem: Untyped HttpClient responses and missing error branches.
+•	Avoid by: Use typed generics http.get<MyModel>(), robust error handling and retries where applicable.
+•	Bypassing the sanitizer or using innerHTML unsafely
+•	Problem: XSS vulnerabilities.
+•	Avoid by: Use DomSanitizer correctly and only trust sanitized content with explicit justification.
+•	Adding heavy or unvetted dependencies
+•	Problem: Bundle size and security risks.
+•	Avoid by: Require justification, check bundle impact (source-map-explorer) and security advisories.
+•	Not lazy-loading modules or assets
+•	Problem: Large initial bundle and slow startup.
+•	Avoid by: Use feature module lazy loading and code splitting.
+•	Fragile or missing tests
+•	Problem: Tests that assert implementation details or none at all.
+•	Avoid by: Prefer behavior-driven tests, mock external dependencies, and add unit/e2e for critical paths.
+•	Ignoring accessibility (a11y) and keyboard flows
+•	Problem: UI not usable by assistive tech.
+•	Avoid by: Check semantic HTML, aria-*, tab order, and run quick audits (axe, Lighthouse).
+•	CSS leakage and poor styling scope
+•	Problem: Global styles inadvertently affecting unrelated components.
+•	Avoid by: Use component-scoped styles, BEM or design system classes, and minimize global overrides.
+•	Leaving debug artifacts in code
+•	Problem: console.log, debugger, or commented code committed.
+•	Avoid by: Lint rules and PR checks; remove before merge.
+•	Not updating docs / stories / runbooks
+•	Problem: Consumers and QA lack guidance.
+•	Avoid by: Require README, Storybook, or docs updates as part of PR acceptance criteria.
+•	Overlooking internationalization (i18n) and formatting
+•	Problem: Hard-coded strings or locale assumptions.
+•	Avoid by: Use the i18n pipeline or translation keys and validate formatting for dates/numbers.
+Use these as quick review checks — for each PR call out the issue, cite an example line, and suggest the minimal change or link to the team standard. Would you like a one-page printable checklist version of these items?
+
+
+

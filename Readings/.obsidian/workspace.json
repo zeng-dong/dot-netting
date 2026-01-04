@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/migrate from custom-webpack to esbuild.md",
+                "file": "About/Scrum.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "migrate from custom-webpack to esbuild"
+              "title": "Scrum"
             }
           }
         ]
@@ -224,6 +224,7 @@
   "active": "03abc513b85e1c90",
   "lastOpenFiles": [
     "About/Code Review.md",
+    "About/Scrum.md",
     "About/Angular/migrate from custom-webpack to esbuild.md",
     "About/Angular/signal store ang ngrx.md",
     "About/AspnetCore/dotnet 10.md",
@@ -250,7 +251,6 @@
     "About/AspnetCore",
     "About/Github Copilot/prompts.md",
     "About/Github Copilot/Github Copilot.md",
-    "About/Github Copilot/trainings.md",
     "About/Claude",
     "About/Github Copilot/Untitled 1.base",
     "About/Github Copilot/Untitled.base",
