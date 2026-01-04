@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "About/Angular/signal store ang ngrx.md",
+                "file": "About/Angular/migrate from custom-webpack to esbuild.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "signal store ang ngrx"
+              "title": "migrate from custom-webpack to esbuild"
             }
           }
         ]
@@ -223,9 +223,10 @@
   },
   "active": "03abc513b85e1c90",
   "lastOpenFiles": [
-    "About/AspnetCore/dotnet 10.md",
-    "About/Angular/signal store ang ngrx.md",
     "About/Code Review.md",
+    "About/Angular/migrate from custom-webpack to esbuild.md",
+    "About/Angular/signal store ang ngrx.md",
+    "About/AspnetCore/dotnet 10.md",
     "About/Angular/migrate from custom webpack to esbuild.md",
     "About/Github Copilot/any.md",
     "About/Any.md",
@@ -250,7 +251,6 @@
     "About/Github Copilot/prompts.md",
     "About/Github Copilot/Github Copilot.md",
     "About/Github Copilot/trainings.md",
-    "About/Claude/Any.md",
     "About/Claude",
     "About/Github Copilot/Untitled 1.base",
     "About/Github Copilot/Untitled.base",
