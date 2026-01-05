@@ -11,10 +11,14 @@
             "id": "5e7edcbfc84dc32f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "About/Code Review.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Code Review"
             }
           }
         ]
