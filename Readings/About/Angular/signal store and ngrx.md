@@ -1,4 +1,9 @@
 
+# angular deep dive: modern state with Signals and SignalStore
+
+## following the m2 demo
+npm i @ngrx/signals ngx-toastr
+
 # angular deep dive: NgRx
 
 I have two projects in my monorepo: 

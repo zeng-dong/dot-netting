@@ -590,3 +590,179 @@ For example, so, you can say I want the website to be reliable, so I don't get a
 defining nonfunctional requirements as user stories like we're doing here is quite simple, but they don't often fall into that same level of achievable work. The availability of a website is something that has many different factors. So this isn't a user story that you're going to give to a developer and, here, go with it, you know, go ahead and do this. It needs to be clearly defined. It can still be given their own set of acceptance criteria and kept as a way to put a stake in the ground about this. 
 
 Now, if you're following Scrum, nonfunctional requirements written as user stories are often treated as constraints in the backlog rather than individual achievable backlog items by themselves. And you simply need to stay aware of them behind the scenes, like reliability. It's not just an achieve and finish sort of a thing. As your system grows, you need to remember of this constraint that it needs to remain reliable. Constraints. Constraints themselves are something we're going to talk a lot more about in the next module because we've been very focused on nonfunctional requirements, mainly as quality aspects of a system, but these days we also need to be concerned about constraints, not just technical, but legal issues, governance, privacy, constraints around costs, business rules, deployment choices. So in the next module, we're going to get into that.
+
+# zd: can an sdet automatically converted to be functioning as an sde?
+
+by nonnet 4.5: can an sdet automatically converted to be functioning as an sde?
+
+An SDET (Software Development Engineer in Test) can transition to an SDE (Software Development Engineer) role, but it's **not automatic** - it requires intentional effort and depends on several factors:
+
+## What makes the transition possible:
+
+**Strong foundation** - SDETs already have solid coding skills, understand software architecture, and work with the same tools and languages as SDEs. This gives them a significant head start.
+
+**Transferable skills** - Experience with CI/CD, debugging, system design (from a testing perspective), and code review all translate directly to SDE work.
+
+## What typically needs development:
+
+**Feature development experience** - SDETs focus on testing infrastructure and automation, while SDEs build product features. This requires shifting from "how do I test this?" to "how do I build this?"
+
+**Algorithm and data structure depth** - Depending on the company, SDEs may need stronger skills in these areas for technical interviews and daily work.
+
+**Product thinking** - SDEs often need to think more about user experience, business requirements, and product tradeoffs rather than quality and edge cases.
+
+**Scale and complexity** - Building production systems at scale may involve different challenges than building test frameworks.
+
+## How to make the transition:
+
+- Take on feature development tasks alongside testing work
+- Contribute to production code in your current role
+- Build side projects that demonstrate product development skills
+- Study system design and prepare for SDE interviews
+- Some companies have internal mobility programs that make this easier
+
+## Reality check:
+
+The transition is common and achievable, but you'll likely need to interview (internally or externally) and demonstrate SDE-level skills. It's more of a **career pivot** than an automatic conversion. Many successful SDEs started as SDETs though, so it's definitely a viable path.
+
+# zd: what could go wrong if we transition sdets to sdes, particularly without interview, and by technical lead?
+
+by sonnet 4.5:
+
+Transitioning SDETs to SDEs without proper vetting can create significant problems:
+
+## Technical risks:
+
+**Skill gaps go undetected** - Without an interview process, you won't know if the person has the necessary depth in algorithms, system design, or production coding. Testing code and production code have different requirements and complexity levels.
+
+**Code quality issues** - An SDET who isn't ready may write brittle, poorly designed, or inefficient production code that creates technical debt and maintenance burdens for the team.
+
+**Performance and scalability problems** - Production systems require understanding of performance optimization, resource management, and scaling that test frameworks may not have demanded.
+
+**Increased bug rates** - Ironically, someone who tested code may not write production code with the same rigor, especially under deadline pressure.
+
+## Team and organizational risks:
+
+**Team morale problems** - Other SDEs who went through rigorous interviews may resent someone being promoted without the same bar, especially if that person struggles or requires significant mentorship.
+
+**Precedent setting** - Other team members may expect similar treatment, creating pressure to bypass interview processes for other transitions.
+
+**Mentorship burden** - The team may need to invest heavily in coaching the transitioned engineer, slowing down overall velocity.
+
+**Authority issues** - If the technical lead makes this decision unilaterally without buy-in from the team or HR/management, it can undermine trust in leadership.
+
+## Career risks for the individual:
+
+**Setup for failure** - Putting someone in a role they're not ready for can damage their confidence and career trajectory when they struggle.
+
+**Lack of validation** - Without proving themselves through an interview, they may always wonder (or others may question) whether they "really" earned the position.
+
+**Skill stagnation** - They might not get the growth opportunities they need if placed at the wrong level.
+
+## Better approaches:
+
+- Create a formal internal transfer process with technical evaluation
+- Have them do a trial period working on SDE tasks before officially transitioning
+- Require peer interviews or technical assessments
+- Start with a mentorship program where they gradually take on more SDE work
+- Be transparent about expectations and evaluation criteria
+
+The technical lead can advocate for and support the transition, but skipping proper evaluation creates risk for everyone involved.
+
+# zd: what is the tech lead's role in arranging sdet to transit to sde, does he usually qualified to make the decision?
+
+by sonnet 4.5
+
+A tech lead's role in an SDET-to-SDE transition is typically **influential but not solely decision-making**. Here's the breakdown:
+
+## What a tech lead typically does:
+
+**Advocates and sponsors** - They can identify SDETs with potential, recommend them for transition, and champion their case to management and HR.
+
+**Provides technical assessment** - They can evaluate the person's current work, code quality, and readiness based on day-to-day observation.
+
+**Mentors and prepares** - They can help the SDET develop necessary skills and take on SDE-type work as a trial.
+
+**Gives input on team fit** - They can assess how the transition would impact team dynamics and workload.
+
+## Who else is typically involved:
+
+**HR/People Ops** - Ensures the transition follows company policy, compensation bands, and internal mobility processes.
+
+**Engineering Manager** - Usually has authority over headcount, role changes, and team composition. Often the final decision-maker.
+
+**Skip-level manager or director** - May need to approve role changes, especially if it affects leveling or compensation.
+
+**Peer engineers** - In healthy organizations, they may conduct technical interviews or provide feedback on the candidate's readiness.
+
+**The SDET themselves** - Should have agency in deciding if they want to make this transition.
+
+## Is the tech lead qualified to make this decision alone?
+
+**Usually not, and here's why:**
+
+- **Limited perspective** - They see the person in one context (their current team) but may not have visibility into broader org standards or how this person compares to other SDEs.
+    
+- **Conflict of interest** - They might be motivated by short-term team needs rather than what's best for the individual or organization long-term.
+    
+- **Lacks authority over HR matters** - Role changes typically involve compensation, leveling, and career progression that require HR involvement.
+    
+- **Bias risk** - A single person making the decision without checks can introduce favoritism or blind spots.
+    
+- **Accountability** - If the transition fails, it shouldn't fall solely on one person's judgment.
+    
+
+## Best practice structure:
+
+The tech lead should be **a key stakeholder and advocate**, but the decision should involve:
+
+- Manager approval
+- Some form of technical validation (formal or informal)
+- HR sign-off on the role change
+- Ideally, peer feedback or assessment
+
+This creates accountability, ensures fairness, and protects both the individual and the organization. A tech lead making this decision unilaterally is a red flag for governance and process issues.
+
+# zd: Should a PO and/or Scrum Master make the decision to transit a SDET to SDE?
+
+by sonnet 4.5
+
+**No, a PO (Product Owner) or Scrum Master should not make this decision.** Here's why:
+
+## Why they're not qualified:
+
+**Product Owner:**
+
+- **Wrong domain** - POs focus on product strategy, user needs, and business value, not technical competency or engineering skills
+- **Lack of technical depth** - They typically can't assess code quality, system design abilities, or the technical requirements of an SDE role
+- **Different priorities** - They care about feature delivery, not whether someone has the right technical skills for a different role
+
+**Scrum Master:**
+
+- **Process facilitator, not technical evaluator** - Their role is to enable team effectiveness and remove blockers, not assess technical capabilities
+- **Not a people manager** - They don't typically have authority over hiring, firing, or role changes
+- **Wrong focus** - They focus on team dynamics and process, not individual technical growth or career progression
+
+## Who should make the decision:
+
+This should be a **technical and HR decision**, involving:
+
+1. **Engineering Manager** - Primary decision-maker for role changes
+2. **Tech Lead** - Provides technical assessment and recommendation
+3. **HR/People Ops** - Ensures compliance with internal processes
+4. **The engineer themselves** - Must want the transition
+5. **Peer engineers** (ideally) - Technical validation through interviews or assessments
+
+## What PO/Scrum Master can do:
+
+- **Provide feedback** on the person's collaboration, communication, and delivery
+- **Support the transition** by adjusting sprint planning if needed
+- **Share observations** about the person's work with the decision-makers
+
+But they should **not be the decision-makers**. If a PO or Scrum Master is making engineering role decisions, that's a significant organizational red flag suggesting:
+
+- Unclear roles and responsibilities
+- Lack of proper engineering leadership
+- Potential for non-technical decisions about technical roles
+
+The decision needs to be made by people who understand both the technical requirements and have the organizational authority to make personnel changes.
