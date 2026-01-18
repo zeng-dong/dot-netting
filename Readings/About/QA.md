@@ -766,3 +766,106 @@ But they should **not be the decision-makers**. If a PO or Scrum Master is makin
 - Potential for non-technical decisions about technical roles
 
 The decision needs to be made by people who understand both the technical requirements and have the organizational authority to make personnel changes.
+
+# zd: So should a tech lead solely make this decision then?
+
+by sonnet 4.5
+
+**No, a tech lead should not solely make this decision either.**
+
+I may have been unclear earlier - let me clarify: while a tech lead is **more qualified** than a PO or Scrum Master to assess technical readiness, they still **shouldn't be the sole decision-maker**.
+
+## Why not the tech lead alone:
+
+**Lack of full authority** - Tech leads typically don't have unilateral authority over:
+
+- Role changes and leveling
+- Compensation adjustments
+- Headcount and team composition
+- Career progression decisions
+
+**Single point of failure** - One person's judgment can have blind spots, biases, or conflicts of interest.
+
+**Accountability gaps** - If the transition fails, the responsibility shouldn't rest on one person's shoulders.
+
+**Process bypass** - Skipping proper evaluation and approval chains sets bad precedents and can create fairness issues.
+
+## The right approach - collaborative decision:
+
+**Engineering Manager** = Primary decision-maker and approver
+
+- Has the authority and accountability
+- Manages headcount and team composition
+- Responsible for career development
+
+**Tech Lead** = Key technical evaluator and advocate
+
+- Assesses day-to-day technical work
+- Provides recommendation and mentorship
+- Champions the transition
+
+**HR/People Ops** = Process and policy guardian
+
+- Ensures fairness and consistency
+- Handles compensation and leveling
+- Manages internal mobility procedures
+
+**Optional but recommended:**
+
+- Peer technical assessment or interviews
+- Skip-level manager approval (for larger changes)
+- The SDET's input on readiness and desire
+
+## Bottom line:
+
+The tech lead should be **heavily involved and influential**, but not the **sole decision-maker**. Think of it as: tech lead recommends, manager approves, HR validates. This creates appropriate checks and balances while still leveraging the tech lead's technical expertise.
+
+# zd: You mentioned PO and Scrum Master are not people managers. Is tech lead a people manager?
+
+by sonnet 4.5
+
+**Good catch - no, a tech lead is typically NOT a people manager either.**
+
+This is an important distinction I should have been clearer about:
+
+## Tech Lead vs. Engineering Manager:
+
+**Tech Lead:**
+
+- **Technical leadership role**, not a management role
+- Guides technical decisions, architecture, and code quality
+- Mentors engineers on technical matters
+- Does NOT typically have authority over: hiring, firing, promotions, compensation, performance reviews, or role changes
+- Usually still writes code as a significant part of their job
+
+**Engineering Manager (EM):**
+
+- **People management role**
+- Has authority over: hiring, firing, promotions, compensation, performance management, role changes
+- Responsible for team health, career development, and headcount
+- May or may not write code regularly
+
+## So who makes the SDET→SDE decision?
+
+The **Engineering Manager** should be the primary decision-maker because they:
+
+- Have the actual authority over role changes
+- Are accountable for team composition and performance
+- Manage career progression and compensation
+
+The **Tech Lead** provides critical input:
+
+- Technical assessment and recommendation
+- Day-to-day observation of skills
+- Mentorship and development support
+
+But the tech lead **cannot unilaterally make this decision** because they lack the managerial authority.
+
+## The confusion:
+
+In some organizations, tech leads have hybrid roles or additional management responsibilities, but in the standard definition, they're **technical leaders, not people managers**. If a tech lead is making personnel decisions alone, either:
+
+1. They actually have a hybrid tech lead/manager role
+2. There's a governance problem in the organization
+
+Thanks for pushing me to clarify this important distinction!
