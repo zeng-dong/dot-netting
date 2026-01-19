@@ -869,3 +869,56 @@ In some organizations, tech leads have hybrid roles or additional management res
 2. There's a governance problem in the organization
 
 Thanks for pushing me to clarify this important distinction!
+
+# zd: So can PO and Scrum Master and Tech Lead, three of them combined, make the decision to transit an SDET to SDE?
+
+by sonnet 4.5
+
+**No, even the three of them combined should not make this decision.**
+
+Here's why:
+
+## What's still missing:
+
+**Actual managerial authority** - None of these three roles typically have the organizational authority to:
+
+- Change someone's job title and role
+- Adjust compensation and leveling
+- Modify headcount allocations
+- Make formal personnel decisions
+
+**HR/People processes** - Role changes need to go through proper channels for:
+
+- Compliance with company policies
+- Fairness and consistency across the org
+- Documentation and legal requirements
+- Compensation band adjustments
+
+**Engineering management accountability** - The **Engineering Manager** needs to be involved because they:
+
+- Own the decision and its consequences
+- Are accountable for team performance
+- Have budget and headcount authority
+- Manage career progression officially
+
+## What this trio brings to the table:
+
+- **Tech Lead**: Technical assessment
+- **Scrum Master**: Process and team dynamics perspective
+- **PO**: Collaboration and delivery observations
+
+This is all **useful input**, but it's not the same as having **decision-making authority**.
+
+## The real problem:
+
+If these three are trying to make this decision together, it suggests:
+
+- **Missing engineering management** - Where is the EM?
+- **Governance issues** - Decisions are being made outside proper channels
+- **Process bypass** - Internal mobility and role change processes are being ignored
+
+## Bottom line:
+
+Even combined, these three roles cannot and should not make this decision. The **Engineering Manager** (or equivalent people manager) must be the decision-maker, with HR involved to ensure proper process. The tech lead, PO, and Scrum Master can all provide input, but they can't replace the actual decision-maker.
+
+This would be like three consultants agreeing to hire someone without the hiring manager's approval - they simply don't have the authority, regardless of how many of them agree.
