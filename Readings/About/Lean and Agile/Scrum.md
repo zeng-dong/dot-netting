@@ -19,6 +19,87 @@ In Malignant Hero Dysfunction this person thinks they're a god and that the rule
 
 #### from Derek Davidson
 Next, we have the hero developer anti‑pattern. High‑functioning organizations don't need heroes. Great team players are vital; heroes are not. Heroes almost always ignore quality. Tests, documentation, automation, these are rarely a priority for them. A hero culture is a broken culture. Needing a hero means the overall system is fundamentally broken. And heroes crave attention. They resist Scrum because the focus moves to the team and away from them. This is possibly one of the hardest anti‑patterns to resolve. The task is to encourage the hero to become a part of the team and for them to invest in that team. This can require deft handling.
+
+## not appreciated
+
+zd asked sonnet: Sometimes some developers on a Scrum team express different opinions. Sometimes some other team mate(s) would say "your opinion is not appreciated". How should a Scrum team respond?
+
+This is a real and important team dynamics issue. Here's how a healthy Scrum team should respond:
+
+**The short answer: that phrase should never be acceptable on a Scrum team.**
+
+Scrum is built on three core values directly relevant here — **respect**, **openness**, and **courage**. Telling someone their opinion isn't appreciated violates all three at once.
+
+---
+
+**What the team should do in the moment**
+
+The Scrum Master (or any team member) should intervene calmly but clearly. Something like: _"Actually, in this team every voice matters — let's hear the concern out."_ Silence in that moment is tacit endorsement of the behavior.
+
+**What the Scrum Master should do afterward**
+
+This is squarely a Scrum Master responsibility. Their job is to protect the team's psychological safety and remove impediments to collaboration — and toxic communication is one of the biggest impediments there is. The SM should:
+
+- Have a private, direct conversation with whoever said it
+- Bring the pattern into a Retrospective as a team health topic (without singling people out if it's a broader culture issue)
+- Reinforce the team's working agreements around communication
+
+**What the team should do structurally**
+
+- Establish or revisit **working agreements** that explicitly name how disagreement is handled
+- Use Retrospectives as a safe space to name the dynamic: _"Do people feel heard on this team?"_
+- Practice structured techniques like **Fist of Five**, **dot voting**, or **silent brainstorming** so that quieter or dissenting voices have equal weight by design
+
+**The deeper point**
+
+Diverse opinions on a Scrum team aren't a problem to be silenced — they're a _feature_. Disagreement, when handled well, leads to better decisions, catches blind spots, and builds trust. A team where people self-censor is a team flying blind.
+
+The goal isn't agreement at all costs. It's **safe disagreement** — where people can challenge ideas without challenging each other's right to be heard.
+
+If the behavior persists and leadership doesn't address it, it becomes a retention and delivery risk, not just a culture one.
+
+### zd ask: I forgot to mention one thing. This has happened in a daily scrum stand up. Would have more to elaborate?
+Great context — that actually makes it more specific and more serious. Here's the elaboration:
+
+---
+
+**Why this is especially problematic in a Daily Scrum**
+
+The Daily Scrum has a very narrow, defined purpose: inspect progress toward the Sprint Goal and adapt the plan for the next 24 hours. It is meant to be a **safe, time-boxed sync** — not a debate forum, but also absolutely not a place where anyone's voice gets shut down.
+
+When someone says "your opinion is not appreciated" in a Daily Scrum, a few things go wrong simultaneously:
+
+**1. It violates the purpose of the event** The Daily Scrum isn't the right place to resolve deep disagreements — but it _is_ a place where every team member should feel comfortable flagging blockers, concerns, or a differing read on the plan. Silencing that defeats the whole point.
+
+**2. It poisons psychological safety at the worst time** The Daily Scrum sets the tone for the _entire day_. If someone leaves that 15-minute meeting feeling dismissed, they are less likely to speak up, raise blockers, or collaborate openly for the rest of the day — and possibly beyond.
+
+**3. It signals a power imbalance** In Scrum, the team is self-managing. No one — not a senior developer, not a tech lead, not even the Product Owner — has the authority to tell another team member their input is unwelcome. That phrase implies a hierarchy that Scrum explicitly rejects.
+
+**4. It corrupts the inspect-and-adapt loop** If developers filter what they say out of fear of social consequences, the team stops getting accurate information. The Daily Scrum becomes performative rather than genuinely useful.
+
+---
+
+**What should happen right there, in the room**
+
+- The **Scrum Master should intervene immediately** — gently but without ambiguity. Even a simple _"let's make sure everyone's perspective gets a fair hearing"_ resets the tone.
+- If the Scrum Master isn't present or misses it, **any team member** can and should push back. Scrum's courage value applies to everyone.
+- The person who was dismissed should be briefly acknowledged: _"What were you flagging? Let's make sure we capture it."_
+
+---
+
+**What should happen after the Daily Scrum**
+
+- The Scrum Master should speak **privately** with the person who made the comment — not publicly, which would create more conflict.
+- The affected developer should be checked in with privately too, to make sure they feel supported.
+- If this is a pattern (not a one-off), it **belongs in the next Retrospective** as a team health issue — framed around how the team communicates, not as an attack on individuals.
+
+---
+
+**The bigger red flag**
+
+If this is happening in the Daily Scrum — the most visible, daily team ritual — it's almost certainly happening in other interactions too: in code reviews, backlog refinement, planning. The Daily Scrum incident is likely a symptom of a broader team culture issue that needs direct attention, not just a one-time correction.
+
+A Scrum Master who witnesses this and does nothing is failing one of their core responsibilities.
 # acceptance criteria
 ```
 Okay, the user is asking if a single developer on a Scrum team can define acceptance Criteria (AC) for a Product Backlog Item (PBI) without involving other developers. Let me break this down.

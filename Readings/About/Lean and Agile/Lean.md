@@ -62,3 +62,6 @@ Modern-day Lean has settled on five principles and a wide array of practices tha
 
 
 #### Eliminate Waste
+
+
+# ## 
