@@ -100,6 +100,53 @@ When someone says "your opinion is not appreciated" in a Daily Scrum, a few thin
 If this is happening in the Daily Scrum — the most visible, daily team ritual — it's almost certainly happening in other interactions too: in code reviews, backlog refinement, planning. The Daily Scrum incident is likely a symptom of a broader team culture issue that needs direct attention, not just a one-time correction.
 
 A Scrum Master who witnesses this and does nothing is failing one of their core responsibilities.
+
+### zd ask: In Scrum practices, is there a documented specification says once a sprint starts no Backlog PBIs can be pulled into currently sprint as Sprint PBI?
+Great question — and the answer is nuanced. Let me give you the accurate picture:
+
+---
+
+**What the Scrum Guide actually says**
+
+The official Scrum Guide (the authoritative source for Scrum) does **not** say that no work can be added to a Sprint once it starts. What it _does_ say is more nuanced:
+
+- The **Sprint Backlog** is owned by the Developers, and **only Developers can change it** during the Sprint
+- Work can be added or removed from the Sprint Backlog as the Developers learn more — as long as it doesn't endanger the **Sprint Goal**
+- The Sprint Goal itself is **fixed** and cannot change once the Sprint begins
+
+So the Scrum Guide distinguishes between the **Sprint Goal** (immovable) and the **Sprint Backlog contents** (flexible).
+
+---
+
+**What this means practically**
+
+||Allowed?|
+|---|---|
+|Adding a new PBI that **supports the Sprint Goal**|✅ Yes — Developers decide|
+|Removing scope that becomes unnecessary|✅ Yes — Developers decide|
+|The Product Owner adding work **without Developer agreement**|❌ No|
+|Changing or abandoning the Sprint Goal mid-Sprint|❌ No|
+|Completely replacing Sprint work with unrelated priorities|❌ No — this would warrant a Sprint cancellation|
+
+---
+
+**Who has the authority here**
+
+This is a critical point that many teams get wrong. The Product Owner **cannot unilaterally** push new PBIs into a running Sprint. They can _negotiate_ with the Developers — presenting new information or changing priorities — but the Developers have the final say on what they take on and whether it's feasible without compromising the Sprint Goal.
+
+If a Product Owner is frequently forcing new items in, that's a Scrum anti-pattern sometimes called **Sprint disruption** or **scope creep**, and it's the Scrum Master's responsibility to address it.
+
+---
+
+**Where the "no changes" myth comes from**
+
+Many teams adopt a stricter internal rule — _nothing gets added once the Sprint starts_ — as a **working agreement** to protect focus and predictability. This is a legitimate team choice, but it is a **team convention**, not a Scrum rule. It's worth knowing the difference so the team is making an informed decision rather than following a misunderstood rule.
+
+---
+
+**The bottom line**
+
+The Scrum Guide gives teams flexibility on Sprint Backlog contents, but draws a firm line at the Sprint Goal. Any addition of PBIs mid-Sprint should be a **deliberate, team-agreed decision** — not a unilateral imposition — and should be the exception, not the norm.
 # acceptance criteria
 ```
 Okay, the user is asking if a single developer on a Scrum team can define acceptance Criteria (AC) for a Product Backlog Item (PBI) without involving other developers. Let me break this down.
