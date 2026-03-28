@@ -1,13 +1,33 @@
-11,  9:29
-10   15:54
-9:   5:55
-8:   10:43
+
+# 2026
+
+* AI-assisted development
+	* agents
+	* orchestration
+* GitHub Copilot
+	* GitHub Copilot Code Review
+	* Secure Development with GitHub Copilot
+	* Debug and Troubleshoot Code with GitHub Copilot
+	* Writing Tests with GitHub Copilot
+	* Refactor and Optimize Code with GitHub Copilot
+	* Creating Developer Documentation with GitHub Copilot
+* angular
+	* version 21 new offerings, particularly Signal Forms, Angular Aria
+	* version 22 new offerings
+* .NET
+	* adopting .NET 10 and C# 14
+* Lean and agile
+	* advanced Scrum Mastery
+	* Lean Principles
+	* Enterprise Architecture: Adapting to Lean and Agile
+	* Lean Software Development Fundamentals
+	* [Creative Problem Solving and Decision Making Techniques](https://app.pluralsight.com/library/courses/creative-problem-solving-decision-techniques)
+	* [Understanding Lean and Value-driven Delivery](https://app.pluralsight.com/library/courses/understanding-lean-value-driven-delivery)
+	* [Critical Thinking and Problem Solving](https://app.pluralsight.com/library/courses/critical-thinking-problem-solving)
+	* [Managing Scope Creep](https://app.pluralsight.com/library/courses/managing-scope-creep)
+	* [Kanban for Agile/Scrum Practitioners](https://app.pluralsight.com/library/courses/kanban-agile-scrum-practitioners)
 
 
-Angular 
-.NET, ASP.NET Cpre
-Generative AI
-Scrum
 
 
 # 2025 first half topics

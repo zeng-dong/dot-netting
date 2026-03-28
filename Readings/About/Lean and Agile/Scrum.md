@@ -147,6 +147,54 @@ Many teams adopt a stricter internal rule — _nothing gets added once the Sprin
 **The bottom line**
 
 The Scrum Guide gives teams flexibility on Sprint Backlog contents, but draws a firm line at the Sprint Goal. Any addition of PBIs mid-Sprint should be a **deliberate, team-agreed decision** — not a unilateral imposition — and should be the exception, not the norm.
+
+### zd aske: Could quote the Scrum Guide that supports "adding or removing items based on sprint goal"?
+
+Fair challenge — let me be precise and honest here.
+
+---
+
+**What the Scrum Guide actually says verbatim**
+
+From the **2020 Scrum Guide**, under _Sprint Backlog_:
+
+> "The Sprint Backlog is a plan by and for the Developers. It is a highly visible, real-time picture of the work that the Developers plan to accomplish during the Sprint in order to achieve the Sprint Goal. Consequently, the Sprint Backlog is updated throughout the Sprint as more is learned."
+
+And under _Sprint_:
+
+> "Only the Developers can change their Sprint Backlog during a Sprint."
+
+And also under _Sprint_:
+
+> "A Sprint could be cancelled if the Sprint Goal becomes obsolete."
+
+---
+
+**What the Scrum Guide does NOT explicitly say**
+
+I want to be transparent with you: the Scrum Guide does **not** contain explicit language saying _"items may be added or removed as long as the Sprint Goal is not endangered."_
+
+That framing — which I used in my previous response — is a **widely accepted interpretation** and practical guidance taught by Scrum trainers and in the PSM/CSM communities, but it is an **inference** drawn from the text, not a direct quote. I should have been clearer about that distinction earlier.
+
+---
+
+**Where that interpretation comes from**
+
+The reasoning behind it is logical:
+
+- The Scrum Guide says the Sprint Backlog is **updated throughout the Sprint as more is learned**
+- It says only **Developers control** the Sprint Backlog
+- It anchors the Sprint's integrity to the **Sprint Goal**, not to a fixed list of PBIs
+
+From those three points, practitioners conclude that scope flexibility exists, bounded by the Sprint Goal. But that is **interpretation**, not explicit specification.
+
+---
+
+**The honest answer to your question**
+
+There is no single sentence in the Scrum Guide that explicitly authorizes pulling in new PBIs mid-Sprint tied to the Sprint Goal condition. If someone cites that as a hard rule, they are citing community practice and inference — not the documented specification itself.
+
+Good catch, and thanks for pushing on that.
 # acceptance criteria
 ```
 Okay, the user is asking if a single developer on a Scrum team can define acceptance Criteria (AC) for a Product Backlog Item (PBI) without involving other developers. Let me break this down.
