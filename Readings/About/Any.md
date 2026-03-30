@@ -4,6 +4,7 @@
 * AI-assisted development
 	* agents
 	* orchestration
+	* Combine agents, skills, and MCP (Model Context Protocol) in unified workflows
 * GitHub Copilot
 	* GitHub Copilot Code Review
 	* Secure Development with GitHub Copilot
