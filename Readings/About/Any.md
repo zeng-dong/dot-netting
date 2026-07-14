@@ -29,7 +29,13 @@
 	* [Kanban for Agile/Scrum Practitioners](https://app.pluralsight.com/library/courses/kanban-agile-scrum-practitioners)
 
 
-
+Ibis Way West North Palm Beach FL
+Ibis Way Palm Beach FL           
+Ibis Way North Palm Beach FL     
+Ibis Isle Rd Palm Beach FL                 
+Ibis Isle Rd East Palm Beach FL            
+Ibis Isle Rd West Palm Beach FL            
+Ibis Blvd West Palm Beach FL
 
 # 2025 first half topics
 * Scaling Agile Foundations	
@@ -843,3 +849,71 @@ While both have local scope, they serve distinct purposes:
 - **Avoid Global Variables:** Treat globals as a "code smell". If you find yourself needing to share data across many functions, consider passing it through parameters or using object-oriented design.- 
 - **Keep Parameters Read-Only:** It is generally considered good practice to treat parameters as immutable within the function. If you need to modify an input, assign it to a new local variable first to maintain clarity and avoid confusing the caller.
 - **Narrow Scope:** Declare variables as close to their point of use as possible to make the code easier to follow.
+
+
+# funny addresses
+
+New York
+	Bowery
+	Broadway
+Cleveland
+	Bivens
+	Cherie
+
+New Caney has many single word streets
+Cleveland TX has many long two number streets with trailing words after Rd
+
+
+3224 124th St SE Everett WA 98208
+
+Southwood Drive San Francisco
+Southwood Drive South San Francisco
+Grand Avenue San Francisco
+Grand Avenue South San Francisco
+
+East End North Palm Beach
+West End West Paml Beach
+
+Ibis Boulevard West        Palm Beach                 WPB
+Ibis Way West North        Palm Beach                 NPB
+Ibis Way North             Palm Beach                 NPB
+Ibis Isle Rd               Palm Beach                 PB
+Ibis Isle Rd East          Palm Beach                 PB
+Ibis Isle Rd West          Palm Beach                 PB
+Ibis Way                   Palm Beach                 PB
+
+
+Ibis Way West North Palm Beach FL
+Ibis Way Palm Beach FL
+Ibis Way North Palm Beach FL
+Ibis Isle Rd Palm Beach FL
+Ibis Isle Rd East Palm Beach FL
+Ibis Isle Rd West Palm Beach FL
+Ibis Blvd West Palm Beach FL
+
+
+
+
+				WPB
+Hibiscus Avenue West Palm Beach
+Hibiscus Circle West Palm Beach
+Hibiscus Drive  West Palm Beach
+Hibiscus Lane  West Palm Beach
+Hibiscus Street  West Palm Beach
+				PB
+Hibiscus Avenue Palm Beach
+				NPB
+Hibiscus Avenue North Palm Beach
+
+
+Via del Lagos     West Palm Beach
+
+Via Del Lago      Palm Beach
+Via Del Mar       Palm Beach
+
+
+3966 W Clark Vw Cv Salt Lake City, Salt Lake County
+3966 W Clark Vw Cv, West Valley City, Salt Lake County, UT 84120
+
+4757 S Coopers Hawk Bay, Millcreek, UT 84117
+4758 S Coopers Hawk Bay, Salt Lake City, UT 84117
