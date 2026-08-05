@@ -211,4 +211,19 @@ With AI‑assisted development and using different AI tools across your softwar
 https://github.com/adhithiravi/Kids-Lunch-Planner
 
 1. - In this react vite app
+
    -create a lunch form for kids
+
+### improved prompt
+let's create this lunch idea type:
+type should contain
+
+- a name
+-  category
+- optional notes
+- nut free flag
+- prep time
+
+and category can use the same ideas you just added, main, snack, fruit, drink and treat
+
+Once you create the type, use the lunch idea type, use the luch idea type and the form should allow user to enter name, category, prep time mins, notes and nut free
