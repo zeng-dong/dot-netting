@@ -204,3 +204,11 @@ Now, as we improve both prompting and context, the quality of AI output improve
 ### Humans Own the Outcome
 
 With AI‑assisted development and using different AI tools across your software development lifecycle, what's important to remember is that AI writes code, but we humans still own it. Make sure to always keep the human in loop by reviewing, validating, and testing the AI‑produced code. Evaluate tradeoffs and performance, and keep in mind that you own the code. If you're working on AI with a team or organization, the best thing you can do to move forward is have a shared standard as a team. You can define AI usage policies, create an AI README that's going to be read by everybody's LLM, standardize the prompting practices, and establish review checkpoints. This way, everybody on the team is using AI pretty much the same way. A wrong approach would be to blindly trust and automate everything without validation. The right approach would be to guide AI, provide the context, and validate the outputs while you're still focusing on the real problems. I'd like to leave with a note that in the age of AI, the best skill that we can bring forward is being adaptable because those who use AI well will replace those who don't. I wish you good luck in your journey with using AI tools for development. And thank you so much for watching this course, and I hope you learned a bit from here, and thank you for your time. If you want to reach out to me, I'm Adhithi Ravichandran, and you can reach out to me on Twitter or LinkedIn or go to my website, suryaconsultinginc for my services. And good luck on your AI learning journey.
+
+
+# GH-300 GitHub Copilot: Applying Prompt Engineering and Context Crafting
+
+https://github.com/adhithiravi/Kids-Lunch-Planner
+
+1. - In this react vite app
+   -create a lunch form for kids
